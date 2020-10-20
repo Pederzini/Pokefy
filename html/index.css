@@ -1,0 +1,70 @@
+/* INÍCIO DA HEADER */
+body {
+    font-family: "Roboto";
+}
+
+.header {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    position: absolute;
+    width: 1366px;
+    height: 134px;
+    left: 0px;
+    top: 0px;
+    background-color: #88E271;
+}
+
+.container {
+    position: absolute;
+    width: 1220px;
+    height: 134px;
+    margin: 0px 0px 0px 73px;
+    background-color: #E06BA3;
+}
+
+.logo {
+    height: 120px;
+    margin: 7px 0px 0px 10px;
+    float: left;
+}
+
+
+ul {
+    margin-top: 48px;
+}
+
+/* Estilo para a tag <nav> inteira */
+.nav {
+    float: left;    
+    margin: 0;
+    height: 134px;
+}
+
+/* Estilo só para a tag <a> que está dentro do nav */
+.nav a {
+    /* Vai tirar o sublinhado do link */
+    text-decoration: none;
+    color: #000000;
+    /* Deixar tudo em caixa alta */
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+/* Alterar as propriedades da lista */
+.nav li {
+    /* Alterar a maneira que os elementos estão dispostos */
+    /* Tirar as propriedades da lista, no caso a bolinha */
+    list-style: none;
+    /* inline = cada um na mesma linha; block em blocos */
+    display: inline-block;
+    /* Não quero deixar tão juntos os itens do menu */
+    /* Espaçamento em todos os lados */
+    /* top left bottom right */
+    padding: 0px 20px 0 20px;
+    /* Não quero que fique grudado e header do container */
+
+}
+
+/* FIM DA HEADER */
