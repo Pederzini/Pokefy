@@ -1,0 +1,171 @@
+/* INÍCIO DA HEADER */
+body {
+    font-family: "Roboto";
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+body::-webkit-scrollbar {
+	width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+	background: #252525;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: #FFC805;
+}
+
+.header {
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-size: 22px;
+    /* position: fixed; */
+    width: 100vw;
+    height: 104px;
+    /* background-color: #88E271; */
+    background-color: #8B4EBB;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 1065px;
+    height: 104px;
+    margin: 0px 130px;
+    display: flex;
+    align-items: center;
+    /* background-color: #E06BA3; */
+    background-color: #8B4EBB;
+}
+
+.logo {
+    height: 80px;
+}
+
+/* Estilo para a tag <nav> inteira */
+.nav {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    padding: 0px;
+    color: white;
+    width: 60.47px;
+    height: 80px;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    padding: 0px;
+    justify-content: space-evenly;
+}
+
+.div_botoes {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    height: 45px;
+    font-family: "Roboto Condensed";
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 12px;
+    border: none;
+    padding: 5px 15px;
+}
+
+.button_usuario {
+    background-color: #B076DE;
+    font-weight: normal;
+    outline: none;
+}
+
+.button_logout {
+    background-color: #FFC805;
+    outline: none;
+}
+
+/* FIM DA HEADER */
+
+/* COMEÇO DO EFEITO DE HOVER */
+
+.inicio:hover, .regiao:hover, .eventos:hover, .pokedex:hover {
+    font-weight: bold;
+    box-shadow: 0 0 3pt 1pt white;
+    padding: 5px 15px;
+    border-radius: 12px;
+    background-color: #7434A6;
+}
+
+.button_usuario:hover {
+    box-shadow: 0 0 3pt 1pt white;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button_logout:hover {
+    box-shadow: 0 0 3pt 2pt #353535;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+/* FIM DO EFEITO DE HOVER */
+
+/* COMEÇO DO BODY */
+
+.conteudo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url("../img/misc/hoennMapSmall.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container_conteudo {
+    width: 1065px;
+    height: 488px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.metade_1 {
+    font-family: "Roboto";
+    width: 50%;
+    height: 100%;
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    /* background-color: yellowgreen; */
+}
+
+.metade_2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* background-color: salmon; */
+}
