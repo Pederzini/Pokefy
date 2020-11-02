@@ -1,0 +1,440 @@
+/* INÍCIO DA HEADER */
+body {
+    font-family: "Roboto";
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../img/misc/hoennTownDark.png");
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+body::-webkit-scrollbar {
+	width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+	background: #252525;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: #FFC805;
+}
+
+.nome_pokemon {
+    background-color: #fff;
+    border-radius: 20px;
+    color: #353535;
+    width: 70%;
+    height: 40px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-size: 22px;
+    /* position: fixed; */
+    width: 100%;
+    height: 104px;
+    /* background-color: #88E271; */
+    background-color: #8B4EBB;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 5px solid #6b3892;
+}
+
+.container {
+    width: 1065px;
+    height: 104px;
+    margin: 0px 130px;
+    display: flex;
+    align-items: center;
+    /* background-color: #E06BA3; */
+    background-color: #8B4EBB;
+}
+
+.logo {
+    height: 80px;
+}
+
+/* Estilo para a tag <nav> inteira */
+.nav {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    padding: 0px;
+    color: white;
+    width: 60.47px;
+    height: 80px;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    padding: 0px;
+    justify-content: space-evenly;
+}
+
+.div_botoes {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    height: 45px;
+    font-family: "Roboto Condensed";
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 12px;
+    border: none;
+    padding: 5px 15px;
+}
+
+.button_usuario {
+    background-color: #B076DE;
+    font-weight: normal;
+    outline: none;
+}
+
+.button_logout {
+    background-color: #FFC805;
+    outline: none;
+}
+
+/* FIM DA HEADER */
+
+/* COMEÇO DO EFEITO DE HOVER */
+
+.inicio:hover, .regiao:hover, .eventos:hover, .pokedex:hover {
+    font-weight: bold;
+    box-shadow: 0 0 3pt 1pt white;
+    padding: 5px 15px;
+    border-radius: 12px;
+    background-color: #7434A6;
+}
+
+.button_usuario:hover {
+    box-shadow: 0 0 3pt 1pt white;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button_logout:hover {
+    box-shadow: 0 0 3pt 2pt #353535;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+/* FIM DO EFEITO DE HOVER */
+
+/* COMEÇO DO BODY */
+
+.conteudo {
+    width: 100%;
+    height: 488px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.capa {
+    width: 100%;
+    height: 96px;
+    border-top: 10.5px solid #B28D06;
+    border-bottom: 10.5px solid #B28D06;
+    background-color: #FFC805;
+    font-size: 64px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #353535;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container_conteudo {
+    width: 1065px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.metade_1 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Roboto";
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: #FFC805; */
+}
+
+.metade_2 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Roboto";
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: #B076DE; */
+}
+
+.container_metade {
+    width: 300px;
+    height: 400px;
+    margin-bottom: 50px;
+    background-color: white;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img_card {
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.content {
+    margin-top: 65px;
+}
+
+.container_metade .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    /* margin: 0 auto;
+    background: #fff; */
+    transition: 0.5s;
+}
+
+.container_metade .card .face {
+    position: absolute;
+    border-radius: 35px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container_metade .card .face.face1 {
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    color: #353535;
+}
+
+.container_metade .card:hover {
+    box-shadow: 0 30px 50px rgba(0,0,0,.2);
+    border-radius: 35px;
+}
+
+.container_metade .card .face.face1 .nome_pokemon{
+    margin-top: 60px;
+}
+
+.container_metade .card .face.face2 .nome_pokemon{
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+    color: #353535;
+    transition: 0.5s;
+}  
+
+.container_metade .card:hover .face.face2 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    top: 40px;
+    left: 17%;
+    transform: translateX(80%);
+    background: #E0E0E0;
+}
+
+/* .container_metade .card .face.face2{
+    background: #8BC56C;
+} */
+
+.container_metade .card .face.face2{
+    transition: 0.5s;
+}
+
+.container_metade .card:hover .face.face2 .nome_pokemon{
+    display: none;
+}
+
+.container_metade .card:hover .face.face2 img{
+    height: 90px;
+}
+
+/* INÍCIO DAS CLASSES PARA OS TIPOS DE POKEMON */
+
+.img_dois_tipos {
+    height: 50px;
+    /* Caso tenha um só tipo, usar margin-left 10 e deixar o justify center da classe tipos */
+    /* Quando tenho dois tipos, tenho que usar margin-left 18 e tirar o justify da classe tipos */
+    margin-left: 18px;
+}
+
+
+.img_um_tipo {
+    height: 50px;
+    /* Caso tenha um só tipo, usar margin-left 10 e deixar o justify center da classe tipos */
+    /* Quando tenho dois tipos, tenho que usar margin-left 18 e tirar o justify da classe tipos */
+}
+
+.tipo_bug {
+
+}
+
+.tipo_dark {
+
+}
+
+.tipo_dragon {
+
+}
+
+.tipo_electric {
+
+}
+
+.tipo_fairy {
+
+}
+
+.tipo_fighting {
+
+}
+
+.tipo_fire {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFDCC2;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.tipo_flying {
+
+}
+
+.tipo_ghost {
+
+}
+
+.tipo_grass {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #A5EA9F;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.tipo_ground {
+
+}
+
+.tipo_ice {
+
+}
+
+.tipo_normal {
+
+}
+
+.tipo_poison {
+
+}
+
+.tipo_psychic {
+
+}
+
+.tipo_rock {
+
+}
+
+.tipo_steel {
+
+}
+
+.tipo_water {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #87C2FF;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.tipo_fire_fighting {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #FFDCC2 0%, #FFDCC2 50%, #EF7A9B 50%, #EF7A9B 100%);
+    width: 100%;
+    border-radius: 20px;
+}
+
+.tipo_fire_fighting img:last-child{
+    margin-left: 30px;
+}
+
+.tipo_water_ground {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #87C2FF 0%, #87C2FF 50%, #EDAE8E 50%, #EDAE8E 100%);
+    width: 100%;
+    border-radius: 20px;
+}
+
+.tipo_water_ground img:last-child{
+    margin-left: 30px;
+}
+
+/* FIM DAS CLASSES PARA OS TIPOS DE POKEMON */
