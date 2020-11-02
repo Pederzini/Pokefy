@@ -268,7 +268,8 @@ button {
 }
 
 .container_metade .card:hover {
-    box-shadow: 0 30px 50px rgba(0,0,0,.2);
+    /* box-shadow: 0 30px 50px rgba(0,0,0,.2); */
+    box-shadow: 0 15px 50px rgba(255, 255, 255, .65);
     border-radius: 35px;
 }
 
@@ -300,6 +301,7 @@ button {
 
 .container_metade .card .face.face2{
     transition: 0.5s;
+    border-radius: 30px;
 }
 
 .container_metade .card:hover .face.face2 .nome_pokemon{
@@ -331,7 +333,13 @@ button {
 }
 
 .tipo_dark {
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #8F889C;
+    width: 100%;
+    border-radius: 20px;
+    color: white;
 }
 
 .tipo_dragon {
