@@ -241,7 +241,6 @@ li {
     font-weight: bold;
     font-size: 45px;
     text-transform: uppercase;
-    color: #8B4EBB;
     color: white;
 }
 
@@ -272,6 +271,7 @@ li {
     justify-content: center;
     font-size: 26px;
     color: white;
+    line-height: 45px;
     /* background-color: salmon; */
 }
 /* COMEÇO DO BODY */
