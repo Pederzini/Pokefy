@@ -175,14 +175,14 @@ button {
 }
 
 .container_conteudo {
-    width: 1065px;
+    width: 90%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.metade_1 {
+.metade_1, .metade_2, .metade_3 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -197,7 +197,7 @@ button {
     /* background-color: #FFC805; */
 }
 
-.metade_2 {
+/* .metade_2 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -209,8 +209,8 @@ button {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* background-color: #B076DE; */
-}
+    /* background-color: #B076DE; 
+} */
 
 .container_metade {
     width: 300px;
@@ -241,9 +241,10 @@ button {
     position: relative;
     width: 300px;
     height: 400px;
+    /* margin-bottom: 50px; */
     /* margin: 0 auto;
     background: #fff; */
-    transition: 0.5s;
+    /* transition: 0.5s; */
 }
 
 .container_metade .card .face {
@@ -393,7 +394,12 @@ button {
 }
 
 .tipo_normal {
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #BCC1C5;
+    width: 100%;
+    border-radius: 20px;
 }
 
 .tipo_poison {
@@ -443,6 +449,10 @@ button {
 
 .tipo_water_ground img:last-child{
     margin-left: 30px;
+}
+
+.content div {
+    font-weight: bold;
 }
 
 /* FIM DAS CLASSES PARA OS TIPOS DE POKEMON */
