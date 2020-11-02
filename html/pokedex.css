@@ -292,7 +292,7 @@ button {
     border-radius: 50%;
     top: 40px;
     left: 17%;
-    transform: translateX(80%);
+    transform: translateX(75%);
 }
 
 /* .container_metade .card .face.face2{
@@ -679,6 +679,220 @@ button {
 
 .tipo_bug_ground img:last-child{
     margin-left: 30px;
+}
+
+.tipo_bug_ghost {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #B8DA72 0%, #B8DA72 50%, #95A6D7 50%, #95A6D7 100%);
+    width: 100%;
+    border-radius: 20px;
+}
+
+.tipo_bug_ghost img:last-child{
+    /* margin-left: 30px; */
+}
+
+.tipo_normal_fairy {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #BCC1C5 0%, #BCC1C5 50%, #FCBFF8 50%, #FCBFF8 100%);
+    width: 100%;
+    border-radius: 20px;
+}
+
+.tipo_normal_fairy img:last-child {
+    margin-left: 30px;
+}
+
+.tipo_normal_fairy .img_dois_tipos {
+    margin-left: 8px;
+}
+
+.tipo_dark_ghost {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #8F889C 0%, #8F889C 50%, #95A6D7 50%, #95A6D7 100%);
+    width: 100%;
+    border-radius: 20px;
+}
+
+.tipo_dark_ghost img:last-child{
+    margin-left: 12px;
+}
+
+.tipo_dark_ghost .img_dois_tipos {
+    margin-left: 8px;
+}
+
+.tipo_steel_fairy {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #89BFD3 0%, #89BFD3 50%, #FCBFF8 50%, #FCBFF8 100%);
+    width: 100%;
+    border-radius: 20px;
+}
+
+.tipo_steel_fairy img:last-child {
+    margin-left: 47px;
+}
+
+.tipo_steel_fairy .img_dois_tipos {
+    /* margin-left: 8px; */
+}
+
+.tipo_steel_rock {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #89BFD3 0%, #89BFD3 50%, #E0D3B0 50%, #E0D3B0 100%);
+    width: 100%;
+    border-radius: 20px;
+}
+
+.tipo_steel_rock img:last-child {
+    margin-left: 47px;
+}
+
+.tipo_fighting_psychic {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #EF7A9B 0%, #EF7A9B 50%, #FFB6B8 50%, #FFB6B8 100%);
+    width: 100%;
+    border-radius: 20px;
+}
+
+.tipo_fighting_psychic img:last-child {
+    margin-left: 20px;
+}
+
+.tipo_fighting_psychic .img_dois_tipos {
+    margin-left: 8px;
+}
+
+.tipo_grass_poison {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #A5EA9F 0%, #A5EA9F 50%, #D9A6EF 50%, #D9A6EF 100%);
+    width: 100%;
+    border-radius: 20px;
+}
+
+.tipo_grass_poison img:last-child{
+    margin-left: 15px;
+}
+
+.tipo_water_dark {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    background: linear-gradient(to right, #87C2FF 0%, #87C2FF 50%, #8F889C 50%, #8F889C 100%);
+    width: 100%;
+    border-radius: 20px;
+}
+
+.tipo_water_dark img:last-child{
+    margin-left: 30px;
+}
+
+.tipo_fire_ground {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #FFDCC2 0%, #FFDCC2 50%, #EDAE8E 50%, #EDAE8E 100%);
+    width: 100%;
+    border-radius: 20px;
+}
+
+.tipo_fire_ground img:last-child{
+    margin-left: 45px;
+}
+
+.tipo_ground_dragon {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #EDAE8E 0%, #EDAE8E 50%, #71B1E9 50%, #71B1E9 100%);
+    width: 100%;
+    border-radius: 20px;
+}
+
+.tipo_ground_dragon img:last-child{
+    margin-left: 30px;
+}
+
+.tipo_dragon_flying {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    background: linear-gradient(to right, #71B1E9 0%, #71B1E9 50%, #AEC3F1 50%, #AEC3F1 100%);
+    width: 100%;
+    border-radius: 20px;
+}
+
+.tipo_dragon_flying img:last-child{
+    margin-left: 18px;
+}
+
+.tipo_rock_psychic {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #E0D3B0 0%, #E0D3B0 50%, #FFB6B8 50%, #FFB6B8 100%);
+    width: 100%;
+    border-radius: 20px;
+}
+
+.tipo_rock_psychic img:last-child {
+    margin-left: 20px;
+}
+
+.tipo_rock_psychic .img_dois_tipos {
+    margin-left: 18px;
+}
+
+.tipo_ground_psychic {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #EDAE8E 0%, #EDAE8E 50%, #FFB6B8 50%, #FFB6B8 100%);
+    width: 100%;
+    border-radius: 20px;
+}
+
+.tipo_ground_psychic img:last-child {
+    margin-left: 30px;
+}
+
+.tipo_ground_psychic .img_dois_tipos {
+    margin-left: 20px;
+}
+
+.tipo_rock_grass {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #E0D3B0 0%, #E0D3B0 50%, #A5EA9F 50%, #A5EA9F 100%);
+    width: 100%;
+    border-radius: 20px;
+}
+
+.tipo_rock_grass img:last-child {
+    margin-left: 28px;
+}
+
+.tipo_rock_grass .img_dois_tipos {
+    margin-left: 18px;
+}
+
+.tipo_rock_bug {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #E0D3B0 0%, #E0D3B0 50%, #B8DA72 50%, #B8DA72 100%);
+    width: 100%;
+    border-radius: 20px;
+}
+
+.tipo_rock_bug img:last-child {
+    margin-left: 35px;
+}
+
+.tipo_rock_bug .img_dois_tipos {
+    margin-left: 18px;
 }
 
 /* FIM DAS CLASSES PARA OS TIPOS DE POKEMON */
