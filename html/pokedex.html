@@ -35,16 +35,18 @@
             </div>
         </div>
     </div>
-    <div class="conteudo">
-        
+    <div class="conteudo">        
         <div class="capa">
             <img src="../img/misc/birch.png" alt="">
             Pokédex
             <img src="../img/misc/starters.png" alt="">
         </div>
-
+        <div class="opcoes">
+            <button id="dexNormais" onclick="mostrarNormais()" style="Display: none">Formas<br>normais</button>
+            <button id="dexMegas" onclick="mostrarMegas()">Mega<br>evoluções</button>
+        </div>
     </div>
-    <div class="container_conteudo">
+    <div id="container_conteudo">
         
 <!-- ------------------------------------------------- COLUNA 1 ------------------------------------------------- -->
         
@@ -819,7 +821,7 @@
                     </div>
                     <div class="face face2" style="background: #AB6AC8">
                         <div class="caixinha_imgPoke">
-                            <img class="img_card" src="../img/Pokemon/Ajustadas/Seviper.png" alt="">
+                            <img class="img_card" src="../img/Pokemon/Seviper.png" alt="">
                         </div>
                         <div class="caixinha_textPoke">
                             <div class="nome_pokemon">Seviper</div>
@@ -965,6 +967,308 @@
                     </div>
                 </div>
             </div>
+
+            <!-- --------------- Banette --------------- -->
+
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Banette</h2>
+                            <div class="tipo_ghost">
+                                <img class="img_um_tipo" src="../img/types/type_ghost.png" alt="">
+                                Fantasma
+                            </div>
+                            <p>Fortes sentimentos de ódio transformaram um fantoche
+                            em um Pokémon. Se ele abre a boca, sua maldita energia escapa</p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: #5269AC">
+                        <div class="caixinha_imgPoke">
+                            <img class="img_card" src="../img/Pokemon/Ajustadas/Banette.png" alt="">
+                        </div>
+                        <div class="caixinha_textPoke">
+                            <div class="nome_pokemon">Banette</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- --------------- Tropius --------------- -->
+
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Tropius</h2>
+                            <div class="tipo_grass_flying">
+                                <img class="img_dois_tipos" src="../img/types/type_grass.png" alt="">
+                                Grama
+                                <img class="img_dois_tipos" src="../img/types/type_flying.png" alt="">
+                                Voador
+                            </div>
+                            <p>Vive nas selvas tropicais. O cacho de frutas em volta do pescoço
+                            é delicioso. A fruta cresce duas vezes por ano</p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: linear-gradient(to right, #63BB5B 0%, #63BB5B 50%, #8FA8DD 50%, #8FA8DD 100%)">
+                        <div class="caixinha_imgPoke">
+                            <img class="img_card" src="../img/Pokemon/Ajustadas/Tropius.png" alt="">
+                        </div>
+                        <div class="caixinha_textPoke">
+                            <div class="nome_pokemon">Tropius</div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+
+            <!-- --------------- Wynaut --------------- -->
+
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Wynaut</h2>
+                            <div class="tipo_psychic">
+                                <img class="img_um_tipo" src="../img/types/type_psychic.png" alt="">
+                                Psíquico
+                            </div>
+                            <p>Ele tende a se mover em grupo com os outros. Costumam se agrupar
+                            em pequenas quantidades para dormir em uma caverna</p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: #F97176">
+                        <div class="caixinha_imgPoke">
+                            <img class="img_card" src="../img/Pokemon/Ajustadas/Wynaut.png" alt="">
+                        </div>
+                        <div class="caixinha_textPoke">
+                            <div class="nome_pokemon">Wynaut</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- --------------- Spheal --------------- -->
+            
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Spheal</h2>
+                            <div class="tipo_ice_water">
+                                <img class="img_dois_tipos" src="../img/types/type_ice.png" alt="">
+                                Gelo
+                                <img class="img_dois_tipos" src="../img/types/type_water.png" alt="">
+                                Água
+                            </div>
+                            <p>Seu corpo é coberto por pêlos fofos. O pêlo evita que
+                            sinta frio enquanto rola no gelo</p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: linear-gradient(to right, #74CEC0 0%, #74CEC0 50%, #4D90D5 50%, #4D90D5 100%)">
+                        <div class="caixinha_imgPoke">
+                            <img class="img_card" src="../img/Pokemon/Ajustadas/Spheal.png" alt="">
+                        </div>
+                        <div class="caixinha_textPoke">
+                            <div class="nome_pokemon">Spheal</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- --------------- Clamperl --------------- -->
+
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Clamperl</h2>
+                            <div class="tipo_water">
+                                <img class="img_um_tipo" src="../img/types/type_water.png" alt="">
+                                Água
+                            </div>
+                            <p>É protegido por uma casca resistente. Uma
+                            vez na vida, ele faz uma pérola magnífica</p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: #4D90D5">
+                        <div class="caixinha_imgPoke">
+                            <img class="img_card" src="../img/Pokemon/Ajustadas/Clamperl.png" alt="">
+                        </div>
+                        <div class="caixinha_textPoke">
+                            <div class="nome_pokemon">Clamperl</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- --------------- Relicanth --------------- -->
+
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Relicanth</h2>
+                            <div class="tipo_water_rock">
+                                <img class="img_dois_tipos" src="../img/types/type_water.png" alt="">
+                                Água
+                                <img class="img_dois_tipos" src="../img/types/type_rock.png" alt="">
+                                Pedra
+                            </div>
+                            <p>Permaneceu inalterado por 100 milhões de anos. Foi descoberto
+                            durante uma exploração em alto mar</p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: linear-gradient(to right, #4D90D5 0%, #4D90D5 50%, #C7B78B 50%, #C7B78B 100%)">
+                        <div class="caixinha_imgPoke">
+                            <img class="img_card" src="../img/Pokemon/Ajustadas/Relicanth.png" alt="">
+                        </div>
+                        <div class="caixinha_textPoke">    
+                            <div class="nome_pokemon">Relicanth</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- --------------- Shelgon --------------- -->
+
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Shelgon</h2>
+                            <div class="tipo_dragon">
+                                <img class="img_um_tipo" src="../img/types/type_dragon.png" alt="">
+                                Dragão
+                            </div>
+                            <p>Seu corpo blindado faz todos os ataques rebaterem. A armadura é
+                            muito resistente, no entanto, tornando-a pesada e um tanto lenta</p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: #0A6DC4">
+                        <div class="caixinha_imgPoke">
+                            <img class="img_card" src="../img/Pokemon/Ajustadas/Shelgon.png" alt="">
+                        </div>
+                        <div class="caixinha_textPoke">
+                            <div class="nome_pokemon">Shelgon</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- --------------- Metang --------------- -->
+
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Metang</h2>
+                            <div class="tipo_steel_psychic">
+                                <img class="img_dois_tipos" src="../img/types/type_steel.png" alt="">
+                                Aço
+                                <img class="img_dois_tipos" src="../img/types/type_psychic.png" alt="">
+                                Psíquico
+                            </div>
+                            <p>Ele flutua no ar usando magnetismo. Seu corpo é tão resistente que mesm
+                            um acidente com um avião a jato não vai deixar um arranhão</p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: linear-gradient(to right, #5A8EA1 0%, #5A8EA1 50%, #F97176 50%, #F97176 100%)">
+                        <div class="caixinha_imgPoke">
+                            <img class="img_card" src="../img/Pokemon/Ajustadas/Metang.png" alt="">
+                        </div>
+                        <div class="caixinha_textPoke">    
+                            <div class="nome_pokemon">Metang</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- --------------- Regice --------------- -->
+
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Regice</h2>
+                            <div class="tipo_ice">
+                                <img class="img_um_tipo" src="../img/types/type_ice.png" alt="">
+                                Gelo
+                            </div>
+                            <p>Seu corpo ultracongelado não pode ser derretido, nem mesmo pelo fogo.
+                            Este Pokémon controla o ar frio de 328 graus F negativos</p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: #74CEC0">
+                        <div class="caixinha_imgPoke">
+                            <img class ="brilho" src="../img/pokemon/animations/stars.gif" alt="" style="height: 280px">
+                            <img class="img_card" src="../img/Pokemon/Ajustadas/Regice.png" alt="">
+                        </div>
+                        <div class="caixinha_textPoke">
+                            <div class="nome_pokemon">Regice</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- --------------- Latios --------------- -->
+            
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Latios</h2>
+                            <div class="tipo_dragon_psychic">
+                                <img class="img_dois_tipos" src="../img/types/type_dragon.png" alt="">
+                                Dragão
+                                <img class="img_dois_tipos" src="../img/types/type_psychic.png" alt="">
+                                Psíquico
+                            </div>
+                            <p>Tem um temperamento dócil e não gosta de lutar. Encolhendo suas
+                            patas dianteiras, ele pode voar mais rápido do que um avião a jato</p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: linear-gradient(to right, #0A6DC4 0%, #0A6DC4 50%, #F97176 50%, #F97176 100%)">
+                        <div class="caixinha_imgPoke">
+                            <img class ="brilho" src="../img/pokemon/animations/stars.gif" alt="" style="height: 280px">
+                            <img class="img_card" src="../img/Pokemon/Ajustadas/Latios.png" alt="">
+                        </div>
+                        <div class="caixinha_textPoke">
+                            <div class="nome_pokemon">Latios</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- --------------- Rayquaza --------------- -->
+            
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Rayquaza</h2>
+                            <div class="tipo_dragon_flying">
+                                <img class="img_dois_tipos" src="../img/types/type_dragon.png" alt="">
+                                Dragão
+                                <img class="img_dois_tipos" src="../img/types/type_flying.png" alt="">
+                                Voador
+                            </div>
+                            <p>Um Pokémon que voa sem parar na camada de ozônio.
+                            Diz-se que ele desceria ao solo se Kyogre e Groudon lutassem</p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: linear-gradient(to right, #0A6DC4 0%, #0A6DC4 50%, #8FA8DD 50%, #8FA8DD 100%)">
+                        <div class="caixinha_imgPoke">
+                            <img class ="brilho" src="../img/pokemon/animations/stars.gif" alt="" style="height: 280px">
+                            <img class="img_card" src="../img/Pokemon/Ajustadas/Rayquaza.png" alt="">
+                        </div>
+                        <div class="caixinha_textPoke">
+                            <div class="nome_pokemon">Rayquaza</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
 <!-- ------------------------------------------------- COLUNA 2 ------------------------------------------------- -->
@@ -1892,6 +2196,305 @@
                     </div>
                 </div>
             </div>
+
+            <!-- --------------- Duskull --------------- -->
+
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Duskull</h2>
+                            <div class="tipo_ghost">
+                                <img class="img_um_tipo" src="../img/types/type_ghost.png" alt="">
+                                Fantasma
+                            </div>
+                            <p>Tornando-se invisível, ele silenciosamente se esgueira para a presa.
+                            Ele tem a capacidade de deslizar através de paredes grossas</p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: #5269AC">
+                        <div class="caixinha_imgPoke">
+                            <img class="img_card" src="../img/Pokemon/Ajustadas/Duskull.png" alt="">
+                        </div>
+                        <div class="caixinha_textPoke">
+                            <div class="nome_pokemon">Duskull</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- --------------- Chimecho --------------- -->
+
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Chimecho</h2>
+                            <div class="tipo_psychic">
+                                <img class="img_um_tipo" src="../img/types/type_psychic.png" alt="">
+                                Psíquico
+                            </div>
+                            <p>Ele viaja flutuando nos ventos. Ele habilmente usa sua
+                            longa cauda para colher nozes e frutos silvestres, que adora comer</p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: #F97176">
+                        <div class="caixinha_imgPoke">
+                            <img class="img_card" src="../img/Pokemon/Ajustadas/Chimecho.png" alt="">
+                        </div>
+                        <div class="caixinha_textPoke">
+                            <div class="nome_pokemon">Chimecho</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- --------------- Snorunt --------------- -->
+
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Snorunt</h2>
+                            <div class="tipo_ice">
+                                <img class="img_um_tipo" src="../img/types/type_ice.png" alt="">
+                                Gelo
+                            </div>
+                            <p>Diz-se que uma casa visitada por um Snorunt irá prosperar.
+                            Ele pode suportar temperaturas de até 150 graus Fahrenheit negativos</p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: #74CEC0">
+                        <div class="caixinha_imgPoke">
+                            <img class="img_card" src="../img/Pokemon/Ajustadas/Snorunt.png" alt="">
+                        </div>
+                        <div class="caixinha_textPoke">
+                            <div class="nome_pokemon">Snorunt</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- --------------- Sealeo --------------- -->
+            
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Sealeo</h2>
+                            <div class="tipo_ice_water">
+                                <img class="img_dois_tipos" src="../img/types/type_ice.png" alt="">
+                                Gelo
+                                <img class="img_dois_tipos" src="../img/types/type_water.png" alt="">
+                                Água
+                            </div>
+                            <p>Ele toca coisas novas com seu nariz para testar
+                            o cheiro e a sensação. Gosta de brincar girando Spheal em seu nariz</p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: linear-gradient(to right, #74CEC0 0%, #74CEC0 50%, #4D90D5 50%, #4D90D5 100%)">
+                        <div class="caixinha_imgPoke">
+                            <img class="img_card" src="../img/Pokemon/Ajustadas/Sealeo.png" alt="">
+                        </div>
+                        <div class="caixinha_textPoke">
+                            <div class="nome_pokemon">Sealeo</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- --------------- Huntail --------------- -->
+
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Huntail</h2>
+                            <div class="tipo_water">
+                                <img class="img_um_tipo" src="../img/types/type_water.png" alt="">
+                                Água
+                            </div>
+                            <p>Ele vive nas profundezas do mar, onde nenhuma luz infiltra.
+                            Ele ilumina sua pequena cauda semelhante a um peixe para atrair presas</p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: #4D90D5">
+                        <div class="caixinha_imgPoke">
+                            <img class="img_card" src="../img/Pokemon/Ajustadas/Huntail.png" alt="">
+                        </div>
+                        <div class="caixinha_textPoke">
+                            <div class="nome_pokemon">Huntail</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- --------------- Luvdisc --------------- -->
+
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Luvdisc</h2>
+                            <div class="tipo_water">
+                                <img class="img_um_tipo" src="../img/types/type_water.png" alt="">
+                                Água
+                            </div>
+                            <p>Diz-se que qualquer casal que encontre este Pokémon, cuja forma
+                            é um coração, é prometido um relacionamento amoroso que nunca termina</p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: #4D90D5">
+                        <div class="caixinha_imgPoke">
+                            <img class="img_card" src="../img/Pokemon/Ajustadas/Luvdisc.png" alt="">
+                        </div>
+                        <div class="caixinha_textPoke">
+                            <div class="nome_pokemon">Luvdisc</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- --------------- Salamence --------------- -->
+            
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Salamence</h2>
+                            <div class="tipo_dragon_flying">
+                                <img class="img_dois_tipos" src="../img/types/type_dragon.png" alt="">
+                                Dragão
+                                <img class="img_dois_tipos" src="../img/types/type_flying.png" alt="">
+                                Voador
+                            </div>
+                            <p>Torna-se incontrolável se estiver com raiva. Ele
+                            destrói tudo com garras destruidoras e fogo</p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: linear-gradient(to right, #0A6DC4 0%, #0A6DC4 50%, #8FA8DD 50%, #8FA8DD 100%)">
+                        <div class="caixinha_imgPoke">
+                            <img class="img_card" src="../img/Pokemon/Ajustadas/Salamence.png" alt="">
+                        </div>
+                        <div class="caixinha_textPoke">
+                            <div class="nome_pokemon">Salamence</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- --------------- Metagross --------------- -->
+
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Metagross</h2>
+                            <div class="tipo_steel_psychic">
+                                <img class="img_dois_tipos" src="../img/types/type_steel.png" alt="">
+                                Aço
+                                <img class="img_dois_tipos" src="../img/types/type_psychic.png" alt="">
+                                Psíquico
+                            </div>
+                            <p>É formado por dois fusíveis Metang. Dizem que seus quatro
+                            cérebros são superiores a um supercomputador</p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: linear-gradient(to right, #5A8EA1 0%, #5A8EA1 50%, #F97176 50%, #F97176 100%)">
+                        <div class="caixinha_imgPoke">
+                            <img class="img_card" src="../img/Pokemon/Ajustadas/Metagross.png" alt="">
+                        </div>
+                        <div class="caixinha_textPoke">    
+                            <div class="nome_pokemon">Metagross</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- --------------- Registeel --------------- -->
+
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Registeel</h2>
+                            <div class="tipo_steel">
+                                <img class="img_um_tipo" src="../img/types/type_steel.png" alt="">
+                                Aço
+                            </div>
+                            <p>É mais resistente do que qualquer tipo de metal. Endureceu
+                            devido à pressão subterrânea ao longo de dezenas de milhares de anos</p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: #5A8EA1">
+                        <div class="caixinha_imgPoke">
+                            <img class ="brilho" src="../img/pokemon/animations/stars.gif" alt="" style="height: 280px">
+                            <img class="img_card" src="../img/Pokemon/Ajustadas/Registeel.png" alt="">
+                        </div>
+                        <div class="caixinha_textPoke">
+                            <div class="nome_pokemon">Registeel</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- --------------- Kyogre --------------- -->
+
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Kyogre</h2>
+                            <div class="tipo_water">
+                                <img class="img_um_tipo" src="../img/types/type_water.png" alt="">
+                                Água
+                            </div>
+                            <p>Kyogre tem o poder de criar nuvens de chuva massivas que cobrem
+                            todo o céu e causam chuvas torrenciais
+                            </p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: #4D90D5">
+                        <div class="caixinha_imgPoke">
+                            <img class ="brilho" src="../img/pokemon/animations/stars.gif" alt="" style="height: 280px">
+                            <img class="img_card" src="../img/Pokemon/Ajustadas/Kyogre.png" alt="">
+                        </div>
+                        <div class="caixinha_textPoke">
+                            <div class="nome_pokemon">Kyogre</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- --------------- Jirachi --------------- -->
+
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Jirachi</h2>
+                            <div class="tipo_steel_psychic">
+                                <img class="img_dois_tipos" src="../img/types/type_steel.png" alt="">
+                                Aço
+                                <img class="img_dois_tipos" src="../img/types/type_psychic.png" alt="">
+                                Psíquico
+                            </div>
+                            <p>Diz-se que ele torna qualquer desejo realidade. Ele
+                            fica acordado por apenas sete dias a cada mil anos</p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: linear-gradient(to right, #5A8EA1 0%, #5A8EA1 50%, #F97176 50%, #F97176 100%)">
+                        <div class="caixinha_imgPoke">
+                            <img class ="brilho" src="../img/pokemon/animations/stars.gif" alt="" style="height: 280px; filter:invert(100%);">
+                            <img class="img_card" src="../img/Pokemon/Ajustadas/Jirachi.png" alt="">
+                        </div>
+                        <div class="caixinha_textPoke">    
+                            <div class="nome_pokemon">Jirachi</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
 <!-- ------------------------------------------------- COLUNA 3 ------------------------------------------------- -->
@@ -2817,7 +3420,500 @@
                     </div>
                 </div>
             </div>
+
+            <!-- --------------- Dusclops --------------- -->
+
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Dusclops</h2>
+                            <div class="tipo_ghost">
+                                <img class="img_um_tipo" src="../img/types/type_ghost.png" alt="">
+                                Fantasma
+                            </div>
+                            <p>Seu corpo é totalmente oco. Quando abre a boca,
+                            suga tudo como se fosse um buraco negro</p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: #5269AC">
+                        <div class="caixinha_imgPoke">
+                            <img class="img_card" src="../img/Pokemon/Ajustadas/Dusclops.png" alt="">
+                        </div>
+                        <div class="caixinha_textPoke">
+                            <div class="nome_pokemon">Dusclops</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- --------------- Absol --------------- -->
+
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Absol</h2>
+                            <div class="tipo_dark">
+                                <img class="img_um_tipo" src="../img/types/type_dark.png" alt="">
+                                Noturno
+                            </div>
+                            <p>Ele aparece quando sente um desastre natural iminente, como um
+                            terremoto ou tsunami. Como resultado, é confundido como um causador da desgraça</p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: #5A5366">
+                        <div class="caixinha_imgPoke">
+                            <img class="img_card" src="../img/Pokemon/Ajustadas/Absol.png" alt="">
+                        </div>   
+                        <div class="caixinha_textPoke"> 
+                            <div class="nome_pokemon">Absol</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- --------------- Glalie --------------- -->
+
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Glalie</h2>
+                            <div class="tipo_ice">
+                                <img class="img_um_tipo" src="../img/types/type_ice.png" alt="">
+                                Gelo
+                            </div>
+                            <p>Tem um corpo de gelo que não derrete, mesmo com fogo.
+                            Ele pode congelar instantaneamente a umidade na atmosfera</p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: #74CEC0">
+                        <div class="caixinha_imgPoke">
+                            <img class="img_card" src="../img/Pokemon/Glalie.png" alt="">
+                        </div>
+                        <div class="caixinha_textPoke">
+                            <div class="nome_pokemon">Glalie</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- --------------- Walrein --------------- -->
+            
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Walrein</h2>
+                            <div class="tipo_ice_water">
+                                <img class="img_dois_tipos" src="../img/types/type_ice.png" alt="">
+                                Gelo
+                                <img class="img_dois_tipos" src="../img/types/type_water.png" alt="">
+                                Água
+                            </div>
+                            <p>Ele nada em mares gelados enquanto quebra blocos 
+                            de gelo com suas grandes presas. Ele é protegido por sua gordura espessa</p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: linear-gradient(to right, #74CEC0 0%, #74CEC0 50%, #4D90D5 50%, #4D90D5 100%)">
+                        <div class="caixinha_imgPoke">
+                            <img class="img_card" src="../img/Pokemon/Ajustadas/Walrein.png" alt="">
+                        </div>
+                        <div class="caixinha_textPoke">
+                            <div class="nome_pokemon">Walrein</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- --------------- Gorebyss --------------- -->
+
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Gorebyss</h2>
+                            <div class="tipo_water">
+                                <img class="img_um_tipo" src="../img/types/type_water.png" alt="">
+                                Água
+                            </div>
+                            <p>Sua forma de natação é primorosamente elegante. Com sua
+                            boca fina, alimenta-se de algas que crescem entre as rochas</p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: #4D90D5">
+                        <div class="caixinha_imgPoke">
+                            <img class="img_card" src="../img/Pokemon/Ajustadas/Gorebyss.png" alt="">
+                        </div>
+                        <div class="caixinha_textPoke">
+                            <div class="nome_pokemon">Gorebyss</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- --------------- Bagon --------------- -->
+
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Bagon</h2>
+                            <div class="tipo_dragon">
+                                <img class="img_um_tipo" src="../img/types/type_dragon.png" alt="">
+                                Dragão
+                            </div>
+                            <p>Sua cabeça dura como aço pode quebrar pedras. Ele espera
+                            ansiosamente que as asas cresçam para poder voar</p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: #0A6DC4">
+                        <div class="caixinha_imgPoke">
+                            <img class="img_card" src="../img/Pokemon/Ajustadas/Bagon.png" alt="">
+                        </div>
+                        <div class="caixinha_textPoke">
+                            <div class="nome_pokemon">Bagon</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- --------------- Beldum --------------- -->
+
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Beldum</h2>
+                            <div class="tipo_steel_psychic">
+                                <img class="img_dois_tipos" src="../img/types/type_steel.png" alt="">
+                                Aço
+                                <img class="img_dois_tipos" src="../img/types/type_psychic.png" alt="">
+                                Psíquico
+                            </div>
+                            <p>Ele usa ondas magnéticas para conversar com sua espécie.
+                            Todas as células de seu corpo são magnéticas</p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: linear-gradient(to right, #5A8EA1 0%, #5A8EA1 50%, #F97176 50%, #F97176 100%)">
+                        <div class="caixinha_imgPoke">
+                            <img class="img_card" src="../img/Pokemon/Ajustadas/Beldum.png" alt="">
+                        </div>
+                        <div class="caixinha_textPoke">    
+                            <div class="nome_pokemon">Beldum</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- --------------- Regirock --------------- -->
+
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Regirock</h2>
+                            <div class="tipo_rock">
+                                <img class="img_um_tipo" src="../img/types/type_rock.png" alt="">
+                                Pedra
+                            </div>
+                            <p>É inteiramente composto por rochas sem sinal de cérebro ou coração.
+                            É um mistério até para os cientistas modernos</p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: #C7B78B">
+                        <div class="caixinha_imgPoke">
+                            <img class ="brilho" src="../img/pokemon/animations/stars.gif" alt="" style="height: 280px">
+                            <img class="img_card" src="../img/Pokemon/Ajustadas/Regirock.png" alt="">
+                        </div>
+                        <div class="caixinha_textPoke">
+                            <div class="nome_pokemon">Regirock</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- --------------- Latias --------------- -->
+            
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Latias</h2>
+                            <div class="tipo_dragon_psychic">
+                                <img class="img_dois_tipos" src="../img/types/type_dragon.png" alt="">
+                                Dragão
+                                <img class="img_dois_tipos" src="../img/types/type_psychic.png" alt="">
+                                Psíquico
+                            </div>
+                            <p>Ele pode se comunicar telepaticamente com as pessoas. Ele muda
+                            sua aparência usando sua penugem que refrata a luz</p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: linear-gradient(to right, #0A6DC4 0%, #0A6DC4 50%, #F97176 50%, #F97176 100%)">
+                        <div class="caixinha_imgPoke">
+                            <img class ="brilho" src="../img/pokemon/animations/stars.gif" alt="" style="height: 280px">
+                            <img class="img_card" src="../img/Pokemon/Ajustadas/Latias.png" alt="">
+                        </div>
+                        <div class="caixinha_textPoke">
+                            <div class="nome_pokemon">Latias</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- --------------- Groudon --------------- -->
+
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Groudon</h2>
+                            <div class="tipo_ground">
+                                <img class="img_um_tipo" src="../img/types/type_ground.png" alt="">
+                                Terra
+                            </div>
+                            <p>Groudon tem o poder de dispersar as nuvens de chuva e
+                            fazer a água evaporar com luz e calor</p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: #D97746">
+                        <div class="caixinha_imgPoke">
+                            <img class ="brilho" src="../img/pokemon/animations/stars.gif" alt="" style="height: 280px">
+                            <img class="img_card" src="../img/Pokemon/Ajustadas/Groudon.png" alt="">
+                        </div>
+                        <div class="caixinha_textPoke">
+                            <div class="nome_pokemon">Groudon</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- --------------- Deoxys --------------- -->
+
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Deoxys</h2>
+                            <div class="tipo_psychic">
+                                <img class="img_um_tipo" src="../img/types/type_psychic.png" alt="">
+                                Psíquico
+                            </div>
+                            <p>Deoxys surgiu da mutação de um vírus que veio do espaço.
+                            É altamente inteligente e exerce poderes psicocinéticos</p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: #F97176">
+                        <div class="caixinha_imgPoke">
+                            <img class ="brilho" src="../img/pokemon/animations/stars.gif" alt="" style="height: 280px; filter:invert(100%);">
+                            <img class="img_card" src="../img/Pokemon/Ajustadas/Deoxys_Normal.png" alt="">
+                        </div>
+                        <div class="caixinha_textPoke">
+                            <div class="nome_pokemon">Deoxys</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="container_Megas">
+        <div class="metade_1_Megas">
+
+            <!-- --------------- Mega Sceptile --------------- -->
+            
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Mega Sceptile</h2>
+                            <div class="tipo_grass_dragon">
+                                <img class="img_dois_tipos" src="../img/types/type_grass.png" alt="">
+                                Grama
+                                <img class="img_dois_tipos" src="../img/types/type_dragon.png" alt="">
+                                Dragão
+                            </div>
+                            <p>Pequenos ganchos embaixo dos pés agarram em paredes e tetos. É assim que ele consegue 
+                            ficar pendurado</p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: linear-gradient(to right, #63BB5B 0%, #63BB5B 50%, #0A6DC4 50%, #0A6DC4 100%)">
+                        <div class="caixinha_imgPoke">
+                            <img class="img_card" src="../img/Pokemon/Ajustadas/Sceptile_Mega.png" alt="">
+                        </div>
+                        <div class="caixinha_textPoke">
+                            <div class="nome_pokemon">Mega Sceptile</div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+
+            <!-- --------------- Mega Gardevoir --------------- -->
+
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Mega Gardevoir</h2>
+                            <div class="tipo_psychic_fairy">
+                                <img class="img_dois_tipos" src="../img/types/type_psychic.png" alt="">
+                                Psíquico
+                                <img class="img_dois_tipos" src="../img/types/type_fairy.png" alt="">
+                                Fada
+                            </div>
+                            <p>Ele tem o poder de prever o futuro. Seu poder
+                            atinge o pico quando está protegendo seu treinador</p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: linear-gradient(to right, #F97176 0%, #F97176 50%, #EC8FE6 50%, #EC8FE6 100%)">
+                        <div class="caixinha_imgPoke">
+                            <img class="img_card" src="../img/Pokemon/Ajustadas/Gardevoir_Mega.png" alt="">
+                        </div>
+                        <div class="caixinha_textPoke">    
+                            <div class="nome_pokemon">Mega Gardevoir</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+                <div class="metade_2_Megas">
+            
+            <!-- --------------- Mega Blaziken --------------- -->
+            
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Mega Blaziken</h2>
+                            <div class="tipo_fighting_fire">
+                                <img class="img_dois_tipos" src="../img/types/type_fire.png" alt="">
+                                Fogo
+                                <img class="img_dois_tipos" src="../img/types/type_fighting.png" alt="">
+                                Lutador
+                            </div>
+                            <p>Pequenos ganchos embaixo dos pés agarram em paredes e tetos. É assim que ele consegue 
+                            ficar pendurado</p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: linear-gradient(to right, #FF9C54 0%, #FF9C54 50%, #CE4069 50%, #CE4069 100%)">
+                        <div class="caixinha_imgPoke">
+                            <img class="img_card" src="../img/Pokemon/Ajustadas/Blaziken_Mega.png" alt="">
+                        </div>
+                        <div class="caixinha_textPoke">
+                            <div class="nome_pokemon">Mega Blaziken</div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+
+            <!-- --------------- Mega Sableye --------------- -->
+            
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Mega Sableye</h2>
+                            <div class="tipo_dark_ghost">
+                                <img class="img_dois_tipos" src="../img/types/type_dark.png" alt="">
+                                Noturno
+                                <img class="img_dois_tipos" src="../img/types/type_ghost.png" alt="">
+                                Fantasma
+                            </div>
+                            <p>Alimenta-se de cristais de gemas. Na escuridão,
+                            seus olhos brilham com o brilho de joias</p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: linear-gradient(to right, #5A5366 0%, #5A5366 50%, #5269AC 50%, #5269AC 100%)">
+                        <div class="caixinha_imgPoke">
+                            <img class="img_card" src="../img/Pokemon/Ajustadas/Sableye_Mega.png" alt="">
+                        </div>
+                        <div class="caixinha_textPoke">
+                            <div class="nome_pokemon">Mega Sableye</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="metade_3_Megas">
+
+            <!-- --------------- Mega Swampert --------------- -->
+
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Mega Swampert</h2>
+                            <div class="tipo_ground_water">
+                                <img class="img_dois_tipos" src="../img/types/type_water.png" alt="">
+                                Água
+                                <img class="img_dois_tipos" src="../img/types/type_ground.png" alt="">
+                                Terra
+                            </div>
+                            <p>Ele pode nadar enquanto reboca um navio grande. Pode derrubar
+                            inimigos com um balanço de seus grandes braços</p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: linear-gradient(to right, #4D90D5 0%, #4D90D5 50%, #D97746 50%, #D97746 100%)">
+                        <div class="caixinha_imgPoke">
+                            <img class="img_card" src="../img/Pokemon/Ajustadas/Swampert_Mega.png" alt="">
+                        </div>
+                        <div class="caixinha_textPoke">
+                            <div class="nome_pokemon">Mega Swampert</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- --------------- Mega Mawile --------------- -->
+
+            <div class="container_metade">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <h2>Mega Mawile</h2>
+                            <div class="tipo_steel_fairy">
+                                <img class="img_dois_tipos" src="../img/types/type_steel.png" alt="">
+                                Aço
+                                <img class="img_dois_tipos" src="../img/types/type_fairy.png" alt="">
+                                Fada
+                            </div>
+                            <p>Ele usa seu rosto de aparência dócil para acalmar os inimigos
+                            até a complacência, depois morde com suas mandíbulas enormes e implacáveis</p>
+                        </div>
+                    </div>
+                    <div class="face face2" style="background: linear-gradient(to right, #5A8EA1 0%, #5A8EA1 50%, #EC8FE6 50%, #EC8FE6 100%)">
+                        <div class="caixinha_imgPoke">
+                            <img class="img_card" src="../img/Pokemon/Ajustadas/Mawile_Mega.png" alt="">
+                        </div>
+                        <div class="caixinha_textPoke">    
+                            <div class="nome_pokemon">Mega Mawile</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </body>
 </html>
+
+<script>
+    function mostrarNormais() {
+        dexNormais.style = "Display: none";
+        dexMegas.style += "Display: flex";
+        container_conteudo.style += "Display: flex";
+        container_Megas.style = "Display: none";
+    }
+    function mostrarMegas() {
+        dexNormais.style += "Display: flex";
+        dexMegas.style = "Display: none";
+        container_conteudo.style = "Display: none";
+        container_Megas.style   = "Display: flex";
+    }
+</script>

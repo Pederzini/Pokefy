@@ -153,10 +153,30 @@ button {
 
 .conteudo {
     width: 100%;
-    height: 488px;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+
+.opcoes {
+    display: flex;
+    height: 100px;
+    margin-top: 120px;
+}
+
+.opcoes button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 100px;
+    padding: 40px 30px;
+    width: 170px;
+}
+
+.opcoes button:hover {
+    cursor: pointer;
 }
 
 .capa {
@@ -174,12 +194,20 @@ button {
     justify-content: space-evenly;
 }
 
-.container_conteudo {
+#container_conteudo {
     width: 90%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#container_Megas {
+    width: 90%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center; 
 }
 
 .metade_1, .metade_2, .metade_3 {
@@ -189,6 +217,21 @@ button {
     outline: none;
     font-family: "Roboto";
     width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: #FFC805; */
+}
+
+.metade_1_Megas, .metade_2_Megas, .metade_3_Megas {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Roboto";
+    width: 33%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -320,11 +363,16 @@ button {
 }
 
 .caixinha_imgPoke {
+    position: relative;
     height: 70%;
     /* width: 100%; */
     display: flex;
     justify-content: center;
     align-items: flex-end; 
+}
+
+.brilho {
+    position: absolute;
 }
 
 .caixinha_imgPoke .img_card {
@@ -340,6 +388,10 @@ button {
 }
 
 .container_metade .card:hover .face.face2 .caixinha_textPoke .nome_pokemon {
+    display: none;
+}
+
+.container_metade .card:hover .face.face2 .caixinha_textPoke_lendario .nome_pokemon {
     display: none;
 }
 
@@ -895,4 +947,84 @@ button {
     margin-left: 18px;
 }
 
+.tipo_grass_flying {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #A5EA9F 0%, #A5EA9F 50%, #AEC3F1 50%, #AEC3F1 100%);
+    width: 100%;
+    border-radius: 20px;
+}
+
+.tipo_grass_flying img:last-child{
+    margin-left: 30px;
+}
+
+.tipo_ice_water {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #A9F3E8 0%, #A9F3E8 50%, #87C2FF 50%, #87C2FF 100%);
+    width: 100%;
+    border-radius: 20px;
+}
+
+.tipo_ice_water img:last-child{
+    margin-left: 45px;
+}
+
+.tipo_water_rock {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #87C2FF 0%, #87C2FF 50%, #E0D3B0 50%, #E0D3B0 100%);
+    width: 100%;
+    border-radius: 20px;
+}
+
+.tipo_water_rock img:last-child {
+    margin-left: 30px;
+}
+
+.tipo_steel_psychic {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #89BFD3 0%, #89BFD3 50%, #FFB6B8 50%, #FFB6B8 100%);
+    width: 100%;
+    border-radius: 20px;
+}
+
+.tipo_steel_psychic img:last-child {
+    margin-left: 35px;
+}
+
+.tipo_steel_psychic .img_dois_tipos {
+    /* margin-left: 8px; */
+}
+
+.tipo_dragon_psychic {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    background: linear-gradient(to right, #71B1E9 0%, #71B1E9 50%, #FFB6B8 50%, #FFB6B8 100%);
+    width: 100%;
+    border-radius: 20px;
+}
+
+.tipo_dragon_psychic img:last-child{
+    margin-left: 20px;
+}
+
+.tipo_dragon_psychic .img_dois_tipos {
+    margin-left: 8px;
+}
+
+.tipo_grass_dragon {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #A5EA9F 0%, #A5EA9F 50%, #71B1E9 50%, #71B1E9 100%);
+    width: 100%;
+    border-radius: 20px;
+}
+
+.tipo_grass_dragon img:last-child{
+    margin-left: 30px;
+}
 /* FIM DAS CLASSES PARA OS TIPOS DE POKEMON */
