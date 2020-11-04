@@ -153,7 +153,7 @@ button {
 
 .conteudo {
     width: 100%;
-    height: 500px;
+    height: 570px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1027,4 +1027,18 @@ button {
 .tipo_grass_dragon img:last-child{
     margin-left: 30px;
 }
+
+.tipo_dragon_fairy {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    background: linear-gradient(to right, #71B1E9 0%, #71B1E9 50%, #FCBFF8 50%, #FCBFF8 100%);
+    width: 100%;
+    border-radius: 20px;
+}
+
+.tipo_dragon_fairy img:last-child{
+    margin-left: 18px;
+}
+
 /* FIM DAS CLASSES PARA OS TIPOS DE POKEMON */
