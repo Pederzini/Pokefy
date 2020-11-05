@@ -6,9 +6,9 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-image: url("../img/misc/hoennTownDark.png");
-    background-size: cover;
-    background-repeat: repeat-y;
+    background: url("../img/misc/fundoPokedex2_ajustado.png") center center;
+    background-position: center top;
+    background-repeat: repeat;
 }
 
 body::-webkit-scrollbar {
@@ -161,9 +161,14 @@ button {
 }
 
 .opcoes {
+    position: relative;
     display: flex;
-    height: 100px;
+    height: 160px;
     margin-top: 120px;
+}
+
+.opcoes img {
+    height: 160px;
 }
 
 .opcoes button {
@@ -176,6 +181,38 @@ button {
 }
 
 .opcoes button:hover {
+    cursor: pointer;
+}
+
+#escritaMegas {
+    height: 100%;
+    width: 50%;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: "Roboto Condensed";
+    color: #ffffff;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: -28px;
+}
+
+#escritaNormais {
+    height: 100%;
+    width: 100%;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: "Roboto Condensed";
+    color: #ffffff;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: -50px;
+}
+
+.opcoes img:hover, span:hover {
     cursor: pointer;
 }
 

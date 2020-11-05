@@ -7,7 +7,6 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #353535;
 }
 
 body::-webkit-scrollbar {
@@ -157,9 +156,11 @@ button {
     /* background-image: url("../img/misc/fundo_historia_ajustado.png");
     background-repeat: repeat-y;
     background-size: 1366px; */
-    background: url(../img/misc/fundo_historia_ajustado.png) no-repeat center center;
+    /* background: url(../img/misc/fundoFossil_ajustado.png) center center; */
+    background: url(../img/misc/fundoFossil3_ajustado.png) center center;
     background-position: center top;
-    background-repeat: repeat-y;
+    background-repeat: repeat;
+    /* background-size: cover; */
 }
 
 .conteudo {
