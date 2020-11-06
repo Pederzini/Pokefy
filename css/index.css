@@ -162,6 +162,7 @@ button {
     justify-content: center;
     background-color: #353535;
     color: white;
+    border-top: 25px solid rgba(255, 255, 255, 0.1);
 }
 
 .container_conteudo2 {
@@ -223,6 +224,7 @@ li {
     display: flex;
     justify-content: center;
     background-color: #8B4EBB;
+    border-top: 25px solid #6b3892;
 }
 
 .container_conteudo3 {

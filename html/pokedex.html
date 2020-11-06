@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
-    <link rel="stylesheet" href="pokedex.css">
+    <link rel="stylesheet" href="../css/pokedex.css">
     <title>Pokéfy - Pokédex de Hoenn</title>
 </head>
 <body>
@@ -43,11 +43,7 @@
         </div>
         <div class="opcoes">
             <img id="dexNormais" onclick="mostrarNormais()" src="../img/misc/botao_normais.png" alt="" style="Display: none">
-            <div id="escritaNormais" style="Display: none"><span onclick="mostrarNormais()">Formas<br>Normais</span></div>
             <img id="dexMegas" onclick="mostrarMegas()" src="../img/misc/botao_megas.png" alt="">
-            <div id="escritaMegas"><span onclick="mostrarMegas()">Mega<br>Evoluções</span></div>
-            <!-- <button id="dexNormais" onclick="mostrarNormais()" style="Display: none">Formas<br>normais</button>
-            <button id="dexMegas" onclick="mostrarMegas()">Mega<br>evoluções</button> -->
         </div>
     </div>
     <div id="container_conteudo">
@@ -4394,23 +4390,33 @@
 
         </div>
     </div>
+    <footer>
+        <div class="container_footer">
+            <div class="footer_logo">
+                <img class="logo" src="../img/logo/logo.png" alt="">
+                Pokéfy
+            </div>
+            <div class="footer_social">
+                <a href="https://br.linkedin.com/in/victor-pederzini-87b3679a"><img src="../img/misc/linkedin.png" alt=""></a>
+                <a href="https://br.linkedin.com/in/victor-pederzini-87b3679a">Victor Pederzini </a>         
+                <a href="https://github.com/Pederzini"><img src="../img/misc/github.png" alt=""></a>
+                <a href="https://github.com/Pederzini">Pederzini</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
 
 <script>
     function mostrarNormais() {
         dexNormais.style = "Display: none";
-        escritaNormais.style = "Display: none";
         dexMegas.style += "Display: flex";
-        escritaMegas.style += "Display: flex";
         container_conteudo.style += "Display: flex";
         container_Megas.style = "Display: none";
     }
     function mostrarMegas() {
         dexNormais.style += "Display: flex";
-        escritaNormais.style += "Display: flex";
         dexMegas.style = "Display: none";
-        escritaMegas.style = "Display: none";
         container_conteudo.style = "Display: none";
         container_Megas.style   = "Display: flex";
     }
