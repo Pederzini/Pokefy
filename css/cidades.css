@@ -274,11 +274,11 @@ li:hover {
 .filhoTras1 {
     height: 43%;
     width: 50%;
-    margin-left: 50%;
+    margin-left: 55%;
     /* background-color: red; */
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     font-weight: bold;
     font-size: 22px;
     line-height: 30px;
@@ -337,13 +337,15 @@ li:hover {
 .cardGeral:hover img {
     height: 160px;
     border-radius: 15px;
-    box-shadow: 0 0 3pt 1.5pt rgba(255, 255, 255, 0.2);
+    /* box-shadow: 0 0 2.5pt 1.5pt rgba(255, 255, 255, 0.2); */
     transition: all 0.5s ease;
     transform: translateY(0%) translateX(-50%);
 }
 
 .cardGeral:hover .cardTras {
-    box-shadow: 0 0 3pt 4pt rgba(0, 0, 0, 0.3);
+    /* box-shadow: 0 0 3pt 1.5pt rgba(255, 255, 255, 0.2); */
+    box-shadow: 0 0 1pt 0.5pt #FFC805;
+    /* box-shadow: 0 0 3pt 4pt rgba(0, 0, 0, 0.3); */
     background-color: #353535;
     transition: background-color .5s ease-in;
 }
