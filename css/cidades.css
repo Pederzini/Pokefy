@@ -83,6 +83,7 @@ body::-webkit-scrollbar-thumb {
 
 li {
     list-style: none;
+    padding: 5px 15px;
 }
 
 ul {
@@ -124,10 +125,9 @@ button {
 
 /* COMEÇO DO EFEITO DE HOVER */
 
-.inicio:hover, .regiao:hover, .eventos:hover, .pokedex:hover {
+li:hover {
     font-weight: bold;
     box-shadow: 0 0 3pt 1pt white;
-    padding: 5px 15px;
     border-radius: 12px;
     background-color: #7434A6;
 }
@@ -197,7 +197,7 @@ button {
 
 .conteudo1 {
     width: 100%;
-    height: 592px;
+    height: 100%;
     display: flex;
     justify-content: center;
     /* background-image: url("../img/misc/fundoHistory2.png"); */
@@ -209,7 +209,6 @@ button {
     width: 1065px;
     height: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
@@ -217,27 +216,28 @@ button {
     font-family: "Roboto";
     width: 50%;
     height: 100%;
-    font-size: 22px;
+    font-size: 18px;
     /* color: #181818; */
     line-height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: yellowgreen;
+    flex-direction: column;
+    /* background-color: yellowgreen; */
 }
 
 .conteudo1_metade_2 {
+    font-family: "Roboto";
     width: 50%;
     height: 100%;
     font-size: 18px;
-    font-weight: bold;
     /* color: #353535; */
+    line-height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    float: left;
-    background-color: salmon;
+    /* background-color: salmon; */
 }
 
 /* INÍCIO DO CARD */
@@ -245,10 +245,11 @@ button {
 .cardGeral {
     width: 380px;
     height: 340px;
-    background: #FFC805;
+    /* background: #FFC805; */
     position: relative;
     display: flex;
     justify-content: center;
+    margin-bottom: 70px;
 }
 
 .cardTras {
@@ -279,7 +280,8 @@ button {
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    font-size: 26px;
+    font-size: 22px;
+    line-height: 30px;
     color: #ffffff;
     text-transform: uppercase;
     transition: 0.3s ease-out;
@@ -296,27 +298,36 @@ button {
     text-align: left;
     font-weight: 100;
     /* font-weight: bold; */
-    font-size: 18px;
+    font-size: 16px;
     line-height: 25px;
     color: white;
-    transition: .6 ease-out;
+    transition: .5 ease-out;
 }
 
 .filhoTras3 {
-    height: 14%;
+    height: 13%;
     /* background-color: green; */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    font-size: 16px;
+}
+
+.filhoTras3:first-child {
+    left: 0;
 }
 
 .filhoTras3 span {
-    padding: 5px 15px;
-    background-color:#ffffff;
+    height: 90%;
+    padding: 0px 10px;
+    background-color: #ffffff;
     border-radius: 35px;
     text-transform: uppercase;
-    font-size: 18px;
-    transition: 0.3s ease-out;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.5s ease-out;
+    display: flex;
+    align-items: center;
 }
 
 /* FIM DO CARD */
@@ -334,17 +345,17 @@ button {
 .cardGeral:hover .cardTras {
     box-shadow: 0 0 3pt 4pt rgba(0, 0, 0, 0.3);
     background-color: #353535;
-    transition: background-color .3s ease-in;
+    transition: background-color .5s ease-in;
 }
 
 .cardGeral:hover .filhoTras1 {
     color: #FFC805;
-    transition: color .3s ease-in;
+    transition: color .5s ease-in;
 }
 
 .cardGeral:hover span {
     background-color: #7434A6;
-    transition: background-color .3s ease-in;
+    transition: background-color .5s ease-in;
 }
 
 /* ------ FIM DO EFEITO HOVER ------ */

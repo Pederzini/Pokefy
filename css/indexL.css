@@ -70,6 +70,7 @@ body::-webkit-scrollbar-thumb {
 
 li {
     list-style: none;
+    padding: 5px 15px;
 }
 
 ul {
@@ -111,10 +112,9 @@ button {
 
 /* COMEÇO DO EFEITO DE HOVER */
 
-.inicio:hover, .regiao:hover, .eventos:hover, .pokedex:hover {
+li:hover {
     font-weight: bold;
     box-shadow: 0 0 3pt 1pt white;
-    padding: 5px 15px;
     border-radius: 12px;
     background-color: #7434A6;
 }
