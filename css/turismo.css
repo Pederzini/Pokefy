@@ -210,6 +210,7 @@ li:hover {
     height: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 .conteudo1_pt1 {
@@ -225,19 +226,6 @@ li:hover {
     /* background-color: yellowgreen; */
 }
 
-.conteudo1_metade_2 {
-    font-family: "Roboto";
-    width: 50%;
-    height: 100%;
-    /* color: #353535; */
-    line-height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    /* background-color: salmon; */
-}
-
 /* INÍCIO DO CARD */
 
 .cardGeral {
@@ -250,7 +238,6 @@ li:hover {
     margin-bottom: 70px;
     border-radius: 35px;
 }
-
 
 .cardFrente {
     position: absolute;
@@ -266,25 +253,55 @@ li:hover {
     z-index: 0;
     bottom: 0;
     width: 550px;
+    opacity: 0;
     height: 100%;
     color: #353535;
+    /* border: 1pt solid #FFC805; */
+    border-radius: 0 35px 35px 0;
     /* border-radius: 35px; */
-    background-color: yellow;
-    transition: 0.3s;
+    background-color: #353535;
+    transition: all 0.3s ease-out;
 }
 
 .cardTras1 {
     height: 35%;
     width: 95%;
     margin-left: 5%;
+    border-radius: 0 35px 0 0;
     background-color: #353535;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     font-family: "Roboto Condensed";
     /* justify-content: center; */
-
     /* color: #ffffff; */
     transition: 0.3s ease-out;
+}
+
+.esquerda {
+    /* background-color: salmon; */
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.direita {
+    /* background-color: #202020; */
+    color: #FFC805;
+    height: 100%;
+    width: 35%;
+    margin-left: 3%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.direta img {
+    max-height: 100px;
 }
 
 .tras1_filho1 {
@@ -302,17 +319,18 @@ li:hover {
     display: flex;
     align-items: center;
     height: 60%;
-    width: 70%;
+    width: 100%;
     font-size: 16px;
     line-height: 21px;
     color: #FFFFFF;
 }
 
 .cardTras2 {
-    font-family: "Roboto";
+    font-family: "Roboto Condensed";
     height: 65%;
     width: 95%;
     margin-left: 5%;
+    border-radius: 0 0 35px 0;
     background-color: #353535;
     display: flex;
     flex-direction: column;
@@ -352,6 +370,7 @@ li:hover {
     justify-content: space-evenly;
     flex-direction: row;
     background-color: #353535;
+    border-radius: 0 0 35px 0;
 }
 
 .fileira1, .fileira3, .fileira5 {
@@ -383,20 +402,26 @@ li:hover {
     justify-content: center;
 }
 
-
+.cardTras1 img {
+    max-height: 80px;
+}
 /* FIM DO CARD */
 
 /* ------ INÍCIO DO EFEITO HOVER ------ */
 
-.cardGeral:hover img {
+.cardGeral:hover .cardFrente {
     border-radius: 35px 0px 0px 35px;
-    /* box-shadow: 0 0 2.5pt 1.5pt rgba(255, 255, 255, 0.2); */
+    box-shadow: 0 0 2.5pt 1.5pt rgba(255, 255, 255, 0.2);
     transition: all 0.5s ease;
-    /* transform: translateY(0%) translateX(-50%); */
+    transform: translateX(-55%);
+    border: 1pt solid #fdef25;
 }
 
-.cardGeral:hover {
-    display: flex;
+.cardGeral:hover .cardTras {
+    box-shadow: 0 0 2.5pt 1.5pt rgba(255, 255, 255, 0.2);
+    opacity: 1;
+    transition: all 0.4s ease-in;
+    transform: translateX(45%);
 }
 
 /* ------ FIM DO EFEITO HOVER ------ */
