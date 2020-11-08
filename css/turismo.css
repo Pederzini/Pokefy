@@ -212,11 +212,10 @@ li:hover {
     justify-content: center;
 }
 
-.conteudo1_metade_1 {
+.conteudo1_pt1 {
     font-family: "Roboto";
-    width: 50%;
-    height: 100%;
-    font-size: 18px;
+    width: 100%;
+    height: 595px;
     /* color: #181818; */
     line-height: 45px;
     display: flex;
@@ -230,7 +229,6 @@ li:hover {
     font-family: "Roboto";
     width: 50%;
     height: 100%;
-    font-size: 18px;
     /* color: #353535; */
     line-height: 45px;
     display: flex;
@@ -243,121 +241,162 @@ li:hover {
 /* INÍCIO DO CARD */
 
 .cardGeral {
-    width: 380px;
-    height: 340px;
+    width: 400px;
+    height: 500px;
     /* background: #FFC805; */
     position: relative;
     display: flex;
     justify-content: center;
     margin-bottom: 70px;
+    border-radius: 35px;
+}
+
+
+.cardFrente {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    border-radius: 35px;
+    transition: 0.5s;
 }
 
 .cardTras {
     position: absolute;
     z-index: 0;
     bottom: 0;
-    width: 360px;
-    height: 310px;
-    border-radius: 25px;
-    background-color: #ffffff;
+    width: 550px;
+    height: 100%;
+    color: #353535;
+    /* border-radius: 35px; */
+    background-color: yellow;
     transition: 0.3s;
 }
 
-.cardFrente {
-    position: absolute;
-    z-index: 1;
-    height: 320px;
-    border-radius: 25px;
-    transition: 0.5s;
-}
-
-.filhoTras1 {
-    height: 43%;
-    width: 50%;
-    margin-left: 55%;
-    /* background-color: red; */
+.cardTras1 {
+    height: 35%;
+    width: 95%;
+    margin-left: 5%;
+    background-color: #353535;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    font-family: "Roboto Condensed";
     /* justify-content: center; */
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 30px;
-    color: #ffffff;
-    text-transform: uppercase;
+
+    /* color: #ffffff; */
     transition: 0.3s ease-out;
 }
 
-.filhoTras2 {
-    font-family: "Roboto";
-    height: 37%;
-    width: 88%;
-    margin-left: 6%;
-    /* background-color: blue; */
+.tras1_filho1 {
     display: flex;
     align-items: center;
+    height: 40%;
+    width: 100%;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFC805;
+}
+
+.tras1_filho2 {
+    display: flex;
+    align-items: center;
+    height: 60%;
+    width: 70%;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.cardTras2 {
+    font-family: "Roboto";
+    height: 65%;
+    width: 95%;
+    margin-left: 5%;
+    background-color: #353535;
+    display: flex;
+    flex-direction: column;
     text-align: left;
     font-weight: 100;
     /* font-weight: bold; */
     font-size: 16px;
     line-height: 25px;
-    color: white;
+    /* color: white; */
     transition: .5 ease-out;
 }
 
-.filhoTras3 {
-    height: 13%;
-    /* background-color: green; */
+.tras2_filho1 {
+    display: flex;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+    font-size: 32px;
+    font-weight: bold;
+    color: #FFC805;
+    background-color: #353535;
+}
+
+.tras2_filho2 {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fileira1, .fileira2, .fileira3, .fileira4, .fileira5, .fileira6 {
+    height: 35px;
+    width: 100%;
+    line-height: 16px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    font-size: 16px;
+    flex-direction: row;
+    background-color: #353535;
 }
 
-.filhoTras3:first-child {
-    left: 0;
+.fileira1, .fileira3, .fileira5 {
+    margin-top: 1.5%;
 }
 
-.filhoTras3 span {
-    height: 90%;
-    padding: 0px 10px;
-    background-color: #ffffff;
-    border-radius: 35px;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: bold;
-    transition: 0.5s ease-out;
+.fileira2, .fileira4, .fileira6 {
+    margin-bottom: 1.5%;
+}
+
+.item {
+    height: 35px;
+    width: 35px;
+}
+
+.item img {
+    height: 100%;
+    width: 100%;
+}
+
+.descricao {
+    height: 35px;
+    width: 40px;
+    font-size: 12px;
+    text-align: center;
+    color: white;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
+
 
 /* FIM DO CARD */
 
 /* ------ INÍCIO DO EFEITO HOVER ------ */
 
 .cardGeral:hover img {
-    height: 160px;
-    border-radius: 15px;
+    border-radius: 35px 0px 0px 35px;
     /* box-shadow: 0 0 2.5pt 1.5pt rgba(255, 255, 255, 0.2); */
     transition: all 0.5s ease;
-    transform: translateY(0%) translateX(-50%);
+    /* transform: translateY(0%) translateX(-50%); */
 }
 
-.cardGeral:hover .cardTras {
-    /* box-shadow: 0 0 3pt 1.5pt rgba(255, 255, 255, 0.2); */
-    box-shadow: 0 0 1pt 0.5pt #FFC805;
-    /* box-shadow: 0 0 3pt 4pt rgba(0, 0, 0, 0.3); */
-    background-color: #353535;
-    transition: background-color .5s ease-in;
-}
-
-.cardGeral:hover .filhoTras1 {
-    color: #FFC805;
-    transition: color .5s ease-in;
-}
-
-.cardGeral:hover span {
-    background-color: #7434A6;
-    transition: background-color .5s ease-in;
+.cardGeral:hover {
+    display: flex;
 }
 
 /* ------ FIM DO EFEITO HOVER ------ */
