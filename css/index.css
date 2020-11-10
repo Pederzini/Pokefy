@@ -1,4 +1,7 @@
+/* INÍCIO DO BODY */
+
 /* INÍCIO DA HEADER */
+
 body {
     font-family: "Roboto";
     margin: 0;
@@ -88,8 +91,6 @@ button {
     outline: none;
 }
 
-/* FIM DA HEADER */
-
 /* COMEÇO DO EFEITO DE HOVER */
 
 .button_login:hover, .button_cadastro:hover {
@@ -108,7 +109,7 @@ button {
 
 /* FIM DO EFEITO DE HOVER */
 
-/* COMEÇO DO BODY */
+/* FIM DA HEADER */
 
 .conteudo1 {
     width: 100%;
@@ -276,51 +277,5 @@ li {
     line-height: 45px;
     /* background-color: salmon; */
 }
-/* COMEÇO DO BODY */
 
-/* INÍCIO DO FOOTER */
-
-footer {
-    height: 104px;
-    width: 100%;
-    background-color: #353535;
-    display: flex;
-    justify-content: center;
-}
-
-.container_footer {
-    width: 1065px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.footer_logo {
-    width: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    font-size: 30px;
-    font-weight: bold;
-    color: white;
-}
-
-.footer_logo img {
-    margin-right: 3%;
-}
-
-.footer_social {
-    width: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-}
-
-.footer_social img {
-    height: 50px;
-}
-
-/* FIM DO FOOTER */
+/* FIM DO BODY */
