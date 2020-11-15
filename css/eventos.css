@@ -50,7 +50,7 @@ label {
     90% { transform: translate(2px, 2px) rotate(0deg) } */
 }
 
-.roxanne:hover, .wattson:hover, .norman:hover, .tateLiza:hover {
+.roxanne:hover, .wattson:hover, .norman:hover, .tateLiza:hover, .sidney:hover, .glacia:hover {
     animation: vibrar .3s step-end infinite alternate;
 }
 
@@ -69,7 +69,7 @@ label {
     90% { transform: translate(2px, 2px) rotate(0deg) } */
 }
 
-.brawly:hover, .flannery:hover, .winona:hover {
+.brawly:hover, .flannery:hover, .winona:hover, .wallace:hover, .phoebe:hover {
     animation: pular .3s step-end infinite alternate;
 }
 
@@ -899,6 +899,491 @@ label {
     border-radius: 20px;
 }
 
+.tipo_ground_psychic {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #EDAE8E 0%, #EDAE8E 50%, #FFB6B8 50%, #FFB6B8 100%);
+    border-radius: 20px;
+}
+
+.tipo_ground_psychic .img_dois_tipos {
+    margin-left: 20px;
+}
+
+.tipo_water_psychic {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    background: linear-gradient(to right, #87C2FF 0%, #87C2FF 50%, #FFB6B8 50%, #FFB6B8 100%);
+    border-radius: 20px;
+}
+
+.tipo_water_psychic .img_dois_tipos {
+    margin-left: 20px;
+}
+
+.tipo_psychic_flying {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right,  #FFB6B8 0%,  #FFB6B8 50%, #AEC3F1 50%, #AEC3F1 100%);
+    border-radius: 20px;
+}
+
+.tipo_psychic_flying .img_dois_tipos {
+    margin-left: 8px;
+}
+
+.tipo_rock_psychic {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #E0D3B0 0%, #E0D3B0 50%, #FFB6B8 50%, #FFB6B8 100%);
+    border-radius: 20px;
+}
+
+.tipo_rock_psychic .img_dois_tipos {
+    margin-left: 18px;
+}
+
 /* FIM DO CONTEÚDO 8 */
+
+/* INÍCIO DO CONTEÚDO 9 */
+
+.conteudo9 {
+    width: 100%;
+    height: 592px;
+    display: flex;
+    justify-content: center;
+    /* background-image: url("../img/misc/fundoHistory3.png"); */
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+}
+
+.container_conteudo9 {
+    width: 1065px;
+    height: 100%;
+}
+
+.conteudo9_cima {
+    width: 100%;
+    height: 15%;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+    font-size: 45px;
+    text-transform: uppercase;
+    color: #FFC805;
+}
+
+.conteudo9_metade_1 {
+    font-family: "Roboto Condensed";
+    width: 20%;
+    height: 75%;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    float: left;
+}
+
+.conteudo9_metade_2 {
+    font-family: "Roboto Condensed";
+    width: 80%;
+    height: 75%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #353535;
+    text-shadow: 0 0 5px #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    float: left;
+}
+
+.tipo_water {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #87C2FF;
+    border-radius: 20px;
+}
+
+.tipo_water_poison {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #87C2FF 0%, #87C2FF 50%, #D9A6EF 50%, #D9A6EF 100%);
+    border-radius: 20px;
+}
+
+.tipo_water_poison .img_dois_tipos {
+    margin-left: 18px;
+}
+
+.tipo_grass_water {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #A5EA9F 0%, #A5EA9F 50%, #87C2FF 50%, #87C2FF 100%);
+    border-radius: 20px;
+}
+
+.tipo_grass_water .img_dois_tipos {
+    margin-left: 18px;
+}
+
+.tipo_ground_water {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #87C2FF 0%, #87C2FF 50%, #EDAE8E 50%, #EDAE8E 100%);
+    border-radius: 20px;
+}
+
+.tipo_ground_water .img_dois_tipos {
+    margin-left: 30px;
+}
+
+/* FIM DO CONTEÚDO 9 */
+
+/* INÍCIO DO CONTEÚDO 10 */
+
+.conteudo10 {
+    width: 100%;
+    height: 592px;
+    display: flex;
+    justify-content: center;
+    /* background-image: url("../img/misc/fundoHistory3.png"); */
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+}
+
+.container_conteudo10 {
+    width: 1065px;
+    height: 100%;
+}
+
+.conteudo10_cima {
+    width: 100%;
+    height: 15%;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+    font-size: 45px;
+    text-transform: uppercase;
+    color: #FFC805;
+}
+
+.conteudo10_metade_1 {
+    font-family: "Roboto Condensed";
+    width: 80%;
+    height: 75%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #353535;
+    text-shadow: 0 0 5px #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    float: left;
+}
+
+.conteudo10_metade_2 {
+    font-family: "Roboto Condensed";
+    width: 20%;
+    height: 75%;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    float: left;
+}
+
+.sidney {
+    width: 236px;
+}
+
+.tipo_dark_fighting {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #8F889C 0%, #8F889C 50%, #EF7A9B 50%, #EF7A9B 100%);
+    border-radius: 20px;
+}
+
+.tipo_dark_fighting .img_dois_tipos {
+    margin-left: 8px;
+}
+
+.tipo_grass_dark {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    background: linear-gradient(to right, #A5EA9F 0%, #A5EA9F 50%, #8F889C 50%, #8F889C 100%);
+    border-radius: 20px;
+}
+
+.tipo_grass_dark .img_dois_tipos {
+    margin-left: 15px;
+}
+
+.tipo_dark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #8F889C;
+    border-radius: 20px;
+}
+
+.tipo_water_dark {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    background: linear-gradient(to right, #87C2FF 0%, #87C2FF 50%, #8F889C 50%, #8F889C 100%);
+    border-radius: 20px;
+}
+
+.tipo_water_dark .img_dois_tipos {
+    margin-left: 20px;
+}
+
+.tipo_dark_flying {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #8F889C 0%, #8F889C 50%, #AEC3F1 50%, #AEC3F1 100%);
+    width: 100%;
+    border-radius: 20px;
+}
+
+.tipo_dark_flying .img_dois_tipos {
+    margin-left: 8px;
+}
+
+/* FIM DO CONTEÚDO 10 */
+
+/* INÍCIO DO CONTEÚDO 11 */
+
+.conteudo11 {
+    width: 100%;
+    height: 592px;
+    display: flex;
+    justify-content: center;
+    /* background-image: url("../img/misc/fundoHistory3.png"); */
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+}
+
+.container_conteudo11 {
+    width: 1065px;
+    height: 100%;
+}
+
+.conteudo11_cima {
+    width: 100%;
+    height: 15%;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+    font-size: 45px;
+    text-transform: uppercase;
+    color: #FFC805;
+}
+
+.conteudo11_metade_1 {
+    font-family: "Roboto Condensed";
+    width: 20%;
+    height: 75%;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    float: left;
+}
+
+.conteudo11_metade_2 {
+    font-family: "Roboto Condensed";
+    width: 80%;
+    height: 75%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #353535;
+    text-shadow: 0 0 5px #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    float: left;
+}
+
+.tipo_ghost {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #95A6D7;
+    border-radius: 20px;
+}
+
+.tipo_ghost_flying {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #95A6D7 0%, #95A6D7 50%, #AEC3F1 50%, #AEC3F1 100%);
+    border-radius: 20px;
+}
+
+.tipo_ghost_flying .img_dois_tipos {
+    margin-left: 1px;
+}
+
+.tipo_ghost_fire {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #95A6D7 0%, #95A6D7 50%, #FFDCC2 50%, #FFDCC2 100%);
+    border-radius: 20px;
+}
+
+.tipo_ghost_fire .img_dois_tipos {
+    margin-left: 0px;
+}
+
+.tipo_dark_ghost {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #8F889C 0%, #8F889C 50%, #95A6D7 50%, #95A6D7 100%);
+    width: 100%;
+    border-radius: 20px;
+}
+
+.tipo_dark_ghost .img_dois_tipos {
+    margin-left: 8px;
+}
+
+/* FIM DO CONTEÚDO 11 */
+
+/* INÍCIO DO CONTEÚDO 10 */
+
+.conteudo12 {
+    width: 100%;
+    height: 592px;
+    display: flex;
+    justify-content: center;
+    /* background-image: url("../img/misc/fundoHistory3.png"); */
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+}
+
+.container_conteudo12 {
+    width: 1065px;
+    height: 100%;
+}
+
+.conteudo12_cima {
+    width: 100%;
+    height: 15%;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+    font-size: 45px;
+    text-transform: uppercase;
+    color: #FFC805;
+}
+
+.conteudo12_metade_1 {
+    font-family: "Roboto Condensed";
+    width: 80%;
+    height: 75%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #353535;
+    text-shadow: 0 0 5px #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    float: left;
+}
+
+.conteudo12_metade_2 {
+    font-family: "Roboto Condensed";
+    width: 20%;
+    height: 75%;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    float: left;
+}
+
+.glacia {
+    height: 320px;
+}
+
+.tipo_ice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #A9F3E8;
+    border-radius: 20px;
+}
+
+.tipo_grass_ice {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #A5EA9F 0%, #A5EA9F 50%, #A9F3E8 50%, #A9F3E8 100%);
+    border-radius: 20px;
+}
+
+.tipo_grass_ice .img_dois_tipos {
+    margin-left: 17px;
+}
+
+.tipo_ice_ghost {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #A9F3E8 0%, #A9F3E8 50%, #95A6D7 50%, #95A6D7 100%);
+    border-radius: 20px;
+}
+
+.tipo_ice_ghost .img_dois_tipos {
+    margin-left: 21px;
+}
+
+.tipo_ice_water {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #A9F3E8 0%, #A9F3E8 50%, #87C2FF 50%, #87C2FF 100%);
+    width: 100%;
+    border-radius: 20px;
+}
+
+.tipo_ice_water .img_dois_tipos {
+    margin-left: 25px;
+}
+
+/* FIM DO CONTEÚDO 12 */
 
 /* FIM DO BODY */
