@@ -917,10 +917,6 @@ body::-webkit-scrollbar-thumb {
     margin-left: 35px;
 }
 
-.tipo_steel_psychic .img_dois_tipos {
-    /* margin-left: 8px; */
-}
-
 .tipo_dragon_psychic {
     display: flex;
     align-items: center;
