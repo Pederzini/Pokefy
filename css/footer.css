@@ -1,7 +1,8 @@
 /* INÍCIO DO FOOTER */
 
 footer {
-    height: 104px;
+    font-size: 16px;
+    height: 60px;
     width: 100%;
     background-color: #353535;
     display: flex;
@@ -16,17 +17,34 @@ footer {
 }
 
 .footer_logo {
-    width: 60%;
+    width: 20%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    font-size: 30px;
     font-weight: bold;
     color: white;
 }
 
 .footer_logo img {
     margin-right: 3%;
+    height: 50px;
+}
+
+.amor {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.amor img {
+    margin: 0 5px;
+}
+
+.amor b {
+    color: #FFC805;
+    margin: 0 5px;
 }
 
 .footer_social {
@@ -34,13 +52,12 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    font-size: 20px;
     font-weight: bold;
     color: white;
 }
 
 .footer_social img {
-    height: 50px;
+    height: 25px;
 }
 
 .logo {

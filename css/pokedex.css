@@ -611,10 +611,6 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px;
 }
 
-.tipo_psychic_fairy img:last-child {
-    /* margin-left: 30px; */
-}
-
 .tipo_psychic_fairy .img_dois_tipos {
     margin-left: 8px;
 }
@@ -709,10 +705,6 @@ body::-webkit-scrollbar-thumb {
 
 .tipo_steel_fairy img:last-child {
     margin-left: 47px;
-}
-
-.tipo_steel_fairy .img_dois_tipos {
-    /* margin-left: 8px; */
 }
 
 .tipo_steel_rock {
