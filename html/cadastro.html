@@ -11,7 +11,7 @@
     <link rel="icon" href="../img/logo/logo.png">
     <title>Pokéfy - Cadastro</title>
 </head>
-<body>
+<body onload="sortear()">
     <div class="header">
         <div class="container">
             <img class="logo" src="../img/logo/logo.png" alt="">
@@ -27,6 +27,17 @@
                 <a href="cadastro.html"><button class="button_cadastro">Cadastro</button></a>
             </div>
         </div>
+    </div>
+        
+    <!-- Modal -->
+    <div id="meuModal" class="modal">
+    
+        <!-- Conteúdo do modal -->
+        <div class="modal-content">
+            <p>Deu tudo certo com o seu cadastro. Aproveite!</p>
+            <label id="close" onclick="sair()">&times;</label>
+        </div>
+    
     </div>
     <div class="conteudo1">
         <div class="container_conteudo1">
@@ -53,9 +64,10 @@
             <div class="conteudo1_metade_2">
                 Para finalizar seu cadastro, confirme que
                 não é um robô e escreva o nome do Pokémon abaixo 
-                <img src="../img/misc/pikachu.gif" alt="">
-                <input type="text">
-                <a href=""><button class="button_cadastroGrande">Cadastrar</button></a>
+                <img id="img_poke_verificar" src="" alt="">
+                <div id="resposta"></div>
+                <input id="entry_pokemon" type="text">
+                <button class="button_cadastroGrande" onclick="poke_verificar()">Cadastrar</button>
             </div>
         </div>
     </div>
@@ -80,10 +92,41 @@
 </html>
 
 <script>
+    var pokemons = ['pikachu', 'treecko', 'torchic', 'mudkip'];
+    var numero = parseInt((Math.random()*4));
+
     function linkedin() {
         window.location.href = "https://br.linkedin.com/in/victor-pederzini-87b3679a";
     }
+
     function github() {
         window.location.href = "https://github.com/Pederzini";
     }
+
+    function sortear() {
+        resposta.innerHTML = ``;
+        img_poke_verificar.src = `../img/misc/${pokemons[numero]}.gif`;
+    }
+
+    // Quando o usuário clica no botão cadastrar, vai verificar se o nome conferen
+    // Em caso afirmativo, mostra o popup
+    function botaoModal() {
+        meuModal.style.display = "block";
+    }
+
+    // Quando o usuário clica no (x), fecha o modal de confirmação e segue para o login
+    function sair() {
+        meuModal.style.display = "none";
+        window.location.href = "login.html"; 
+    }
+
+    function poke_verificar() {
+        if (entry_pokemon.value == `${pokemons[numero]}`) {
+            botaoModal();
+         } else {
+            resposta.style = "color: red; font-size: 18px; text-shadow: -1.25px 0 white, 0 1.25px white, 1.25px 0 white, 0 -1.25px white;";
+            resposta.innerHTML = `Ops, este não é o nome certo. Tente novamente!`;
+        }
+    }
+
 </script>
