@@ -1,4 +1,7 @@
+/* INÍCIO DO BODY */
+
 /* INÍCIO DA HEADER */
+
 body {
     font-family: "Roboto";
     margin: 0;
@@ -23,7 +26,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 22px;
     /* position: fixed; */
     width: 100%;
-    height: 104px;
+    height: 70px;
     /* background-color: #88E271; */
     background-color: #8B4EBB;
     display: flex;
@@ -36,7 +39,7 @@ body::-webkit-scrollbar-thumb {
 
 .container {
     width: 1065px;
-    height: 104px;
+    height: 100%;
     margin: 0px 130px;
     display: flex;
     align-items: center;
@@ -44,8 +47,8 @@ body::-webkit-scrollbar-thumb {
     background-color: #8B4EBB;
 }
 
-.logo {
-    height: 80px;
+.container .logo {
+    height: 65px;
 }
 
 /* Estilo para a tag <nav> inteira */
@@ -76,12 +79,16 @@ li {
 
 button {
     font-family: "Roboto Condensed";
-    font-size: 24px;
+    font-size: 20px;
     text-transform: uppercase;
     font-weight: bold;
     border-radius: 12px;
     border: none;
     padding: 5px 15px;
+}
+
+.div_botoes button {
+    margin-left: 10px;
 }
 
 .button_login {
@@ -93,8 +100,6 @@ button {
     background-color: #FFC805;
     outline: none;
 }
-
-/* FIM DA HEADER */
 
 /* COMEÇO DO EFEITO DE HOVER */
 
@@ -121,11 +126,11 @@ li:hover {
 
 /* FIM DO EFEITO DE HOVER */
 
-/* COMEÇO DO BODY */
+/* FIM DA HEADER */
 
 .conteudo1 {
     width: 100%;
-    height: 488px;
+    height: 492px;
     display: flex;
     justify-content: center;
     background-image: url("../img/misc/fundoLoginCadastro_ajustado.png");
