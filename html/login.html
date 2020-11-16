@@ -62,12 +62,21 @@
                 Feito com <img src="../img/misc/heart.gif" style="height: 20px"> por <b>Victor Pederzini</b>
             </div>
             <div class="footer_social">
-                <a href="https://br.linkedin.com/in/victor-pederzini-87b3679a"><img src="../img/misc/linkedin.png" alt=""></a>
-                <a href="https://br.linkedin.com/in/victor-pederzini-87b3679a">Victor Pederzini </a>         
-                <a href="https://github.com/Pederzini"><img src="../img/misc/github.png" alt=""></a>
-                <a href="https://github.com/Pederzini">Pederzini</a>
+                <img onclick="linkedin()" src="../img/misc/linkedin.png" alt="">
+                <span onclick="linkedin()">Victor Pederzini</span>         
+                <img onclick="github()" src="../img/misc/github.png" alt=""></a>
+                <span onclick="github()">Pederzini</span>
             </div>
         </div>
     </footer>
 </body>
 </html>
+
+<script>
+    function linkedin() {
+        window.location.href = "https://br.linkedin.com/in/victor-pederzini-87b3679a";
+    }
+    function github() {
+        window.location.href = "https://github.com/Pederzini";
+    }
+</script>
