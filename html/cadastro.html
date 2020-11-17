@@ -52,11 +52,11 @@
                     <div class="senhas">
                         <div class="senhas_filho">
                             Senha
-                            <input id="entry_senha" type="text">
+                            <input id="entry_senha" type="password" onkeyup="preencherSenha()">
                         </div>
                         <div class="senhas_filho">
                             Confirmar senha
-                            <input type="text">
+                            <input id="entry_confirmarSenha" type="password" onkeyup=>
                         </div>
                     </div>
                 <!-- </form> -->
@@ -66,7 +66,7 @@
                 não é um robô e escreva o nome do Pokémon abaixo 
                 <img id="img_poke_verificar" src="" alt="">
                 <div id="resposta"></div>
-                <input id="entry_pokemon" type="text">
+                <input id="entry_pokemon" type="text" onkeyup="return forcarLowerCase(this)">
                 <button class="button_cadastroGrande" onclick="poke_verificar()">Cadastrar</button>
             </div>
         </div>
@@ -94,18 +94,20 @@
 <script>
     var pokemons = ['pikachu', 'treecko', 'torchic', 'mudkip'];
     var numero = parseInt((Math.random()*4));
+    var senha = [];
 
-    function linkedin() {
-        window.location.href = "https://br.linkedin.com/in/victor-pederzini-87b3679a";
-    }
-
-    function github() {
-        window.location.href = "https://github.com/Pederzini";
+    function preencherSenha() {
+        senha.push(entry_senha.value);
+        // pesquisar pop
     }
 
     function sortear() {
         resposta.innerHTML = ``;
         img_poke_verificar.src = `../img/misc/${pokemons[numero]}.gif`;
+    }
+
+    function forcarLowerCase(strInput) {
+        strInput.value=strInput.value.toLowerCase();
     }
 
     // Quando o usuário clica no botão cadastrar, vai verificar se o nome conferen
@@ -127,6 +129,14 @@
             resposta.style = "color: red; font-size: 18px; text-shadow: -1.25px 0 white, 0 1.25px white, 1.25px 0 white, 0 -1.25px white;";
             resposta.innerHTML = `Ops, este não é o nome certo. Tente novamente!`;
         }
+    }
+    
+    function linkedin() {
+        window.location.href = "https://br.linkedin.com/in/victor-pederzini-87b3679a";
+    }
+
+    function github() {
+        window.location.href = "https://github.com/Pederzini";
     }
 
 </script>

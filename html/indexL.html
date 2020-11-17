@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
     <link rel="stylesheet" href="../css/indexL.css">
@@ -17,20 +18,21 @@
         <div class="container">
             <a href="indexL.html"><img class="logo" src="../img/logo/logo.png" alt=""></a>
             <div class="nav">
-                <ul>
-                    <li>
-                        <a class="inicio" href="indexL.html">Início</a>
-                    </li>
-                    <li>
-                        <a class="regiao" href="historia.html">A Região</a>
-                    </li>
-                    <li>
-                        <a class="eventos" href="indexL.html">Eventos</a>
-                    </li>
-                    <li>
-                        <a class="pokedex" href="pokedex.html">Pokédex de Hoenn</a>
-                    </li>
-                </ul>
+                <a class="inicio" href="indexL.html">Início</a>
+                <div class="dropdown">
+                    <button class="regiao">A região
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="conteudo_dropdown">
+                        <a href="cidades.html">Cidades</a>
+                        <a href="geografia.html">Geografia</a>
+                        <a href="historia.html">História</a>
+                        <a href="turismo.html">Turismo</a>
+                    </div>
+                    <!-- <a class="regiao" href="historia.html">A Região</a> -->
+                </div>
+                <a class="eventos" href="eventos.html">Eventos</a>
+                <a class="pokedex" href="pokedex.html">Pokédex de Hoenn</a>       
             </div>
             <div class="div_botoes">
                 <button class="button_usuario">[usuário]</button>
