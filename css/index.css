@@ -26,7 +26,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 20px;
     /* position: fixed; */
     width: 100%;
-    height: 104px;
+    height: 70px;
     /* background-color: #88E271; */
     background-color: #8B4EBB;
     display: flex;
@@ -39,7 +39,7 @@ body::-webkit-scrollbar-thumb {
 
 .container {
     width: 1065px;
-    height: 104px;
+    height: 100%;
     margin: 0px 130px;
     display: flex;
     align-items: center;
@@ -47,8 +47,8 @@ body::-webkit-scrollbar-thumb {
     background-color: #8B4EBB;
 }
 
-.logo {
-    height: 80px;
+.container .logo {
+    height: 65px;
 }
 
 /* Estilo para a tag <nav> inteira */
@@ -63,6 +63,12 @@ body::-webkit-scrollbar-thumb {
 a {
     text-decoration: none;
     color: white;
+}
+
+
+li {
+    list-style: none;
+    padding: 5px 15px;
 }
 
 .div_botoes {
@@ -85,6 +91,10 @@ button {
     text-shadow: -1.25px 0 white, 0 1.25px white, 1.25px 0 white, 0 -1.25px white;
 }
 
+.div_botoes button {
+    margin-left: 10px;
+}
+
 .button_login {
     background-color: #FFE485;
     outline: none;
@@ -96,6 +106,13 @@ button {
 }
 
 /* COMEÇO DO EFEITO DE HOVER */
+
+li:hover {
+    font-weight: bold;
+    box-shadow: 0 0 3pt 1pt white;
+    border-radius: 12px;
+    background-color: #7434A6;
+}
 
 .button_login:hover, .button_cadastro:hover {
     /* border: 1px solid white; */

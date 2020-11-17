@@ -68,6 +68,11 @@
     text-shadow: -1.25px 0 white, 0 1.25px white, 1.25px 0 white, 0 -1.25px white;
 }
 
+.div_botoes a {
+    padding: 0;
+    margin: 0;
+}
+
 .button_usuario {
     background-color: #B076DE;
     font-weight: normal;
@@ -95,12 +100,13 @@
     font-weight: bold;
     box-shadow: 0 0 3pt 1pt white;
     border-radius: 12px 12px 0 0;
-    background-color: #FFC805;;
+    background-color: #FFC805;
     cursor: pointer;
 }
 
 .dropdown:hover button {
     color: black;
+    text-shadow: -1.25px 0 white, 0 1.25px white, 1.25px 0 white, 0 -1.25px white;
 }
 
 .button_usuario:hover {

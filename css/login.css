@@ -190,7 +190,7 @@ input:focus {
     border-radius: 15px;
     border: none;
     height: 40px;
-    width: 100%;
+    width: 98%;
 }
 
 .button_cadastroGrande {
@@ -202,7 +202,7 @@ input:focus {
     font-size: 20px;
     line-height: 30px;
     color: #FFC805;
-    width: 30%;
+    width: 33%;
     height: 60%;
     display: flex;
     align-items: center;
@@ -221,8 +221,15 @@ input:focus {
 }
 
 .botao {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.botao span {
+    font-size: 14px;
+    text-decoration: underline;
 }
 
 ul {
