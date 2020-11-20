@@ -32,12 +32,12 @@
     <!-- Modal -->
     <div id="meuModal" class="modal">
         <!-- Conteúdo do modal -->
-        <div class="modal-content">
+        <div class="modal_content">
             <p id="conteudo_modal"></p>
             <label id="fechar" onclick="botao_sair()">&times;</label>
         </div>
     </div>
-    
+
     <div class="conteudo1">
         <div class="container_conteudo1">
             <div class="conteudo1_metade_1">
@@ -95,11 +95,14 @@
 </html>
 
 <script>
-    var pokemons = ['pikachu', 'treecko', 'torchic', 'mudkip'];
-    var numero = parseInt((Math.random()*4));
+    let pokemons = ['pikachu', 'treecko', 'torchic', 'mudkip'];
+    let numero = parseInt((Math.random()*4));
     let contador = 0;
-    var entradaEmail;
-    var validarEmail;
+    let contadorSenha = 0;
+    let entradaEmail;
+    let validarEmail;
+    let senha;
+    let confirmarSenha;
 
     function testeValidar() {
         entradaEmail = entry_email.value;
@@ -107,14 +110,16 @@
     }
 
     function verificarSenha() {
-        let senha = entry_senha.value;
-        let confirmarSenha = entry_confirmarSenha.value;
+        contadorSenha = 0;
+        senha = entry_senha.value;
+        confirmarSenha = entry_confirmarSenha.value;
         if (senha == confirmarSenha) {
             validacaoSenha.style = style="color: green; font-size: 18px; text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white";
             validacaoSenha.innerHTML = `Senhas corretas`;
         } else {
             validacaoSenha.style = style="color: red; font-size: 18px; text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white";
             validacaoSenha.innerHTML = `Senhas incorretas`;
+            contadorSenha++;
         }
     }
 
@@ -148,11 +153,10 @@
         return validarEmail = re.test(String(entradaEmail).toLowerCase());
     }
 
-
     function verificarCadastro() {
         contador = 0;
         if (entry_nomeCompleto.value == `` || entry_nomeUsuario.value == `` || entry_email.value == ``
-        || entry_senha.value == `` || entry_confirmarSenha == ``) {
+        || entry_senha.value == `` || entry_confirmarSenha.value == ``) {
             // conteudo_modal.innerHTML = `Deu tudo certo com o seu cadastro. Aproveite!`;
             resposta.innerHTML = `Preencha os dados à esquerda antes de adivinhar o Pokémon!`;
             conteudo_modal.innerHTML = `Por favor, preencha os campos vazios`;
@@ -161,6 +165,11 @@
         } else if (validarEmail == false) {
             resposta.innerHTML = `Preencha os dados à esquerda antes de adivinhar o Pokémon!`;
             conteudo_modal.innerHTML = `Por favor, digite um e-mail válido`;
+            meuModal.style.display = "block";
+            contador++;
+        } else if (contadorSenha > 0) {
+            resposta.innerHTML = `Preencha os dados à esquerda antes de adivinhar o Pokémon!`;
+            conteudo_modal.innerHTML = `Senhas informadas não são iguais`;
             meuModal.style.display = "block";
             contador++;
         } else if (entry_pokemon.value != `${pokemons[numero]}`) {

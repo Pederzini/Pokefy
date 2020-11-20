@@ -150,7 +150,7 @@ li:hover {
 }
   
   /* Conteúdo do modal */
-.modal-content {
+.modal_content {
     display: flex;
     align-items: center;
     justify-content: space-around;

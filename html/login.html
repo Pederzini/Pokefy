@@ -32,9 +32,26 @@
     <!-- Modal -->
     <div id="meuModal" class="modal">
         <!-- Conteúdo do modal -->
-        <div class="modal-content">
-            <p id="conteudo_modal"></p>
-            <label id="fechar" onclick="botao_sair()">&times;</label>
+        <div class="modal_content">
+            <div class="modal_cima">
+                <p id="conteudo_modal"></p>
+                <label id="fechar" onclick="botao_sair()">&times;</label>
+            </div>
+            <div class="modal_baixo">
+                <input id="entry_email" type="text">
+                <button id="botao_enviar" onclick="modalEnviado()">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Segundo modal -->
+    <div id="meuModal2" class="modal2">
+        <!-- Conteúdo do modal -->
+        <div class="modal_content2">
+            <div class="modal_cima2">
+                <p id="conteudo_modal2"></p>
+                <label id="fechar2" onclick="botao_sair()">&times;</label>
+            </div>
         </div>
     </div>
 
@@ -57,7 +74,7 @@
                     <input type="text">
                 </div>
                 <div class="botao">
-                    <span>Esqueceu a senha?</span>
+                    <span onclick="recuperarSenha()">Esqueceu a senha?</span>
                     <a href="indexL.html"><button class="button_cadastroGrande">Entrar</button></a>
                 </div>
             </div>
@@ -87,9 +104,28 @@
     function linkedin() {
         window.location.href = "https://br.linkedin.com/in/victor-pederzini-87b3679a";
     }
+
     function github() {
         window.location.href = "https://github.com/Pederzini";
     }
 
-    localStorage["key"] = value;
+    function recuperarSenha() {
+        conteudo_modal.innerHTML = `Por favor, informe seu e-mail ou nome de usuário cadastrados
+        para enviar um e-mail de redefinição de senha`;
+        entry_email.value = ``;
+        meuModal.style.display = "flex";
+        // meuModal2.style.display = "flex";
+    }
+
+    function modalEnviado() {
+        conteudo_modal2.innerHTML = `E-mail enviado com sucesso! Mude sua senha e tente não esquecer mais!`;
+        meuModal.style.display = "none";
+        meuModal2.style.display = "flex";
+    }
+
+    function botao_sair() {
+        meuModal.style.display = "none";
+        meuModal2.style.display = "none";    
+    }
+
 </script>
