@@ -31,43 +31,46 @@
         
     <!-- Modal -->
     <div id="meuModal" class="modal">
-    
         <!-- Conteúdo do modal -->
         <div class="modal-content">
-            <p>Deu tudo certo com o seu cadastro. Aproveite!</p>
-            <label id="close" onclick="sair()">&times;</label>
+            <p id="conteudo_modal"></p>
+            <label id="fechar" onclick="botao_sair()">&times;</label>
         </div>
-    
     </div>
+    
     <div class="conteudo1">
         <div class="container_conteudo1">
             <div class="conteudo1_metade_1">
                 <!-- <form id="form_cadastro" method="post" onsubmit="return cadastrar()"> -->
-                    Nome completo
-                    <input id="entry_nomeCompleto" type="text">
-                    Nome de Usuário
-                    <input id="entry_nomeUsuario" type="text">
-                    E-mail
-                    <input id="entry_email" type="text">
-                    <div class="senhas">
-                        <div class="senhas_filho">
-                            Senha
-                            <input id="entry_senha" type="password" onkeyup="preencherSenha()">
+                    <form>
+                        <label>Nome completo</label>
+                        <input id="entry_nomeCompleto" type="text" required><br>
+                        <label>Nome de Usuário</label>
+                        <input id="entry_nomeUsuario" type="text" required><br>
+                        <label>E-mail</label>
+                        <input id="entry_email" type="text" onkeyup="testeValidar()"><br>
+                        <!-- pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" -->
+                        <div class="senhas">
+                            <div class="senhas_filho">
+                                <label>Senha</label>
+                                <input id="entry_senha" type="password" required>
+                            </div>
+                            <div class="senhas_filho">
+                                <label>Confirmar senha</label>
+                                <input id="entry_confirmarSenha" type="password" required onkeyup="verificarSenha()">
+                            </div>
                         </div>
-                        <div class="senhas_filho">
-                            Confirmar senha
-                            <input id="entry_confirmarSenha" type="password" onkeyup=>
-                        </div>
-                    </div>
+                        <div id="validacaoSenha"></div>
+                    </form>
                 <!-- </form> -->
             </div>
             <div class="conteudo1_metade_2">
                 Para finalizar seu cadastro, confirme que
                 não é um robô e escreva o nome do Pokémon abaixo 
                 <img id="img_poke_verificar" src="" alt="">
-                <div id="resposta"></div>
+                <div id="resposta" style="color: red; font-size: 18px; text-shadow: -1.25px 0 white, 0 1.25px white, 1.25px 0 white, 0 -1.25px white"></div>
                 <input id="entry_pokemon" type="text" onkeyup="return forcarLowerCase(this)">
-                <button class="button_cadastroGrande" onclick="poke_verificar()">Cadastrar</button>
+                <button class="button_cadastroGrande" onclick="verificarCadastro()">Cadastrar</button>
             </div>
         </div>
     </div>
@@ -94,14 +97,34 @@
 <script>
     var pokemons = ['pikachu', 'treecko', 'torchic', 'mudkip'];
     var numero = parseInt((Math.random()*4));
-    var senha = [];
+    let contador = 0;
+    var entradaEmail;
+    var validarEmail;
 
-    function preencherSenha() {
-        senha.push(entry_senha.value);
-        // pesquisar pop
+    function testeValidar() {
+        entradaEmail = entry_email.value;
+        validateEmail(entradaEmail);
+    }
+
+    function verificarSenha() {
+        let senha = entry_senha.value;
+        let confirmarSenha = entry_confirmarSenha.value;
+        if (senha == confirmarSenha) {
+            validacaoSenha.style = style="color: green; font-size: 18px; text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white";
+            validacaoSenha.innerHTML = `Senhas corretas`;
+        } else {
+            validacaoSenha.style = style="color: red; font-size: 18px; text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white";
+            validacaoSenha.innerHTML = `Senhas incorretas`;
+        }
     }
 
     function sortear() {
+        entry_nomeCompleto.value = ``;
+        entry_nomeUsuario.value = ``;
+        entry_email.value = ``;
+        entry_senha.value = ``;
+        entry_confirmarSenha.value = ``;
+        entry_pokemon.value = ``;
         resposta.innerHTML = ``;
         img_poke_verificar.src = `../img/misc/${pokemons[numero]}.gif`;
     }
@@ -110,24 +133,43 @@
         strInput.value=strInput.value.toLowerCase();
     }
 
-    // Quando o usuário clica no botão cadastrar, vai verificar se o nome conferen
-    // Em caso afirmativo, mostra o popup
-    function botaoModal() {
-        meuModal.style.display = "block";
-    }
-
     // Quando o usuário clica no (x), fecha o modal de confirmação e segue para o login
-    function sair() {
-        meuModal.style.display = "none";
-        window.location.href = "login.html"; 
+    function botao_sair() {
+        if (contador < 1) {
+            meuModal.style.display = "none";
+            window.location.href = "login.html"; 
+        } else {
+            meuModal.style.display = "none";
+        }
     }
 
-    function poke_verificar() {
-        if (entry_pokemon.value == `${pokemons[numero]}`) {
-            botaoModal();
-         } else {
-            resposta.style = "color: red; font-size: 18px; text-shadow: -1.25px 0 white, 0 1.25px white, 1.25px 0 white, 0 -1.25px white;";
+    function validateEmail(entradaEmail) {
+        const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return validarEmail = re.test(String(entradaEmail).toLowerCase());
+    }
+
+
+    function verificarCadastro() {
+        contador = 0;
+        if (entry_nomeCompleto.value == `` || entry_nomeUsuario.value == `` || entry_email.value == ``
+        || entry_senha.value == `` || entry_confirmarSenha == ``) {
+            // conteudo_modal.innerHTML = `Deu tudo certo com o seu cadastro. Aproveite!`;
+            resposta.innerHTML = `Preencha os dados à esquerda antes de adivinhar o Pokémon!`;
+            conteudo_modal.innerHTML = `Por favor, preencha os campos vazios`;
+            meuModal.style.display = "block";
+            contador++;
+        } else if (validarEmail == false) {
+            resposta.innerHTML = `Preencha os dados à esquerda antes de adivinhar o Pokémon!`;
+            conteudo_modal.innerHTML = `Por favor, digite um e-mail válido`;
+            meuModal.style.display = "block";
+            contador++;
+        } else if (entry_pokemon.value != `${pokemons[numero]}`) {
             resposta.innerHTML = `Ops, este não é o nome certo. Tente novamente!`;
+         } else {
+            resposta.style = "color: green; font-size: 18px; text-shadow: -1.25px 0 white, 0 1.25px white, 1.25px 0 white, 0 -1.25px white;";
+            resposta.innerHTML = `Parabéns, você acertou!`;
+            conteudo_modal.innerHTML = `Deu tudo certo com o seu cadastro. Aproveite!`;
+            meuModal.style.display = "block";
         }
     }
     

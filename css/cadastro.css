@@ -164,15 +164,15 @@ li:hover {
 }
   
 /* Botão fechar */
-#close {
+#fechar {
     color: #FFC805;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
   
-#close:hover,
-#close:focus {
+#fechar:hover,
+#fechar:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
@@ -206,10 +206,14 @@ li:hover {
     font-weight: bold;
     color: #FFC805;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
     /* background-color: yellowgreen; */
+}
+
+form input {
+    margin-bottom: 15px;
 }
 
 input {
