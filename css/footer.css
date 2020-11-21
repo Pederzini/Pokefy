@@ -68,7 +68,11 @@ footer {
     color: white;
 }
 
-.footer_social:hover img, span {
+.footer_social:hover img {
+    cursor: pointer;
+}
+
+.footer_social:hover span {
     cursor: pointer;
 }
 

@@ -91,6 +91,8 @@ body::-webkit-scrollbar-thumb {
     font-weight: bold;
     font-size: 45px;
     text-transform: uppercase;
+    text-shadow: -1.25px 0 white, 0 1.25px white, 1.25px 0 white, 0 -1.25px white;
+
     /* color: #353535; */
     /* background-color: lightblue; */
 }

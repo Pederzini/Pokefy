@@ -209,6 +209,10 @@ li:hover {
     outline: none;
 }
 
+#botao_enviar:hover {
+    cursor: pointer;
+}
+
 .modal_baixo input {
     color: #353535;
     border: 0 none;
@@ -264,6 +268,7 @@ input {
     text-align: center;
     color: #ffffff;
     font-size: 16px;
+    text-shadow: -1.25px 0 black, 0 1.25px black, 1.25px 0 black, 0 -1.25px black;
 }
 
 input:focus {
@@ -316,6 +321,10 @@ input:focus {
 .botao span {
     font-size: 14px;
     text-decoration: underline;
+}
+
+.botao:hover span {
+    cursor: pointer;
 }
 
 ul {

@@ -106,13 +106,13 @@ button {
 }
 
 /* COMEÇO DO EFEITO DE HOVER */
-
+/* 
 li:hover {
     font-weight: bold;
     box-shadow: 0 0 3pt 1pt white;
     border-radius: 12px;
     background-color: #7434A6;
-}
+} */
 
 .button_login:hover, .button_cadastro:hover {
     /* border: 1px solid white; */

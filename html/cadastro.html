@@ -48,12 +48,11 @@
                         <label>Nome de Usuário</label>
                         <input id="entry_nomeUsuario" type="text" required><br>
                         <label>E-mail</label>
-                        <input id="entry_email" type="text" onkeyup="testeValidar()"><br>
-                        <!-- pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" -->
+                        <input id="entry_email" type="text" onkeyup="validateEmail()"><br>
                         <div class="senhas">
                             <div class="senhas_filho">
                                 <label>Senha</label>
-                                <input id="entry_senha" type="password" required>
+                                <input id="entry_senha" type="password" required onkeyup="verificarSenha()">
                             </div>
                             <div class="senhas_filho">
                                 <label>Confirmar senha</label>
@@ -104,11 +103,6 @@
     let senha;
     let confirmarSenha;
 
-    function testeValidar() {
-        entradaEmail = entry_email.value;
-        validateEmail(entradaEmail);
-    }
-
     function verificarSenha() {
         contadorSenha = 0;
         senha = entry_senha.value;
@@ -149,6 +143,7 @@
     }
 
     function validateEmail(entradaEmail) {
+        entradaEmail = entry_email.value;
         const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return validarEmail = re.test(String(entradaEmail).toLowerCase());
     }
