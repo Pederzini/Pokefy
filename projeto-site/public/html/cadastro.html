@@ -172,10 +172,13 @@
          } else {
             resposta.style = "color: green; font-size: 18px; text-shadow: -1.25px 0 white, 0 1.25px white, 1.25px 0 white, 0 -1.25px white;";
             resposta.innerHTML = `Parabéns, você acertou!`;
-            conteudo_modal.innerHTML = `Deu tudo certo com o seu cadastro. Aproveite!`;
-            meuModal.style.display = "block";
             cadastrar();
         }
+    }
+
+    function cadastroCerto() {
+        conteudo_modal.innerHTML = `Deu tudo certo com o seu cadastro. Aproveite!`;
+        meuModal.style.display = "block";
     }
     
     function linkedin() {
@@ -194,7 +197,8 @@
         }).then(function (response) {
             
             if (response.ok) {
-                window.location.href='login.html';
+                cadastroCerto();
+                // window.location.href='login.html';
             } else {
                 console.log('Erro de cadastro!');
                 response.text().then(function (resposta) {

@@ -12,9 +12,9 @@ function verificar_autenticacao() {
     if (login_usuario == undefined)  {
         redirecionar_login();
     } else {
-        b_usuario.innerHTML = nome_usuario;
         b_usuario2.innerHTML = login_usuario;
         validar_sessao();
+        b_usuario.innerHTML = nome_usuario;
     }
     
 }

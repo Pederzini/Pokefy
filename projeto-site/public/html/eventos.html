@@ -11,9 +11,14 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="icon" href="../img/logo/logo.png">
+    <script type="text/javascript" src="../funcoes.js"></script>
+    <script>
+        let usuario;
+        verificar_autenticacao();
+    </script>
     <title>Pokéfy - Eventos</title>
 </head>
-<body>
+<body onload="verificar_autenticacao()">
     <div class="header">
         <div class="container">
             <a href="indexL.html"><img class="logo" src="../img/logo/logo.png" alt=""></a>
@@ -35,8 +40,8 @@
                 <a class="pokedex" href="pokedex.html">Pokédex de Hoenn</a>       
             </div>
             <div class="div_botoes">
-                <button class="button_usuario">[usuário]</button>
-                <a href="index.html"><button class="button_logout">logout</button></a>
+                <button class="button_usuario"><b id="b_usuario2"></b></button>
+                <button class="button_logout" onclick="logoff()">logout</button>
             </div>
         </div>
     </div>
