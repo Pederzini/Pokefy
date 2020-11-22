@@ -1,0 +1,240 @@
+/* INÍCIO DO BODY */
+
+body {
+    font-family: "Roboto Condensed";
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+body::-webkit-scrollbar {
+	width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+	background: #252525;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: #FFC805;
+}
+
+.conteudo_pai {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    /* background-image: url("../img/misc/fundo_historia_ajustado.png");
+    background-repeat: repeat-y;
+    background-size: 1366px; */
+    /* background: url(../img/misc/fundoFossil_ajustado.png) center center; */
+    background: url(../img/misc/fundoCidades_ajustado.png) center center;
+    background-position: center top;
+    background-repeat: repeat;
+    /* background-size: cover; */
+}
+
+.conteudo {
+    width: 100%;
+    height: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-image: url("../img/misc/fundoHistory1.png"); */
+    background-repeat: no-repeat;
+}
+
+.conteudo img {
+    height: 220px;
+}
+
+.capa {
+    width: 100%;
+    height: 96px;
+    border-top: 10.5px solid #B28D06;
+    border-bottom: 10.5px solid #B28D06;
+    background-color: #FFC805;
+    font-size: 64px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #353535;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* INÍCIO DO CONTEÚDO 1 */
+
+.conteudo1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* background-image: url("../img/misc/fundoHistory2.png"); */
+    background-repeat: no-repeat;
+    color: #ffffff;
+}
+
+.container_conteudo1 {
+    width: 1065px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo1_metade_1 {
+    font-family: "Roboto";
+    width: 50%;
+    height: 100%;
+    font-size: 18px;
+    /* color: #181818; */
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: yellowgreen; */
+}
+
+.conteudo1_metade_2 {
+    font-family: "Roboto";
+    width: 50%;
+    height: 100%;
+    font-size: 18px;
+    /* color: #353535; */
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: salmon; */
+}
+
+/* INÍCIO DO CARD */
+
+.cardGeral {
+    width: 380px;
+    height: 340px;
+    /* background: #FFC805; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.cardTras {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    width: 360px;
+    height: 310px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    transition: 0.3s;
+}
+
+.cardFrente {
+    position: absolute;
+    z-index: 1;
+    height: 320px;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.filhoTras1 {
+    height: 43%;
+    width: 50%;
+    margin-left: 55%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: 0.3s ease-out;
+}
+
+.filhoTras2 {
+    font-family: "Roboto";
+    height: 37%;
+    width: 88%;
+    margin-left: 6%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-weight: 100;
+    /* font-weight: bold; */
+    font-size: 16px;
+    line-height: 25px;
+    color: white;
+    transition: .5 ease-out;
+}
+
+.filhoTras3 {
+    height: 13%;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 16px;
+}
+
+.filhoTras3:first-child {
+    left: 0;
+}
+
+.filhoTras3 span {
+    height: 90%;
+    padding: 0px 10px;
+    background-color: #ffffff;
+    border-radius: 35px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.5s ease-out;
+    display: flex;
+    align-items: center;
+}
+
+/* FIM DO CARD */
+
+/* ------ INÍCIO DO EFEITO HOVER ------ */
+
+.cardGeral:hover img {
+    height: 160px;
+    border-radius: 15px;
+    /* box-shadow: 0 0 2.5pt 1.5pt rgba(255, 255, 255, 0.2); */
+    transition: all 0.5s ease;
+    transform: translateY(0%) translateX(-50%);
+}
+
+.cardGeral:hover .cardTras {
+    /* box-shadow: 0 0 3pt 1.5pt rgba(255, 255, 255, 0.2); */
+    box-shadow: 0 0 1pt 0.5pt #FFC805;
+    /* box-shadow: 0 0 3pt 4pt rgba(0, 0, 0, 0.3); */
+    background-color: #353535;
+    transition: background-color .5s ease-in;
+}
+
+.cardGeral:hover .filhoTras1 {
+    color: #FFC805;
+    transition: color .5s ease-in;
+}
+
+.cardGeral:hover span {
+    background-color: #7434A6;
+    transition: background-color .5s ease-in;
+}
+
+/* ------ FIM DO EFEITO HOVER ------ */
+
+/* FIM DO CONTEÚDO 1 */
+
+/* FIM DO BODY */

@@ -1,0 +1,340 @@
+/* INÍCIO DO BODY */
+
+/* INÍCIO DA HEADER */
+
+body {
+    font-family: "Roboto";
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+	width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+	background: #252525;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: #FFC805;
+}
+
+.header {
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-size: 20px;
+    /* position: fixed; */
+    width: 100%;
+    height: 70px;
+    /* background-color: #88E271; */
+    background-color: #8B4EBB;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 5px solid #6b3892;
+}
+
+.container {
+    width: 1065px;
+    height: 100%;
+    margin: 0px 130px;
+    display: flex;
+    align-items: center;
+    /* background-color: #E06BA3; */
+    background-color: #8B4EBB;
+}
+
+.container .logo {
+    height: 65px;
+}
+
+/* Estilo para a tag <nav> inteira */
+.nav {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+li {
+    list-style: none;
+    padding: 5px 15px;
+}
+
+.div_botoes {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    height: 45px;
+    font-family: "Roboto Condensed";
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 12px;
+    border: none;
+    padding: 15px;
+    text-shadow: -1.25px 0 white, 0 1.25px white, 1.25px 0 white, 0 -1.25px white;
+}
+
+.div_botoes button {
+    margin-left: 10px;
+}
+
+.button_login {
+    background-color: #FFE485;
+    outline: none;
+}
+
+.button_cadastro, .button_cadastroGrande {
+    background-color: #FFC805;
+    outline: none;
+}
+
+/* COMEÇO DO EFEITO DE HOVER */
+
+li:hover {
+    font-weight: bold;
+    box-shadow: 0 0 3pt 1pt white;
+    border-radius: 12px;
+    background-color: #7434A6;
+}
+
+.button_login:hover, .button_cadastro:hover {
+    /* border: 1px solid white; */
+    /* outline: 1px solid white; */
+    box-shadow: 0 0 3pt 2pt #353535;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.button_cadastroGrande:hover {
+    box-shadow: 0 0 3pt 2pt white;
+    border-radius: 12px;
+    cursor: pointer; 
+}
+
+/* FIM DO EFEITO DE HOVER */
+
+/* FIM DA HEADER */
+
+/* INÍCIO DO MODAL */
+
+/* Background do modal */
+
+.modal, .modal2 {
+    display: none; /* Escondido inicialmente */
+    position: fixed; /* Posição fixa na tela */
+    z-index: 1; /* Está à frente de tudo */
+    /* left: 0;
+    top: 0; */
+    width: 100%; /* Tela inteira */
+    height: 80%; /* Tela inteira */
+    align-items: center;
+    justify-content: center;
+    overflow: auto; /* Caso necessite de scroll, autoriza */
+    background-color: rgba(0,0,0,0.4);
+}
+  
+  /* Conteúdo do modal */
+.modal_content, .modal_content2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    font-family: "Roboto";
+    background-color: #8B4EBB;
+    color: white;
+    padding: 20px;
+    width: 30%; /* Depende do tamanho da tela */
+    border-radius: 25px;
+}
+
+.modal_cima, .modal_cima2 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+}
+
+.modal_baixo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
+    color: #353535;
+}
+  
+/* Botão fechar */
+#fechar, #fechar2 {
+    color: #FFC805;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+#fechar:hover,
+#fechar:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#fechar2:hover,
+#fechar2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#botao_enviar {
+    padding: 10px 25px;
+    margin-top: 15px;
+    background-color: #FFC805;
+    outline: none;
+}
+
+#botao_enviar:hover {
+    cursor: pointer;
+}
+
+.modal_baixo input {
+    color: #353535;
+    border: 0 none;
+    border-radius: 15px;
+    width: 80%;
+}
+
+/* FIM DO MODAL */
+
+.conteudo1 {
+    width: 100%;
+    height: 492px;
+    display: flex;
+    justify-content: center;
+    background-image: url("../img/misc/fundoLoginCadastro_ajustado.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container_conteudo1 {
+    font-family: "Roboto Condensed";
+    width: 1065px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.conteudo1_metade_1 {
+    font-family: "Roboto";
+    width: 40%;
+    height: 65%;
+    font-size: 64px;
+    line-height: 75px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* background-color: yellowgreen; */
+}
+
+.pokebolas {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+input {
+    font-family: "Roboto";
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    text-shadow: -1.25px 0 black, 0 1.25px black, 1.25px 0 black, 0 -1.25px black;
+}
+
+input:focus {
+    box-shadow: 0 0 1pt 1pt #FFC805;
+    outline: none;
+}
+
+.conteudo1_metade_2 input {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    border: none;
+    height: 40px;
+    width: 98%;
+}
+
+.button_cadastroGrande {
+    padding: 10px 25px;
+}
+
+.conteudo1_metade_2 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFC805;
+    width: 33%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* background-color: salmon; */
+}
+
+.entradas {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-evenly;
+}
+
+.botao {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.botao span {
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.botao:hover span {
+    cursor: pointer;
+}
+
+ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0;
+}
+
+/* FIM DO BODY */
+
+/* FIM DO BODY */
