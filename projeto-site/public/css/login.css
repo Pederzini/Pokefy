@@ -3,6 +3,7 @@
 /* INÍCIO DA HEADER */
 
 body {
+    position: relative;
     font-family: "Roboto";
     margin: 0;
     padding: 0;
@@ -335,6 +336,69 @@ ul {
     margin: 0;
 }
 
-/* FIM DO BODY */
+/* INÍCIO DO CARREGAMENTO */
+
+#carregamento, #erro {
+    height: 80%;
+    width: 100%;
+	position: absolute;
+	display: none;
+	align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#container_carregamento {
+    width: 100%;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#container_erro {
+    width: 33%;
+    height: 70%;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#botao_erro {
+    height: 70%;
+    display: flex;
+    align-items: flex-start;
+    color: #FFC805;
+    font-size: 60px;
+}
+
+#container_carregamento img {
+    height: 150px;
+}
+
+#container_erro img {
+    height: 300px;
+}
+
+#container_carregamento h3, #container_erro h3  {
+	font-size: 32px;
+	color: white;
+	animation: piscar 1.5s linear infinite;
+}
+
+#x_erro:hover {
+    cursor: pointer;
+}
+
+@keyframes piscar {
+    20%{opacity: 1;}
+    40%{opacity: 0;}
+    60%{opacity: 1;}
+    80%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+/* FIM DO CARREGAMENTO */
 
 /* FIM DO BODY */

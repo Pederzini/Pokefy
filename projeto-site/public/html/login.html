@@ -55,7 +55,24 @@
         </div>
     </div>
 
-    <div class="conteudo1">
+    <div id="carregamento">
+        <div id="container_carregamento">
+            <img src="../img/misc/mew.gif">
+            <h3>Carregando...</h3>
+        </div>
+    </div>
+
+    <div id="erro">
+        <div id="container_erro">
+            <img src="../img/misc/gastly.gif">
+            <h3>Erro de login...</h3>
+        </div>
+        <div id="botao_erro">
+            <h3 id="x_erro" onclick="fechar()">&times;</h3>
+        </div>
+    </div>
+
+    <div id="desaparecer" class="conteudo1">
         <div class="container_conteudo1">
             <div class="conteudo1_metade_1">
                 Faça o login e se aventure por Hoenn!
@@ -131,6 +148,7 @@
     }
 
     function entrar() {
+        aguardar();
         var formulario = new URLSearchParams(new FormData(form_login));
         fetch("/usuarios/autenticar", {
             method: "POST",
@@ -151,6 +169,19 @@
             }
         });
         return false;
+    }
+
+    function aguardar() {
+        carregamento.style.display = "flex";
+    }
+
+    function finalizar_aguardar(resposta) {
+        carregamento.style.display = "none";
+        erro.style.display = "flex";
+    }
+
+    function fechar() {
+        erro.style.display = "none";
     }
 
 </script>
