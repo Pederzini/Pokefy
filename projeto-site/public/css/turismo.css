@@ -174,7 +174,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .direta img {
-    max-height: 100px;
+    max-height: 50px;
 }
 
 .tras1_filho1 {
@@ -277,7 +277,9 @@ body::-webkit-scrollbar-thumb {
 
 .cardTras1 img {
     max-height: 80px;
+    max-width: 120px;
 }
+
 /* FIM DO CARD */
 
 /* ------ INÍCIO DO EFEITO HOVER ------ */
