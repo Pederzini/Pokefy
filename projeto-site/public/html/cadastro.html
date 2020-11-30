@@ -28,6 +28,13 @@
             </div>
         </div>
     </div>
+
+    <div id="carregamento">
+        <div id="container_carregamento">
+            <img src="../img/misc/mew.gif">
+            <h3>Carregando...</h3>
+        </div>
+    </div>
         
     <!-- Modal -->
     <div id="meuModal" class="modal">
@@ -177,6 +184,7 @@
     }
 
     function cadastroCerto() {
+        finalizar_aguardar();
         conteudo_modal.innerHTML = `Deu tudo certo com o seu cadastro. Aproveite!`;
         meuModal.style.display = "block";
     }
@@ -190,6 +198,7 @@
     }
 
     function cadastrar() {
+        aguardar();
         var formulario = new URLSearchParams(new FormData(form_cadastro));
         fetch("/usuarios/cadastrar", {
             method: "POST",
@@ -203,10 +212,20 @@
                 console.log('Erro de cadastro!');
                 response.text().then(function (resposta) {
                     div_erro.innerHTML = resposta;
+                    finalizar_aguardar();
                 });
             }
         });
         return false;
     }
+
+    function aguardar() {
+        carregamento.style.display = "flex";
+    }
+
+    function finalizar_aguardar(resposta) {
+        carregamento.style.display = "none";
+    }
+
 
 </script>

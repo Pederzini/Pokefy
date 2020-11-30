@@ -49,7 +49,6 @@ body::-webkit-scrollbar-thumb {
     color: white;
     display: flex;
     align-items: center;
-    /* background-color: yellowgreen; */
 }
 
 .conteudo1_metade_2 {
@@ -58,7 +57,6 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    /* background-color: salmon; */
 }
 
 /* FIM DO CONTEÚDO 1 */
@@ -92,9 +90,6 @@ body::-webkit-scrollbar-thumb {
     font-size: 45px;
     text-transform: uppercase;
     text-shadow: -1.25px 0 white, 0 1.25px white, 1.25px 0 white, 0 -1.25px white;
-
-    /* color: #353535; */
-    /* background-color: lightblue; */
 }
 
 .conteudo2_metade_1 {
@@ -103,13 +98,11 @@ body::-webkit-scrollbar-thumb {
     height: 75%;
     font-size: 18px;
     font-weight: bold;
-    /* color: #353535; */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     float: left;
-    /* background-color: yellowgreen; */
 }
 
 .conteudo2_metade_1 img {
@@ -121,13 +114,11 @@ body::-webkit-scrollbar-thumb {
     width: 60%;
     height: 75%;
     font-size: 26px;
-    /* color: #181818; */
     line-height: 45px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     float: left;
-    /* background-color: salmon; */
 }
 
 /* FIM DO CONTEÚDO 2 */
@@ -161,7 +152,6 @@ body::-webkit-scrollbar-thumb {
     font-size: 26px;
     color: white;
     line-height: 45px;
-    /* background-color: lightblue; */
 }
 
 .container_conteudo3 img {
@@ -178,7 +168,6 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: center;
     background-color: #353535;
-    /* border-top: 5px solid #FFC805; */
 }
 
 .container_conteudo4 {
@@ -201,7 +190,6 @@ body::-webkit-scrollbar-thumb {
     line-height: 45px;
     align-items: center;
     justify-content: center;
-    /* background-color: lightblue; */
 }
 
 .container_conteudo4 img {
@@ -232,13 +220,11 @@ body::-webkit-scrollbar-thumb {
     width: 60%;
     height: 95%;
     font-size: 26px;
-    /* color: #181818; */
     line-height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
     float: left;
-    /* background-color: yellowgreen; */
 }
 
 .conteudo5_metade_1 img {
@@ -251,13 +237,11 @@ body::-webkit-scrollbar-thumb {
     height: 100%;
     font-size: 18px;
     font-weight: bold;
-    /* color: #353535; */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     float: left;
-    /* background-color: salmon; */
 }
 
 /* FIM DO CONTEÚDO 5 */

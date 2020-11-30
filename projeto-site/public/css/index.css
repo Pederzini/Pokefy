@@ -24,10 +24,8 @@ body::-webkit-scrollbar-thumb {
     font-family: "Roboto Condensed";
     font-style: normal;
     font-size: 20px;
-    /* position: fixed; */
     width: 100%;
     height: 70px;
-    /* background-color: #88E271; */
     background-color: #8B4EBB;
     display: flex;
     justify-content: center;
@@ -43,7 +41,6 @@ body::-webkit-scrollbar-thumb {
     margin: 0px 130px;
     display: flex;
     align-items: center;
-    /* background-color: #E06BA3; */
     background-color: #8B4EBB;
 }
 
@@ -105,18 +102,7 @@ button {
     outline: none;
 }
 
-/* COMEÇO DO EFEITO DE HOVER */
-/* 
-li:hover {
-    font-weight: bold;
-    box-shadow: 0 0 3pt 1pt white;
-    border-radius: 12px;
-    background-color: #7434A6;
-} */
-
 .button_login:hover, .button_cadastro:hover {
-    /* border: 1px solid white; */
-    /* outline: 1px solid white; */
     box-shadow: 0 0 3pt 2pt #353535;
     border-radius: 12px;
     cursor: pointer;
@@ -160,7 +146,6 @@ li:hover {
     align-items: flex-start;
     flex-direction: column;
     justify-content: space-evenly;
-    /* background-color: yellowgreen; */
 }
 
 .button_cadastroGrande {
@@ -174,7 +159,6 @@ li:hover {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    /* background-color: salmon; */
 }
 
 .conteudo2 {
@@ -195,12 +179,10 @@ li:hover {
 .conteudo2_cima {
     width: 100%;
     height: 30%;
-    /* background-color: lightblue; */
     display: flex;
     align-items: center;
     font-weight: bold;
     font-size: 30px;
-    /* color: #8B4EBB; */
 }
 
 .conteudo2_metade_1 {
@@ -210,7 +192,6 @@ li:hover {
     font-weight: bold;
     color: white;
     float: left;
-    /* background-color: yellowgreen; */
 }
 
 .conteudo2_metade_2 {
@@ -220,7 +201,6 @@ li:hover {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    /* background-color: salmon; */
 }
 
 ul {
@@ -237,7 +217,6 @@ li {
     font-size: 30px;
     color: white;
     list-style-image: url(../img/misc/bullet_yellow.png); 
-    /* list-style: none; */
 }
 
 .conteudo3 {
@@ -258,7 +237,6 @@ li {
     width: 100%;
     height: 15%;
     margin-top: 3%;
-    /* background-color: lightblue; */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -279,7 +257,6 @@ li {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* background-color: yellowgreen; */
 }
 
 .eu {
@@ -296,7 +273,6 @@ li {
     font-size: 26px;
     color: white;
     line-height: 45px;
-    /* background-color: salmon; */
 }
 
 /* FIM DO BODY */

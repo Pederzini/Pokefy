@@ -26,14 +26,9 @@ body::-webkit-scrollbar-thumb {
     height: 100%;
     width: 100%;
     margin: 0;
-    /* background-image: url("../img/misc/fundo_historia_ajustado.png");
-    background-repeat: repeat-y;
-    background-size: 1366px; */
-    /* background: url(../img/misc/fundoFossil_ajustado.png) center center; */
     background: url(../img/misc/fundoGeografia_ajustado.png) center center;
     background-position: center top;
     background-repeat: repeat;
-    /* background-size: cover; */
 }
 
 .conteudo {
@@ -43,7 +38,6 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* background-image: url("../img/misc/fundoHistory1.png"); */
     background-repeat: no-repeat;
 }
 
@@ -74,14 +68,12 @@ body::-webkit-scrollbar-thumb {
     height: 592px;
     display: flex;
     justify-content: center;
-    /* background-image: url("../img/misc/fundoHistory3.png"); */
     background-repeat: no-repeat;
     color: #FFFFFF;
 }
 
 .conteudo1:hover .fundo_estatico {
     animation: fadein 0.5s ease-in alternate;
-    /* Animation-fill-mode é usado para manter a animação no estado final */
     animation-fill-mode: forwards;
 }
 
@@ -142,8 +134,6 @@ body::-webkit-scrollbar-thumb {
     font-weight: bold;
     font-size: 45px;
     text-transform: uppercase;
-    /* color: #353535; */
-    /* background-color: lightblue; */
 }
 
 .conteudo1_metade_1 {
@@ -152,13 +142,10 @@ body::-webkit-scrollbar-thumb {
     height: 75%;
     font-size: 18px;
     font-weight: bold;
-    /* color: #353535; */
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* justify-content: center; */
     float: left;
-    /* background-color: yellowgreen; */
 }
 
 .conteudo1_metade_1 img {
@@ -184,8 +171,6 @@ body::-webkit-scrollbar-thumb {
 .metade1_filho1, .metade2_filho1 {
     height: 30%;
     width: 90%;
-    /* align-items: left; */
-    /* justify-content: flex-start; */
 }
 
 .conteudo1_metade_1 .circle1_poke {
@@ -218,13 +203,11 @@ body::-webkit-scrollbar-thumb {
     height: 75%;
     font-size: 22px;
     margin-left: 5%;
-    /* color: #181818; */
     line-height: 45px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     float: left;
-    /* background-color: salmon; */
 }
 
 /* FIM DO CONTEÚDO 1 */
@@ -237,14 +220,12 @@ body::-webkit-scrollbar-thumb {
     height: 592px;
     display: flex;
     justify-content: center;
-    /* background-image: url("../img/misc/fundoHistory2.png"); */
     background-repeat: no-repeat;
     color: #ffffff;
 }
 
 .conteudo2:hover .fundo_estatico {
     animation: fadein 0.5s ease-in alternate;
-    /* Animation-fill-mode é usado para manter a animação no estado final */
     animation-fill-mode: forwards;
 }
 
@@ -284,8 +265,6 @@ body::-webkit-scrollbar-thumb {
     font-weight: bold;
     font-size: 45px;
     text-transform: uppercase;
-    /* color: #353535; */
-    /* background-color: lightblue; */
 }
 
 .conteudo2_metade_1 {
@@ -294,13 +273,11 @@ body::-webkit-scrollbar-thumb {
     height: 75%;
     margin-right: 5%;
     font-size: 22px;
-    /* color: #181818; */
     line-height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
     float: left;
-    /* background-color: yellowgreen; */
 }
 
 .conteudo2_metade_1 img {
@@ -314,13 +291,11 @@ body::-webkit-scrollbar-thumb {
     height: 75%;
     font-size: 18px;
     font-weight: bold;
-    /* color: #353535; */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     float: left;
-    /* background-color: salmon; */
 }
 
 .conteudo2_metade_2 .circle1_poke {
@@ -345,7 +320,6 @@ body::-webkit-scrollbar-thumb {
     height: 592px;
     display: flex;
     justify-content: center;
-    /* background-image: url("../img/misc/fundoHistory3.png"); */
     background-repeat: no-repeat;
     color: #FFFFFF;
     transition: all 0.5s ease-out;
@@ -360,7 +334,6 @@ body::-webkit-scrollbar-thumb {
 
 .conteudo3:hover .fundo_estatico {
     animation: fadein 0.5s ease-in alternate;
-    /* Animation-fill-mode é usado para manter a animação no estado final */
     animation-fill-mode: forwards;
 }
 
@@ -401,8 +374,6 @@ body::-webkit-scrollbar-thumb {
     font-weight: bold;
     font-size: 45px;
     text-transform: uppercase;
-    /* color: #353535; */
-    /* background-color: lightblue; */
 }
 
 .conteudo3_metade_1 {
@@ -411,13 +382,10 @@ body::-webkit-scrollbar-thumb {
     height: 75%;
     font-size: 18px;
     font-weight: bold;
-    /* color: #353535; */
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* justify-content: center; */
     float: left;
-    /* background-color: yellowgreen; */
 }
 
 .conteudo3_metade_1 .circle2 {
@@ -441,8 +409,6 @@ body::-webkit-scrollbar-thumb {
 .metade1_filho1, .metade2_filho1 {
     height: 30%;
     width: 90%;
-    /* align-items: left; */
-    /* justify-content: flex-start; */
 }
 
 .conteudo3_metade_1 .circle1_poke {
@@ -475,13 +441,11 @@ body::-webkit-scrollbar-thumb {
     height: 75%;
     font-size: 22px;
     margin-left: 5%;
-    /* color: #181818; */
     line-height: 45px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     float: left;
-    /* background-color: salmon; */
 }
 
 /* FIM DO CONTEÚDO 3 */

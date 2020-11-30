@@ -26,14 +26,9 @@ body::-webkit-scrollbar-thumb {
     height: 100%;
     width: 100%;
     margin: 0;
-    /* background-image: url("../img/misc/fundo_historia_ajustado.png");
-    background-repeat: repeat-y;
-    background-size: 1366px; */
-    /* background: url(../img/misc/fundoFossil_ajustado.png) center center; */
     background: url(../img/misc/fundoFossil3_ajustado.png) center center;
     background-position: center top;
     background-repeat: repeat;
-    /* background-size: cover; */
 }
 
 .conteudo {
@@ -43,7 +38,6 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* background-image: url("../img/misc/fundoHistory1.png"); */
     background-repeat: no-repeat;
 }
 
@@ -73,7 +67,6 @@ body::-webkit-scrollbar-thumb {
     height: 592px;
     display: flex;
     justify-content: center;
-    /* background-image: url("../img/misc/fundoHistory2.png"); */
     background-repeat: no-repeat;
     color: #ffffff;
 }
@@ -93,8 +86,6 @@ body::-webkit-scrollbar-thumb {
     font-weight: bold;
     font-size: 45px;
     text-transform: uppercase;
-    /* color: #353535; */
-    /* background-color: lightblue; */
 }
 
 .conteudo1_metade_1 {
@@ -103,13 +94,11 @@ body::-webkit-scrollbar-thumb {
     height: 75%;
     margin-right: 7%;
     font-size: 22px;
-    /* color: #181818; */
     line-height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
     float: left;
-    /* background-color: yellowgreen; */
 }
 
 .conteudo1_metade_1 img {
@@ -122,13 +111,11 @@ body::-webkit-scrollbar-thumb {
     height: 75%;
     font-size: 18px;
     font-weight: bold;
-    /* color: #353535; */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     float: left;
-    /* background-color: salmon; */
 }
 
 /* FIM DO CONTEÚDO 1 */
@@ -140,7 +127,6 @@ body::-webkit-scrollbar-thumb {
     height: 592px;
     display: flex;
     justify-content: center;
-    /* background-image: url("../img/misc/fundoHistory3.png"); */
     background-repeat: no-repeat;
     color: #FFFFFF;
 }
@@ -160,8 +146,6 @@ body::-webkit-scrollbar-thumb {
     font-weight: bold;
     font-size: 45px;
     text-transform: uppercase;
-    /* color: #353535; */
-    /* background-color: lightblue; */
 }
 
 .conteudo2_metade_1 {
@@ -170,13 +154,11 @@ body::-webkit-scrollbar-thumb {
     height: 75%;
     font-size: 18px;
     font-weight: bold;
-    /* color: #353535; */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     float: left;
-    /* background-color: yellowgreen; */
 }
 
 .conteudo2_metade_1 img {
@@ -187,13 +169,11 @@ body::-webkit-scrollbar-thumb {
     width: 60%;
     height: 75%;
     font-size: 22px;
-    /* color: #181818; */
     line-height: 45px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     float: left;
-    /* background-color: salmon; */
 }
 
 /* FIM DO CONTEÚDO 2 */
@@ -205,7 +185,6 @@ body::-webkit-scrollbar-thumb {
     height: 700px;
     display: flex;
     justify-content: center;
-    /* background-image: url("../img/misc/fundoHistory4.png"); */
     color: #FFFFFF;
 }
 
@@ -227,8 +206,6 @@ body::-webkit-scrollbar-thumb {
     font-weight: bold;
     font-size: 45px;
     text-transform: uppercase;
-    /* color: #353535; */
-    /* background-color: lightblue; */
 }
 
 .conteudo3_cima {
@@ -241,7 +218,6 @@ body::-webkit-scrollbar-thumb {
     font-size: 22px;
     color: white;
     line-height: 45px;
-    /* background-color: lightblue; */
 }
 
 .conteudo3_baixo {
@@ -264,7 +240,6 @@ body::-webkit-scrollbar-thumb {
     height: 592px;
     display: flex;
     justify-content: center;
-    /* background-image: url("../img/misc/fundoHistory5.png"); */
     background-repeat: no-repeat;
     color: #ffffff;
 }
@@ -284,8 +259,6 @@ body::-webkit-scrollbar-thumb {
     font-weight: bold;
     font-size: 45px;
     text-transform: uppercase;
-    /* color: #353535; */
-    /* background-color: lightblue; */
 }
 
 .conteudo4_metade_1 {
@@ -294,13 +267,11 @@ body::-webkit-scrollbar-thumb {
     height: 75%;
     margin-right: 7%;
     font-size: 22px;
-    /* color: #181818; */
     line-height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
     float: left;
-    /* background-color: yellowgreen; */
 }
 
 .conteudo4_metade_2 {
@@ -308,13 +279,11 @@ body::-webkit-scrollbar-thumb {
     height: 75%;
     font-size: 18px;
     font-weight: bold;
-    /* color: #353535; */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     float: left;
-    /* background-color: salmon; */
 }
 
 /* FIM DO CONTEÚDO 4 */
@@ -326,7 +295,6 @@ body::-webkit-scrollbar-thumb {
     height: 592px;
     display: flex;
     justify-content: center;
-    /* background-image: url("../img/misc/fundoHistory6.png"); */
     background-repeat: no-repeat;
     color: #FFFFFF;
 }
@@ -346,8 +314,6 @@ body::-webkit-scrollbar-thumb {
     font-weight: bold;
     font-size: 45px;
     text-transform: uppercase;
-    /* color: #353535; */
-    /* background-color: lightblue; */
 }
 
 .conteudo5_metade_1 {
@@ -356,13 +322,11 @@ body::-webkit-scrollbar-thumb {
     height: 75%;
     font-size: 18px;
     font-weight: bold;
-    /* color: #353535; */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     float: left;
-    /* background-color: yellowgreen; */
 }
 
 .conteudo5_metade_1 img {
@@ -374,13 +338,11 @@ body::-webkit-scrollbar-thumb {
     width: 40%;
     height: 75%;
     font-size: 22px;
-    /* color: #181818; */
     line-height: 45px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     float: left;
-    /* background-color: salmon; */
 }
 
 /* FIM DO CONTEÚDO 5 */
