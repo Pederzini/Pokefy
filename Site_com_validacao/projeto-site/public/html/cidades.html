@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
+    <link rel="stylesheet" href="../css/cidades.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="icon" href="../img/logo/logo.png">
+    <script type="text/javascript" src="../funcoes.js"></script>
+    <script>
+        let usuario;
+        verificar_autenticacao();
+    </script>
+    <title>Pokéfy - Cidades</title>
+</head>
+<body onload="verificar_autenticacao()">
+    <div class="header">
+        <div class="container">
+            <a href="indexL.html"><img class="logo" src="../img/logo/logo.png" alt=""></a>
+            <div class="nav">
+                <a class="inicio" href="indexL.html">Início</a>
+                <div class="dropdown">
+                    <button class="regiao">A região
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="conteudo_dropdown">
+                        <a href="cidades.html">Cidades</a>
+                        <a href="geografia.html">Geografia</a>
+                        <a href="historia.html">História</a>
+                        <a href="turismo.html">Turismo</a>
+                    </div>
+                    <!-- <a class="regiao" href="historia.html">A Região</a> -->
+                </div>
+                <a class="eventos" href="eventos.html">Eventos</a>
+                <a class="pokedex" href="pokedex.html">Pokédex de Hoenn</a>       
+            </div>
+            <div class="div_botoes">
+                <button class="button_usuario"><b id="b_usuario2"></b></button>
+                <button class="button_logout" onclick="logoff()">logout</button>
+            </div>
+        </div>
+    </div>
+    <div class="conteudo_pai">
+        <div class="conteudo">        
+            <div class="capa">
+                <img src="../img/pokemon/Minun.png" alt="">
+                Cidades
+                <img src="../img/pokemon/Plusle.png" alt="">
+            </div>
+        </div>
+        <div class="conteudo1">
+            <div class="container_conteudo1">
+                <div class="conteudo1_metade_1">
+                    <div class="cardGeral">
+                        <img class="cardFrente" src="../img/cities/Littleroot.png" alt="">
+                        <div class="cardTras">
+                            <div class="filhoTras1">
+                                Littleroot<br>
+                                Town
+                            </div>
+                            <div class="filhoTras2">
+                                Banhando-se em meio à natureza vibrante,
+                                esta cidade simples não é sombreada por nenhuma tonalidade
+                            </div>
+                            <div class="filhoTras3">
+                                <label>Local de interesse:</label>
+                                <span>Laboratório</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardGeral">
+                        <img class="cardFrente" src="../img/cities/Petalburg.png" alt="">
+                        <div class="cardTras">
+                            <div class="filhoTras1">
+                                Petalburg<br>
+                                City
+                            </div>
+                            <div class="filhoTras2">
+                                Um sopro de sal está sempre no ar nesta cidade,
+                                que é banhada pela costa do oceano
+                            </div>
+                            <div class="filhoTras3">
+                                Local de interesse:
+                                <span>Casa do Wally</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardGeral">
+                        <img class="cardFrente" src="../img/cities/Dewford.png" alt="">
+                        <div class="cardTras">
+                            <div class="filhoTras1">
+                                Dewford<br>
+                                Town
+                            </div>
+                            <div class="filhoTras2">
+                                As novas tendências estão sempre na moda
+                                entre os habitantes desta pequena cidade insular
+                            </div>
+                            <div class="filhoTras3">
+                                Local de interesse:
+                                <span>Ginásio de Dewford</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardGeral">
+                        <img class="cardFrente" src="../img/cities/Mauville.png" alt="">
+                        <div class="cardTras">
+                            <div class="filhoTras1">
+                                Mauville<br>
+                                City
+                            </div>
+                            <div class="filhoTras2">
+                                Esta grande cidade está localizada no coração da região de Hoenn, no
+                                cruzamento de seu passado nostálgico e das novas tecnologias
+                            </div>
+                            <div class="filhoTras3">
+                                Local de interesse:
+                                <span>Bicicletaria do Rydel</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardGeral">
+                        <img class="cardFrente" src="../img/cities/Fallarbor.png" alt="">
+                        <div class="cardTras">
+                            <div class="filhoTras1">
+                                Fallarbor<br>
+                                Town
+                            </div>
+                            <div class="filhoTras2">
+                                Cidade formada por estudiosos que se
+                                reúnem para pesquisar meteoritos
+                            </div>
+                            <div class="filhoTras3">
+                                Local de interesse:
+                                <span>Tutor de Movimentos</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardGeral">
+                        <img class="cardFrente" src="../img/cities/Fortree.png" alt="">
+                        <div class="cardTras">
+                            <div class="filhoTras1">
+                                Fortree<br>
+                                City
+                            </div>
+                            <div class="filhoTras2">
+                                As pessoas e os Pokémon desta cidade seguem os
+                                sinais da natureza para subir a cada manhã e terminar cada dia
+                            </div>
+                            <div class="filhoTras3">
+                                Local de interesse:
+                                <span>Casas suspensas</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardGeral">
+                        <img class="cardFrente" src="../img/cities/Mossdeep.png" alt="">
+                        <div class="cardTras">
+                            <div class="filhoTras1">
+                                Mossdeep<br>
+                                City
+                            </div>
+                            <div class="filhoTras2">
+                                A pesquisa está em andamento dia e noite nesta cidade, tudo
+                                na esperança de compreender os confins do espaço
+                            </div>
+                            <div class="filhoTras3">
+                                Local de interesse:
+                                <span>Estação espacial</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardGeral">
+                        <img class="cardFrente" src="../img/cities/Pacifidlog.png" alt="">
+                        <div class="cardTras">
+                            <div class="filhoTras1">
+                                Pacifidlog<br>
+                                Town
+                            </div>
+                            <div class="filhoTras2">
+                                Esta cidade surgiu pela primeira vez como um armazém flutuante
+                                usado por pessoas que vivem na superfície do oceano
+                            </div>
+                            <div class="filhoTras3">
+                                Local de interesse:
+                                <span>Pokémon Fan Club</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="conteudo1_metade_2">
+                    <div class="cardGeral">
+                        <img class="cardFrente" src="../img/cities/Oldale.png" alt="">
+                        <div class="cardTras">
+                            <div class="filhoTras1">
+                                Oldale<br>
+                                Town
+                            </div>
+                            <div class="filhoTras2">
+                                Uma cidade onde o contraste entre flores
+                                coloridas e florestas verdes e profundas é mais bonito
+                            </div>
+                            <div class="filhoTras3">
+                                Local de interesse:
+                                <span>Primeiro Poké Mart</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardGeral">
+                        <img class="cardFrente" src="../img/cities/Rustboro.png" alt="">
+                        <div class="cardTras">
+                            <div class="filhoTras1">
+                                Rustboro<br>
+                                City
+                            </div>
+                            <div class="filhoTras2">
+                                Esta cidade é o principal centro industrial da região
+                                de Hoenn, com a Devon Corporation como seu coração
+                            </div>
+                            <div class="filhoTras3">
+                                Local de interesse:
+                                <span>Devon Corporation</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardGeral">
+                        <img class="cardFrente" src="../img/cities/Slateport.png" alt="">
+                        <div class="cardTras">
+                            <div class="filhoTras1">
+                                Slateport<br>
+                                City
+                            </div>
+                            <div class="filhoTras2">
+                                Pessoas de diferentes regiões se reúnem e se misturam
+                                nesta agitada cidade portuária
+                            </div>
+                            <div class="filhoTras3">
+                                Local de interesse:
+                                <span>Mercado ao ar livre</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardGeral">
+                        <img class="cardFrente" src="../img/cities/Verdanturf.png" alt="">
+                        <div class="cardTras">
+                            <div class="filhoTras1">
+                                Verdanturf<br>
+                                Town
+                            </div>
+                            <div class="filhoTras2">
+                                Graças ao padrão de vento predominante, esta cidade é
+                                sempre mantida livre de cinzas vulcânicas em queda
+                            </div>
+                            <div class="filhoTras3">
+                                Local de interesse:
+                                <span>Tenda de Batalha</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardGeral">
+                        <img class="cardFrente" src="../img/cities/Lavaridge.png" alt="">
+                        <div class="cardTras">
+                            <div class="filhoTras1">
+                                Lavaridge<br>
+                                Town
+                            </div>
+                            <div class="filhoTras2">
+                                Um local popular na região de Hoenn, graças às
+                                suas fontes termais, que dizem curar qualquer doença
+                            </div>
+                            <div class="filhoTras3">
+                                Local de interesse:
+                                <span>Fontes termais</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardGeral">
+                        <img class="cardFrente" src="../img/cities/Lilycove.png" alt="">
+                        <div class="cardTras">
+                            <div class="filhoTras1">
+                                Lilycove<br>
+                                City
+                            </div>
+                            <div class="filhoTras2">
+                                Este destino turístico está passando por um renascimento,
+                                graças à popularidade de seus Pokémon Contest Spectaculars
+                            </div>
+                            <div class="filhoTras3">
+                                Local de interesse:
+                                <span>Museu de arte</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardGeral">
+                        <img class="cardFrente" src="../img/cities/Sootopolis.png" alt="">
+                        <div class="cardTras">
+                            <div class="filhoTras1">
+                                Sootopolis<br>
+                                City
+                            </div>
+                            <div class="filhoTras2">
+                                Esta cidade, que surge da cratera da queda de um grande meteoróide,
+                                só pode ser alcançada através do mar ou do céu
+                            </div>
+                            <div class="filhoTras3">
+                                Local de interesse:
+                                <span>Caverna da origem</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardGeral">
+                        <img class="cardFrente" src="../img/cities/Ever_Grande.png" alt="">
+                        <div class="cardTras">
+                            <div class="filhoTras1">
+                                Ever Grande<br>
+                                City
+                            </div>
+                            <div class="filhoTras2">
+                                Esta cidade é coberta por uma profusão de flores coloridas. Além disso, acolhe a grande
+                                Liga Pokémon
+                            </div>
+                            <div class="filhoTras3">
+                                Local de interesse:
+                                <span>Victory road</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <footer>
+        <div class="container_footer">
+            <div class="footer_logo">
+                <img class="logo" src="../img/logo/logo.png" alt="">
+                Pokéfy
+            </div>
+            <div class="amor">
+                Feito com <img src="../img/misc/heart.gif" style="height: 20px"> por <b>Victor Pederzini</b>
+            </div>
+            <div class="footer_social">
+                <img onclick="linkedin()" src="../img/misc/linkedin.png" alt="">
+                <span onclick="linkedin()">Victor Pederzini</span>         
+                <img onclick="github()" src="../img/misc/github.png" alt=""></a>
+                <span onclick="github()">Pederzini</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+<script>
+    function linkedin() {
+        window.location.href = "https://br.linkedin.com/in/victor-pederzini-87b3679a";
+    }
+    function github() {
+        window.location.href = "https://github.com/Pederzini";
+    }
+</script>

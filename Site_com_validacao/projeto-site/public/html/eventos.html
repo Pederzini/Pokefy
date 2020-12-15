@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
+    <link rel="stylesheet" href="../css/eventos.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="icon" href="../img/logo/logo.png">
+    <script type="text/javascript" src="../funcoes.js"></script>
+    <script>
+        let usuario;
+        verificar_autenticacao();
+    </script>
+    <title>Pokéfy - Eventos</title>
+</head>
+<body onload="verificar_autenticacao()">
+    <div class="header">
+        <div class="container">
+            <a href="indexL.html"><img class="logo" src="../img/logo/logo.png" alt=""></a>
+            <div class="nav">
+                <a class="inicio" href="indexL.html">Início</a>
+                <div class="dropdown">
+                    <button class="regiao">A região
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="conteudo_dropdown">
+                        <a href="cidades.html">Cidades</a>
+                        <a href="geografia.html">Geografia</a>
+                        <a href="historia.html">História</a>
+                        <a href="turismo.html">Turismo</a>
+                    </div>
+                    <!-- <a class="regiao" href="historia.html">A Região</a> -->
+                </div>
+                <a class="eventos" href="eventos.html">Eventos</a>
+                <a class="pokedex" href="pokedex.html">Pokédex de Hoenn</a>       
+            </div>
+            <div class="div_botoes">
+                <button class="button_usuario"><b id="b_usuario2"></b></button>
+                <button class="button_logout" onclick="logoff()">logout</button>
+            </div>
+        </div>
+    </div>
+    <div class="conteudo_pai">
+        <div class="conteudo">        
+            <div class="capa">
+                <img src="../img/pokemon/Altaria_Mega.png" alt="">
+                Eventos
+                <img src="../img/pokemon/Gardevoir_Mega.png" alt="">
+            </div>
+        </div>
+        <div class="conteudo0">
+            <div class="container_conteudo0">
+                <div class="conteudo0_cima">
+                    <img src="../img/misc/line_yellow.png" alt="">
+                    Concursos
+                    <img src="../img/misc/line_yellow.png" alt="">
+                </div>
+                <div class="conteudo0_metade_1">
+                    <img src="../img/misc/contests.png" alt="">
+                </div>
+                <div class="conteudo0_metade_2">
+                    Nem sempre os treinadores estão batalhando, pois também
+                    participam dos Concursos Pokémon. Os concursos são divididos
+                    por níveis (Normal, Super, Hyper e Master) e por categorias
+                    (Cool, Beauty, Smart, Cute e Tough). Para disputar, deve-se
+                    escolher uma categoria e posteriormente um Pokémon. 
+                </div>
+            </div>
+        </div>
+        <div class="conteudo1">
+            <div class="container_conteudo1">
+                <div class="conteudo1_cima">
+                    <img src="../img/misc/line_yellow.png" alt="">
+                    Ginásios
+                    <img src="../img/misc/line_yellow.png" alt="">
+                </div>
+                <div class="conteudo1_metade_1">
+                    <div class="insignias_geral">
+                        <div class="insignias">
+                            <img src="../img/gyms/stone.png" alt="">
+                            <img src="../img/gyms/knuckle.png" alt="">
+                            <img src="../img/gyms/dynamo.png" alt="">
+                            <img src="../img/gyms/heat.png" alt="">
+                            <img src="../img/gyms/balance.png" alt="">
+                            <img src="../img/gyms/feather.png" alt="">
+                            <img src="../img/gyms/mind.png" alt="">
+                            <img src="../img/gyms/rain.png" alt="">
+                        </div>
+                        Insígnias dos ginásios de Hoenn
+                    </div>
+                </div>
+                <div class="conteudo1_metade_2">
+                    No mundo das batalhas Pokémon, os ginásios são de
+                    extrema relevância para os treinadores. Para um
+                    treinador se tornar um mestre Pokémon em Hoenn,
+                    este deve vencer os oito ginásios de lá e, depois,
+                    vencer a Liga Pokémon. Cada ginásio tem suas peculiaridades,
+                    conheça um pouco de cada um deles a seguir
+                </div>
+            </div>
+        </div>
+        <div class="conteudo2">
+            <div class="container_conteudo2">
+                <div class="conteudo2_cima">
+                    <img src="../img/misc/line_yellow.png" alt="">
+                    Ginásio - Pedra
+                    <img src="../img/gyms/stone.png" alt="" style="width: 70px">
+                    <img src="../img/misc/line_yellow.png" alt="">
+                </div>
+                <div class="conteudo2_metade_1">
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #C7B78B 0%, #C7B78B 50%, #8FA8DD 50%, #8FA8DD 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/aerodactyl.gif" alt="">
+                        <span>Aerodactyl</span>
+                        <div class="tipo_rock_flying">
+                            <img class="img_dois_tipos" src="../img/types/type_rock.png" alt="">
+                            <label>Pedra</label>
+                            <img class="img_dois_tipos" src="../img/types/type_flying.png" alt="">
+                            <label>Voador</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #C7B78B 0%, #C7B78B 50%, #D97746 50%, #D97746 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/golem.gif" alt="">
+                        <span>Golem</span>
+                        <div class="tipo_rock_ground">
+                            <img class="img_dois_tipos" src="../img/types/type_rock.png" alt="">
+                            <label>Pedra</label>
+                            <img class="img_dois_tipos" src="../img/types/type_ground.png" alt="">
+                            <label>Terra</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #C7B78B 0%, #C7B78B 50%, #4D90D5 50%, #4D90D5 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/omastar.gif" alt="">
+                        <span>Omastar</span>
+                        <div class="tipo_rock_water">
+                            <img class="img_dois_tipos" src="../img/types/type_rock.png" alt="">
+                            <label>Pedra</label>
+                            <img class="img_dois_tipos" src="../img/types/type_water.png" alt="">
+                            <label>Água</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #C7B78B 0%, #C7B78B 50%, #4D90D5 50%, #4D90D5 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/kabutops.gif" alt="">
+                        <span>Kabutops</span>
+                        <div class="tipo_rock_water">
+                            <img class="img_dois_tipos" src="../img/types/type_rock.png" alt="">
+                            <label>Pedra</label>
+                            <img class="img_dois_tipos" src="../img/types/type_water.png" alt="">
+                            <label>Água</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #5A8EA1 0%, #5A8EA1 50%, #D97746 50%, #D97746 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/steelix.gif" alt="">
+                        <span>Steelix</span>
+                        <div class="tipo_steel_ground">
+                            <img class="img_dois_tipos" src="../img/types/type_steel.png" alt="">
+                            <label>Aço</label>
+                            <img class="img_dois_tipos" src="../img/types/type_ground.png" alt="">
+                            <label>Terra</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background-color: #C7B78B">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/nosepass.gif" alt="">
+                        <span>Nosepass</span>
+                        <div class="tipo_rock">
+                            <img class="img_um_tipo" src="../img/types/type_rock.png" alt="">
+                            <label>Pedra</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="conteudo2_metade_2">
+                    <img class="roxanne" src="../img/gyms/roxanne.png" alt="">
+                    Roxanne, líder do ginásio de Pedra
+                </div>
+            </div>
+        </div>
+        <div class="conteudo3">
+            <div class="container_conteudo3">
+                <div class="conteudo3_cima">
+                    <img src="../img/misc/line_yellow.png" alt="">
+                    Ginásio - Lutador
+                    <img src="../img/gyms/knuckle.png" alt="" style="width: 70px">
+                    <img src="../img/misc/line_yellow.png" alt="">
+                </div>
+                <div class="conteudo3_metade_1">
+                    <img class="brawly" src="../img/gyms/brawly.png" alt="">
+                    Brawly, líder do ginásio de Lutador
+                </div>
+                <div class="conteudo3_metade_2">
+                    <div class="time_ginasio" style="background-color: #CE4069">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/hitmonlee.gif" alt="">
+                        <span>Hitmonlee</span>
+                        <div class="tipo_fighting">
+                            <img class="img_um_tipo" src="../img/types/type_fighting.png" alt="">
+                            <label>Lutador</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background-color: #CE4069">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/hitmonchan.gif" alt="">
+                        <span>Hitmonchan</span>
+                        <div class="tipo_fighting">
+                            <img class="img_um_tipo" src="../img/types/type_fighting.png" alt="">
+                            <label>Lutador</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background-color: #CE4069">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/machamp.gif" alt="">
+                        <span>Machamp</span>
+                        <div class="tipo_fighting">
+                            <img class="img_um_tipo" src="../img/types/type_fighting.png" alt="">
+                            <label>Lutador</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #CE4069 0%, #CE4069 50%, #F97176 50%, #F97176 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/Medicham.gif" alt="">
+                        <span>Medicham</span>
+                        <div class="tipo_fighting_psychic">
+                            <img class="img_dois_tipos" src="../img/types/type_fighting.png" alt="">
+                            <label>Lutador</label>
+                            <img class="img_dois_tipos" src="../img/types/type_psychic.png" alt="">
+                            <label>Psíquico</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background-color: #CE4069">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/hitmontop.gif" alt="">
+                        <span>Hitmontop</span>
+                        <div class="tipo_fighting">
+                            <img class="img_um_tipo" src="../img/types/type_fighting.png" alt="">
+                            <label>Lutador</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background-color: #CE4069">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/hariyama.gif" alt="">
+                        <span>Hariyama</span>
+                        <div class="tipo_fighting">
+                            <img class="img_um_tipo" src="../img/types/type_fighting.png" alt="">
+                            <label>Lutador</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div class="conteudo4">
+            <div class="container_conteudo4">
+                <div class="conteudo4_cima">
+                    <img src="../img/misc/line_yellow.png" alt="">
+                    Ginásio - Elétrico
+                    <img src="../img/gyms/dynamo.png" alt="" style="width: 70px">
+                    <img src="../img/misc/line_yellow.png" alt="">
+                </div>
+                <div class="conteudo4_metade_1">
+                    <div class="time_ginasio" style="background-color: #F3D23B">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/electabuzz.gif" alt="">
+                        <span>Electabuzz</span>
+                        <div class="tipo_electric">
+                            <img class="img_um_tipo" src="../img/types/type_electric.png" alt="">
+                            <label>Elétrico</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background-color: #F3D23B">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/raichu.gif" alt="">
+                        <span>Raichu</span>
+                        <div class="tipo_electric">
+                            <img class="img_um_tipo" src="../img/types/type_electric.png" alt="">
+                            <label>Elétrico</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background-color: #F3D23B">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/ampharos.gif" alt="">
+                        <span>Ampharos</span>
+                        <div class="tipo_electric">
+                            <img class="img_um_tipo" src="../img/types/type_electric.png" alt="">
+                            <label>Elétrico</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background-color: #F3D23B">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/electrode.gif" alt="">
+                        <span>Electrode</span>
+                        <div class="tipo_electric">
+                            <img class="img_um_tipo" src="../img/types/type_electric.png" alt="">
+                            <label>Elétrico</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #5A8EA1 0%, #5A8EA1 50%, #F3D23B 50%, #F3D23B 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/magneton.gif" alt="">
+                        <span>Magneton</span>
+                        <div class="tipo_steel_electric">
+                            <img class="img_dois_tipos" src="../img/types/type_steel.png" alt="">
+                            <label>Aço</label>
+                            <img class="img_dois_tipos" src="../img/types/type_electric.png" alt="">
+                            <label>Elétrico</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background-color: #F3D23B">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/manectric.gif" alt="">
+                        <span>Manectric</span>
+                        <div class="tipo_electric">
+                            <img class="img_um_tipo" src="../img/types/type_electric.png" alt="">
+                            <label>Elétrico</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="conteudo4_metade_2">
+                    <img class="wattson" src="../img/gyms/wattson.png" alt="">
+                    Wattson, líder do ginásio de Elétrico
+                </div>
+            </div>
+        </div>
+        <div class="conteudo5">
+            <div class="container_conteudo5">
+                <div class="conteudo5_cima">
+                    <img src="../img/misc/line_yellow.png" alt="">
+                    Ginásio - Fogo
+                    <img src="../img/gyms/heat.png" alt="" style="width: 70px">
+                    <img src="../img/misc/line_yellow.png" alt="">
+                </div>
+                <div class="conteudo5_metade_1">
+                    <img class="flannery" src="../img/gyms/flannery.png" alt="">
+                    Flannery, líder do ginásio de Fogo
+                </div>
+                <div class="conteudo5_metade_2">
+                    <div class="time_ginasio" style="background-color: #FF9C54">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/arcanine.gif" alt="">
+                        <span>Arcanine</span>
+                        <div class="tipo_fire">
+                            <img class="img_um_tipo" src="../img/types/type_fire.png" alt="">
+                            <label>Fogo</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background-color: #FF9C54">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/magcargo.gif" alt="">
+                        <span>Magcargo</span>
+                        <div class="tipo_fire">
+                            <img class="img_um_tipo" src="../img/types/type_fire.png" alt="">
+                            <label>Fogo</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #5A5366 0%, #5A5366 50%, #FF9C54 50%, #FF9C54 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/houndoom.gif" alt="">
+                        <span>Houndoom</span>
+                        <div class="tipo_dark_fire">
+                            <img class="img_dois_tipos" src="../img/types/type_dark.png" alt="">
+                            <label>Noturno</label>
+                            <img class="img_dois_tipos" src="../img/types/type_fire.png" alt="">
+                            <label>Fogo</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background-color: #FF9C54">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/rapidash.gif" alt="">
+                        <span>Rapidash</span>
+                        <div class="tipo_fire">
+                            <img class="img_um_tipo" src="../img/types/type_fire.png" alt="">
+                            <label>Fogo</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #FF9C54 0%, #FF9C54 50%, #D97746 50%, #D97746 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/camerupt.gif" alt="">
+                        <span>Camerupt</span>
+                        <div class="tipo_fire_ground">
+                            <img class="img_dois_tipos" src="../img/types/type_fire.png" alt="">
+                            <label>Fogo</label>
+                            <img class="img_dois_tipos" src="../img/types/type_ground.png" alt="">
+                            <label>Terra</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background-color: #FF9C54">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/torkoal.gif" alt="">
+                        <span>Torkoal</span>
+                        <div class="tipo_fire">
+                            <img class="img_um_tipo" src="../img/types/type_fire.png" alt="">
+                            <label>Fogo</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="conteudo6">
+            <div class="container_conteudo6">
+                <div class="conteudo6_cima">
+                    <img src="../img/misc/line_yellow.png" alt="">
+                    Ginásio - Normal
+                    <img src="../img/gyms/balance.png" alt="" style="width: 70px">
+                    <img src="../img/misc/line_yellow.png" alt="">
+                </div>
+                <div class="conteudo6_metade_1">
+                    <div class="time_ginasio" style="background-color: #9099A1">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/slaking.gif" alt="">
+                        <span>Slaking</span>
+                        <div class="tipo_normal">
+                            <img class="img_um_tipo" src="../img/types/type_normal.png" alt="">
+                            <label>Normal</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background-color: #9099A1">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/blissey.gif" alt="">
+                        <span>Blissey</span>
+                        <div class="tipo_normal">
+                            <img class="img_um_tipo" src="../img/types/type_normal.png" alt="">
+                            <label>Normal</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background-color: #9099A1">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/kangaskhan.gif" alt="">
+                        <span>Kangaskhan</span>
+                        <div class="tipo_normal">
+                            <img class="img_um_tipo" src="../img/types/type_normal.png" alt="">
+                            <label>Normal</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background-color: #9099A1">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/tauros.gif" alt="">
+                        <span>Tauros</span>
+                        <div class="tipo_normal">
+                            <img class="img_um_tipo" src="../img/types/type_normal.png" alt="">
+                            <label>Normal</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background-color: #9099A1">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/spinda.gif" alt="">
+                        <span>Spinda</span>
+                        <div class="tipo_normal">
+                            <img class="img_um_tipo" src="../img/types/type_normal.png" alt="">
+                            <label>Normal</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background-color: #9099A1">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/slaking.gif" alt="">
+                        <span>Slaking</span>
+                        <div class="tipo_normal">
+                            <img class="img_um_tipo" src="../img/types/type_normal.png" alt="">
+                            <label>Normal</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="conteudo6_metade_2">
+                    <img class="norman" src="../img/gyms/norman.png" alt="">
+                    Norman, líder do ginásio de Normal
+                </div>
+            </div>
+        </div>
+        <div class="conteudo7">
+            <div class="container_conteudo7">
+                <div class="conteudo7_cima">
+                    <img src="../img/misc/line_yellow.png" alt="">
+                    Ginásio - Voador
+                    <img src="../img/gyms/feather.png" alt="" style="width: 70px">
+                    <img src="../img/misc/line_yellow.png" alt="">
+                </div>
+                <div class="conteudo7_metade_1">
+                    <img class="winona" src="../img/gyms/winona.png" alt="">
+                    Winona, líder do ginásio de Voador
+                </div>
+                <div class="conteudo7_metade_2">
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #9099A1 0%, #9099A1 50%, #8FA8DD 50%, #8FA8DD 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/noctowl.gif" alt="">
+                        <span>Noctowl</span>
+                        <div class="tipo_normal_flying">
+                            <img class="img_dois_tipos" src="../img/types/type_normal.png" alt="">
+                            <label>Normal</label>
+                            <img class="img_dois_tipos" src="../img/types/type_flying.png" alt="">
+                            <label>Voador</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #63BB5B 0%, #63BB5B 50%, #8FA8DD 50%, #8FA8DD 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/tropius.gif" alt="">
+                        <span>Tropius</span>
+                        <div class="tipo_grass_flying">
+                            <img class="img_dois_tipos" src="../img/types/type_grass.png" alt="">
+                            <label>Grama</label>
+                            <img class="img_dois_tipos" src="../img/types/type_flying.png" alt="">
+                            <label>Voador</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #4D90D5 0%, #4D90D5 50%, #8FA8DD 50%, #8FA8DD 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/pelipper.gif" alt="">
+                        <span>Pelipper</span>
+                        <div class="tipo_water_flying">
+                            <img class="img_dois_tipos" src="../img/types/type_water.png" alt="">
+                            <label>Água</label>
+                            <img class="img_dois_tipos" src="../img/types/type_flying.png" alt="">
+                            <label>Voador</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #0A6DC4 0%, #0A6DC4 50%, #8FA8DD 50%, #8FA8DD 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/dragonite.gif" alt="">
+                        <span>Dragonite</span>
+                        <div class="tipo_dragon_flying">
+                            <img class="img_dois_tipos" src="../img/types/type_dragon.png" alt="">
+                            <label>Dragão</label>
+                            <img class="img_dois_tipos" src="../img/types/type_flying.png" alt="">
+                            <label>Voador</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #5A8EA1 0%, #5A8EA1 50%, #8FA8DD 50%, #8FA8DD 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/skarmory.gif" alt="">
+                        <span>Skarmory</span>
+                        <div class="tipo_steel_flying">
+                            <img class="img_dois_tipos" src="../img/types/type_steel.png" alt="">
+                            <label>Aço</label>
+                            <img class="img_dois_tipos" src="../img/types/type_flying.png" alt="">
+                            <label>Voador</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #0A6DC4 0%, #0A6DC4 50%, #8FA8DD 50%, #8FA8DD 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/altaria.gif" alt="">
+                        <span>Altaria</span>
+                        <div class="tipo_dragon_flying">
+                            <img class="img_dois_tipos" src="../img/types/type_dragon.png" alt="">
+                            <label>Dragão</label>
+                            <img class="img_dois_tipos" src="../img/types/type_flying.png" alt="">
+                            <label>Voador</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="conteudo8">
+            <div class="container_conteudo8">
+                <div class="conteudo8_cima">
+                    <img src="../img/misc/line_yellow.png" alt="">
+                    Ginásio - Psíquico
+                    <img src="../img/gyms/mind.png" alt="" style="width: 70px">
+                    <img src="../img/misc/line_yellow.png" alt="">
+                </div>
+                <div class="conteudo8_metade_1">
+                    <div class="time_ginasio" style="background-color: #F97176">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/hypno.gif" alt="">
+                        <span>Hypno</span>
+                        <div class="tipo_psychic">
+                            <img class="img_um_tipo" src="../img/types/type_psychic.png" alt="">
+                            <label>Psíquico</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #D97746 0%, #D97746 50%, #F97176 50%, #F97176 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/claydol.gif" alt="">
+                        <span>Claydol</span>
+                        <div class="tipo_ground_psychic">
+                            <img class="img_dois_tipos" src="../img/types/type_ground.png" alt="">
+                            <label>Terra</label>
+                            <img class="img_dois_tipos" src="../img/types/type_psychic.png" alt="">
+                            <label>Psíquico</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #4D90D5 0%, #4D90D5 50%, #F97176 50%, #F97176 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/slowking.gif" alt="">
+                        <span>Slowking</span>
+                        <div class="tipo_water_psychic">
+                            <img class="img_dois_tipos" src="../img/types/type_water.png" alt="">
+                            <label>Água</label>
+                            <img class="img_dois_tipos" src="../img/types/type_psychic.png" alt="">
+                            <label>Psíquico</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #F97176 0%, #F97176 50%, #8FA8DD 50%, #8FA8DD 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/xatu.gif" alt="">
+                        <span>Xatu</span>
+                        <div class="tipo_psychic_flying">
+                            <img class="img_dois_tipos" src="../img/types/type_psychic.png" alt="">
+                            <label>Psíquico</label>
+                            <img class="img_dois_tipos" src="../img/types/type_flying.png" alt="">
+                            <label>Voador</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #C7B78B 0%, #C7B78B 50%, #F97176 50%, #F97176 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/lunatone.gif" alt="">
+                        <span>Lunatone</span>
+                        <div class="tipo_rock_psychic">
+                            <img class="img_dois_tipos" src="../img/types/type_rock.png" alt="">
+                            <label>Pedra</label>
+                            <img class="img_dois_tipos" src="../img/types/type_psychic.png" alt="">
+                            <label>Psíquico</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #C7B78B 0%, #C7B78B 50%, #F97176 50%, #F97176 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/solrock.gif" alt="">
+                        <span>Solrock</span>
+                        <div class="tipo_rock_psychic">
+                            <img class="img_dois_tipos" src="../img/types/type_rock.png" alt="">
+                            <label>Pedra</label>
+                            <img class="img_dois_tipos" src="../img/types/type_psychic.png" alt="">
+                            <label>Psíquico</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="conteudo8_metade_2">
+                    <img class=tateLiza src="../img/gyms/tateLiza.png" alt="">
+                    Tate e Liza, líderes do ginásio de Psíquico
+                </div>
+            </div>
+        </div>
+        <div class="conteudo9">
+            <div class="container_conteudo9">
+                <div class="conteudo9_cima">
+                    <img src="../img/misc/line_yellow.png" alt="">
+                    Ginásio - Água
+                    <img src="../img/gyms/rain.png" alt="" style="width: 70px">
+                    <img src="../img/misc/line_yellow.png" alt="">
+                </div>
+                <div class="conteudo9_metade_1">
+                    <img class="wallace" src="../img/gyms/wallace.png" alt="">
+                    Wallace, líder do ginásio de Água
+                </div>
+                <div class="conteudo9_metade_2">
+                    <div class="time_ginasio" style="background: #4D90D5">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/wailord.gif" alt="">
+                        <span>Wailord</span>
+                        <div class="tipo_water">
+                            <img class="img_um_tipo" src="../img/types/type_water.png" alt="">
+                            <label>Água</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #4D90D5 0%, #4D90D5 50%, #AB6AC8 50%, #AB6AC8 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/tentacruel.gif" alt="">
+                        <span>Tentacruel</span>
+                        <div class="tipo_water_poison">
+                            <img class="img_dois_tipos" src="../img/types/type_water.png" alt="">
+                            <label>Água</label>
+                            <img class="img_dois_tipos" src="../img/types/type_poison.png" alt="">
+                            <label>Venenoso</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #63BB5B 0%, #63BB5B 50%, #4D90D5 50%, #4D90D5 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/ludicolo.gif" alt="">
+                        <span>Ludicolo</span>
+                        <div class="tipo_grass_water">
+                            <img class="img_dois_tipos" src="../img/types/type_grass.png" alt="">
+                            <label>Grama</label>
+                            <img class="img_dois_tipos" src="../img/types/type_water.png" alt="">
+                            <label>Água</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #4D90D5 0%, #4D90D5 50%, #D97746 50%, #D97746 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/whiscash.gif" alt="">
+                        <span>Whiscash</span>
+                        <div class="tipo_ground_water">
+                            <img class="img_dois_tipos" src="../img/types/type_water.png" alt="">
+                            <label>Água</label>
+                            <img class="img_dois_tipos" src="../img/types/type_ground.png" alt="">
+                            <label>Terra</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #4D90D5 0%, #4D90D5 50%, #8FA8DD 50%, #8FA8DD 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/gyarados.gif" alt="">
+                        <span>Gyarados</span>
+                        <div class="tipo_water_flying">
+                            <img class="img_dois_tipos" src="../img/types/type_water.png" alt="">
+                            <label>Água</label>
+                            <img class="img_dois_tipos" src="../img/types/type_flying.png" alt="">
+                            <label>Voador</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background-color: #4D90D5">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/milotic.gif" alt="">
+                        <span>Milotic</span>
+                        <div class="tipo_water">
+                            <img class="img_um_tipo" src="../img/types/type_water.png" alt="">
+                            <label>Água</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="conteudo10">
+            <div class="container_conteudo10">
+                <div class="conteudo10_cima">
+                    <img src="../img/misc/line_yellow.png" alt="">
+                    Elite 4 - Noturno
+                    <img src="../img/misc/line_yellow.png" alt="">
+                </div>
+                <div class="conteudo10_metade_1">
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #5A5366 0%, #5A5366 50%, #CE4069 50%, #CE4069 100%)">
+                        <img class="gif_pokemon" src="../img/gyms/animations/scrafty.gif" alt="">
+                        <span>Scrafty</span>
+                        <div class="tipo_dark_fighting">
+                            <img class="img_dois_tipos" src="../img/types/type_dark.png" alt="">
+                            <label>Noturno</label>
+                            <img class="img_dois_tipos" src="../img/types/type_fighting.png" alt="">
+                            <label>Lutador</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #63BB5B 0%, #63BB5B 50%, #5A5366 50%, #5A5366 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/shiftry.gif" alt="">
+                        <span>Shiftry</span>
+                        <div class="tipo_grass_dark">
+                            <img class="img_dois_tipos" src="../img/types/type_grass.png" alt="">
+                            <label>Grama</label>
+                            <img class="img_dois_tipos" src="../img/types/type_dark.png" alt="">
+                            <label>Noturno</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: #5A5366">
+                        <img class="gif_pokemon" src="../img/gyms/animations/zoroark.gif" alt="">
+                        <span>Zoroark</span>
+                        <div class="tipo_dark">
+                            <img class="img_um_tipo" src="../img/types/type_dark.png" alt="">
+                            <label>Noturno</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #4D90D5 0%, #4D90D5 50%, #5A5366 50%, #5A5366 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/sharpedo.gif" alt="">
+                        <span>Sharpedo</span>
+                        <div class="tipo_water_dark">
+                            <img class="img_dois_tipos" src="../img/types/type_water.png" alt="">
+                            <label>Água</label>
+                            <img class="img_dois_tipos" src="../img/types/type_dark.png" alt="">
+                            <label>Noturno</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #5A5366 0%, #5A5366 50%, #8FA8DD 50%, #8FA8DD 100%)">
+                        <img class="gif_pokemon" src="../img/gyms/animations/mandibuzz.gif" alt="">
+                        <span>Mandibuzz</span>
+                        <div class="tipo_dark_flying">
+                            <img class="img_dois_tipos" src="../img/types/type_dark.png" alt="">
+                            <label>Noturno</label>
+                            <img class="img_dois_tipos" src="../img/types/type_flying.png" alt="">
+                            <label>Voador</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background-color: #5A5366">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/absol.gif" alt="">
+                        <span>Absol</span>
+                        <div class="tipo_dark">
+                            <img class="img_um_tipo" src="../img/types/type_dark.png" alt="">
+                            <label>Noturno</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="conteudo10_metade_2">
+                    <img class="sidney" src="../img/gyms/sidney.png" alt="">
+                    Sidney, membro da Elite 4 (tipo Noturno)
+                </div>
+            </div>
+        </div>
+        <div class="conteudo11">
+            <div class="container_conteudo11">
+                <div class="conteudo11_cima">
+                    <img src="../img/misc/line_yellow.png" alt="">
+                    Elite 4 - Fantasma
+                    <img src="../img/misc/line_yellow.png" alt="">
+                </div>
+                <div class="conteudo11_metade_1">
+                    <img class="phoebe" src="../img/gyms/phoebe.png" alt="">
+                    Phoebe, membro da Elite 4 (tipo Fantasma)
+                </div>
+                <div class="conteudo11_metade_2">
+                    <div class="time_ginasio" style="background: #5269AC">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/Banette.gif" alt="">
+                        <span>Banette</span>
+                        <div class="tipo_ghost">
+                            <img class="img_um_tipo" src="../img/types/type_ghost.png" alt="">
+                            <label>Fantasma</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: #5269AC">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/mismagius.gif" alt="">
+                        <span>Mismagius</span>
+                        <div class="tipo_ghost">
+                            <img class="img_um_tipo" src="../img/types/type_ghost.png" alt="">
+                            <label>Fantasma</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #5269AC 0%, #5269AC 50%, #8FA8DD 50%, #8FA8DD 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/drifblim.gif" alt="">
+                        <span>Drifblim</span>
+                        <div class="tipo_ghost_flying">
+                            <img class="img_dois_tipos" src="../img/types/type_ghost.png" alt="">
+                            <label>Fantasma</label>
+                            <img class="img_dois_tipos" src="../img/types/type_flying.png" alt="">
+                            <label>Voador</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #5269AC 0%, #5269AC 50%, #FF9C54 50%, #FF9C54 100%)">
+                        <img class="gif_pokemon" src="../img/gyms/animations/chandelure.gif" alt="">
+                        <span>Chandelure</span>
+                        <div class="tipo_ghost_fire">
+                            <img class="img_dois_tipos" src="../img/types/type_ghost.png" alt="">
+                            <label>Fantasma</label>
+                            <img class="img_dois_tipos" src="../img/types/type_fire.png" alt="">
+                            <label>Fogo</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: #5269AC">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/dusknoir.gif" alt="">
+                        <span>Dusknoir</span>
+                        <div class="tipo_ghost">
+                            <img class="img_um_tipo" src="../img/types/type_ghost.png" alt="">
+                            <label>Fantasma</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #5A5366 0%, #5A5366 50%, #5269AC 50%, #5269AC 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/sableye.gif" alt="">
+                        <span>Sableye</span>
+                        <div class="tipo_dark_ghost">
+                            <img class="img_dois_tipos" src="../img/types/type_dark.png" alt="">
+                            <label>Noturno</label>
+                            <img class="img_dois_tipos" src="../img/types/type_ghost.png" alt="">
+                            <label>Fantasma</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="conteudo12">
+            <div class="container_conteudo12">
+                <div class="conteudo12_cima">
+                    <img src="../img/misc/line_yellow.png" alt="">
+                    Elite 4 - Gelo
+                    <img src="../img/misc/line_yellow.png" alt="">
+                </div>
+                <div class="conteudo12_metade_1">
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #63BB5B 0%, #63BB5B 50%, #74CEC0 50%, #74CEC0 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/abomasnow.gif" alt="">
+                        <span>Abomasnow</span>
+                        <div class="tipo_grass_ice">
+                            <img class="img_dois_tipos" src="../img/types/type_grass.png" alt="">
+                            <label>Grama</label>
+                            <img class="img_dois_tipos" src="../img/types/type_ice.png" alt="">
+                            <label>Gelo</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background-color: #74CEC0">
+                        <img class="gif_pokemon" src="../img/gyms/animations/beartic.gif" alt="">
+                        <span>Beartic</span>
+                        <div class="tipo_ice">
+                            <img class="img_um_tipo" src="../img/types/type_ice.png" alt="">
+                            <label>Gelo</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #74CEC0 0%, #74CEC0 50%, #5269AC 50%, #5269AC 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/froslass.gif" alt="">
+                        <span>Froslass</span>
+                        <div class="tipo_ice_ghost">
+                            <img class="img_dois_tipos" src="../img/types/type_ice.png" alt="">
+                            <label>Gelo</label>
+                            <img class="img_dois_tipos" src="../img/types/type_ghost.png" alt="">
+                            <label>Fantasma</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background-color: #74CEC0">
+                        <img class="gif_pokemon" src="../img/gyms/animations/vanilluxe.gif" alt="">
+                        <span>Vanilluxe</span>
+                        <div class="tipo_ice">
+                            <img class="img_um_tipo" src="../img/types/type_ice.png" alt="">
+                            <label>Gelo</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #74CEC0 0%, #74CEC0 50%, #4D90D5 50%, #4D90D5 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/walrein.gif" alt="">
+                        <span>Walrein</span>
+                        <div class="tipo_ice_water">
+                            <img class="img_dois_tipos" src="../img/types/type_ice.png" alt="">
+                            <label>Gelo</label>
+                            <img class="img_dois_tipos" src="../img/types/type_water.png" alt="">
+                            <label>Água</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background-color: #74CEC0">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/glalie.gif" alt="">
+                        <span>Glalie</span>
+                        <div class="tipo_ice">
+                            <img class="img_um_tipo" src="../img/types/type_ice.png" alt="">
+                            <label>Gelo</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="conteudo12_metade_2">
+                    <img class="glacia" src="../img/gyms/glacia.png" alt="">
+                    Glacia, membro da Elite 4 (tipo Gelo)
+                </div>
+            </div>
+        </div>
+        <div class="conteudo13">
+            <div class="container_conteudo13">
+                <div class="conteudo13_cima">
+                    <img src="../img/misc/line_yellow.png" alt="">
+                    Elite 4 - Dragão
+                    <img src="../img/misc/line_yellow.png" alt="">
+                </div>
+                <div class="conteudo13_metade_1">
+                    <img class="drake" src="../img/gyms/drake.png" alt="">
+                    Drake, membro da Elite 4 (tipo Dragão)
+                </div>
+                <div class="conteudo13_metade_2">
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #0A6DC4 0%, #0A6DC4 50%, #8FA8DD 50%, #8FA8DD 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/altaria.gif" alt="">
+                        <span>Altaria</span>
+                        <div class="tipo_dragon_flying">
+                            <img class="img_dois_tipos" src="../img/types/type_dragon.png" alt="">
+                            <label>Dragão</label>
+                            <img class="img_dois_tipos" src="../img/types/type_flying.png" alt="">
+                            <label>Voador</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #AB6AC8 0%, #AB6AC8 50%, #0A6DC4 50%, #0A6DC4 100%)">
+                        <img class="gif_pokemon" src="../img/gyms/animations/dragalge.gif" alt="">
+                        <span>Dragalge</span>
+                        <div class="tipo_poison_dragon">
+                            <img class="img_dois_tipos" src="../img/types/type_poison.png" alt="">
+                            <label>Venenoso</label>
+                            <img class="img_dois_tipos" src="../img/types/type_dragon.png" alt="">
+                            <label>Dragão</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #4D90D5 0%, #4D90D5 50%, #0A6DC4 50%, #0A6DC4 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/kingdra.gif" alt="">
+                        <span>Kingdra</span>
+                        <div class="tipo_water_dragon">
+                            <img class="img_dois_tipos" src="../img/types/type_water.png" alt="">
+                            <label>Água</label>
+                            <img class="img_dois_tipos" src="../img/types/type_dragon.png" alt="">
+                            <label>Dragão</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #D97746 0%, #D97746 50%, #0A6DC4 50%, #0A6DC4 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/flygon.gif" alt="">
+                        <span>Flygon</span>
+                        <div class="tipo_ground_dragon">
+                            <img class="img_dois_tipos" src="../img/types/type_ground.png" alt="">
+                            <label>Terra</label>
+                            <img class="img_dois_tipos" src="../img/types/type_dragon.png" alt="">
+                            <label>Dragão</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: #0A6DC4">
+                        <img class="gif_pokemon" src="../img/gyms/animations/haxorus.gif" alt="">
+                        <span>Haxorus</span>
+                        <div class="tipo_dragon">
+                            <img class="img_um_tipo" src="../img/types/type_dragon.png" alt="">
+                            <label>Dragão</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #0A6DC4 0%, #0A6DC4 50%, #8FA8DD 50%, #8FA8DD 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/salamence.gif" alt="">
+                        <span>Salamence</span>
+                        <div class="tipo_dragon_flying">
+                            <img class="img_dois_tipos" src="../img/types/type_dragon.png" alt="">
+                            <label>Dragão</label>
+                            <img class="img_dois_tipos" src="../img/types/type_flying.png" alt="">
+                            <label>Voador</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="conteudo14">
+            <div class="container_conteudo14">
+                <div class="conteudo14_cima">
+                    <img src="../img/misc/line_yellow.png" alt="">
+                    Campeão de Hoenn
+                    <img src="../img/misc/line_yellow.png" alt="">
+                </div>
+                <div class="conteudo14_metade_1">
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #5A8EA1 0%, #5A8EA1 50%, #8FA8DD 50%, #8FA8DD 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/skarmory.gif" alt="">
+                        <span>Skarmory</span>
+                        <div class="tipo_steel_flying">
+                            <img class="img_dois_tipos" src="../img/types/type_steel.png" alt="">
+                            <label>Aço</label>
+                            <img class="img_dois_tipos" src="../img/types/type_flying.png" alt="">
+                            <label>Voador</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #D97746 0%, #D97746 50%, #F97176 50%, #F97176 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/claydol.gif" alt="">
+                        <span>Claydol</span>
+                        <div class="tipo_ground_psychic">
+                            <img class="img_dois_tipos" src="../img/types/type_ground.png" alt="">
+                            <label>Terra</label>
+                            <img class="img_dois_tipos" src="../img/types/type_psychic.png" alt="">
+                            <label>Psíquico</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #5A8EA1 0%, #5A8EA1 50%, #C7B78B 50%, #C7B78B 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/aggron.gif" alt="">
+                        <span>Aggron</span>
+                        <div class="tipo_steel_rock">
+                            <img class="img_dois_tipos" src="../img/types/type_steel.png" alt="">
+                            <label>Aço</label>
+                            <img class="img_dois_tipos" src="../img/types/type_rock.png" alt="">
+                            <label>Pedra</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #C7B78B 0%, #C7B78B 50%, #EC8FE6 50%, #EC8FE6 100%)">
+                        <img class="gif_pokemon" src="../img/gyms/animations/carbink.gif" alt="">
+                        <span>Carbink</span>
+                        <div class="tipo_rock_fairy">
+                            <img class="img_dois_tipos" src="../img/types/type_rock.png" alt="">
+                            <label>Pedra</label>
+                            <img class="img_dois_tipos" src="../img/types/type_fairy.png" alt="">
+                            <label>Fada</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #C7B78B 0%, #C7B78B 50%, #8FA8DD 50%, #8FA8DD 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/aerodactyl.gif" alt="">
+                        <span>Aerodactyl</span>
+                        <div class="tipo_rock_flying">
+                            <img class="img_dois_tipos" src="../img/types/type_rock.png" alt="">
+                            <label>Pedra</label>
+                            <img class="img_dois_tipos" src="../img/types/type_flying.png" alt="">
+                            <label>Voador</label>
+                        </div>
+                    </div>
+                    <div class="time_ginasio" style="background: linear-gradient(to right, #5A8EA1 0%, #5A8EA1 50%, #F97176 50%, #F97176 100%)">
+                        <img class="gif_pokemon" src="../img/pokemon/animations/metagross.gif" alt="">
+                        <span>Metagross</span>
+                        <div class="tipo_steel_psychic">
+                            <img class="img_dois_tipos" src="../img/types/type_steel.png" alt="">
+                            <label>Aço</label>
+                            <img class="img_dois_tipos" src="../img/types/type_psychic.png" alt="">
+                            <label>Psíquico</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="conteudo14_metade_2">
+                    <img class="steven" src="../img/gyms/steven.png" alt=""
+                    onmouseover="confetti.style = 'opacity: 1'"
+                    onmouseout="confetti.style = 'opacity: 0'">
+                    <p>Steven, Campeão de Hoenn (tipo Aço)</p>
+                    <img id="confetti" src="../img/gyms/animations/confetti.gif" alt="">
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container_footer">
+                <div class="footer_logo">
+                    <img class="logo" src="../img/logo/logo.png" alt="">
+                    Pokéfy
+                </div>
+                <div class="amor">
+                    Feito com <img src="../img/misc/heart.gif" style="height: 20px"> por <b>Victor Pederzini</b>
+                </div>
+                <div class="footer_social">
+                    <img onclick="linkedin()" src="../img/misc/linkedin.png" alt="">
+                    <span onclick="linkedin()">Victor Pederzini</span>         
+                    <img onclick="github()" src="../img/misc/github.png" alt=""></a>
+                    <span onclick="github()">Pederzini</span>
+                </div>
+            </div>
+        </footer>
+    </body>
+    </html>
+    
+    <script>
+        function linkedin() {
+            window.location.href = "https://br.linkedin.com/in/victor-pederzini-87b3679a";
+        }
+        function github() {
+            window.location.href = "https://github.com/Pederzini";
+        }
+    </script>
