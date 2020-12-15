@@ -1,0 +1,453 @@
+/* INÍCIO DO BODY */
+
+body {
+    font-family: "Roboto";
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+body::-webkit-scrollbar {
+	width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+	background: #252525;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: #FFC805;
+}
+
+.conteudo_pai {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background: url(../img/misc/fundoGeografia_ajustado.png) center center;
+    background-position: center top;
+    background-repeat: repeat;
+}
+
+.conteudo {
+    width: 100%;
+    height: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+}
+
+.conteudo img {
+    height: 220px;
+}
+
+.capa {
+    width: 100%;
+    height: 96px;
+    border-top: 10.5px solid #B28D06;
+    border-bottom: 10.5px solid #B28D06;
+    background-color: #FFC805;
+    font-size: 64px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #353535;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* INÍCIO DO CONTEÚDO 1 */
+
+.conteudo1 {
+    position: relative;
+    width: 100%;
+    height: 592px;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+}
+
+.conteudo1:hover .fundo_estatico {
+    animation: fadein 0.5s ease-in alternate;
+    animation-fill-mode: forwards;
+}
+
+.conteudo1:hover .circle1 {
+    opacity: 1;
+    transition: all 0.5s ease-in;
+}
+
+.conteudo1:hover .circle2 {
+    opacity: 1;
+    transition: all 0.5s ease-in;
+}
+
+.conteudo1:hover .circle3 {
+    opacity: 1;
+    transition: all 0.5s ease-in;
+}
+
+.conteudo1:hover .fundo_animado {
+    opacity: 0.2;
+}
+
+.fundo_animado {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    animation: fadeout 0.5s ease-in alternate;
+}
+
+/* Keyframe é um grupo de efeitos que vão ocorrer em determinada animação  */
+
+@keyframes fadein {
+    from { opacity: 0; visibility: hidden }
+    to { opacity: 1; visibility: visible }
+}
+
+@keyframes fadeout {
+    from { opacity: 1; visibility: visible }
+    to { opacity: 0; visibility: hidden }
+}
+
+.container_conteudo1 {
+    position: absolute;
+    width: 1065px;
+    height: 100%;
+    z-index: 1;
+}
+
+.conteudo1_cima {
+    width: 100%;
+    height: 15%;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.conteudo1_metade_1 {
+    font-family: "Roboto";
+    width: 45%;
+    height: 75%;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    float: left;
+}
+
+.conteudo1_metade_1 img {
+    margin-bottom: 15px;
+}
+
+.conteudo1_metade1_filho1, .conteudo1_metade1_filho2, .conteudo1_metade1_filho3 {
+    position: relative;
+}
+
+.circle1, .circle2, .circle3 {
+    opacity: 0.2;
+    position: absolute;
+    z-index: 0;
+    transition: all 0.5s ease-out;
+}
+
+.circle1_poke, .circle2_poke, .circle3_poke {
+    position: absolute;
+    z-index: 1;
+}
+
+.metade1_filho1, .metade2_filho1 {
+    height: 30%;
+    width: 90%;
+}
+
+.conteudo1_metade_1 .circle1_poke {
+    height: 150px;
+}
+
+.metade1_filho2, .metade2_filho2 {
+    height: 30%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.conteudo1_metade_1 .circle2_poke {
+    height: 100px;
+}
+
+.metade1_filho3, .metade2_filho3 {
+    height: 30%;
+    width: 90%;
+}
+
+.conteudo1_metade_1 .circle3_poke {
+    height: 100px;
+}
+
+.conteudo1_metade_2 {
+    width: 50%;
+    height: 75%;
+    font-size: 22px;
+    margin-left: 5%;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    float: left;
+}
+
+/* FIM DO CONTEÚDO 1 */
+
+/* INÍCIO DO CONTEÚDO 2 */
+
+.conteudo2 {
+    position: relative;
+    width: 100%;
+    height: 592px;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+}
+
+.conteudo2:hover .fundo_estatico {
+    animation: fadein 0.5s ease-in alternate;
+    animation-fill-mode: forwards;
+}
+
+.conteudo2:hover .circle1 {
+    opacity: 1;
+    transition: all 0.5s ease-in;
+}
+
+.conteudo2:hover .circle2 {
+    opacity: 1;
+    transition: all 0.5s ease-in;
+}
+
+.conteudo2:hover .circle3 {
+    opacity: 1;
+    transition: all 0.5s ease-in;
+}
+
+.conteudo2:hover .fundo_animado {
+    opacity: 0.2;
+}
+
+.container_conteudo2 {
+    position: absolute;
+    width: 1065px;
+    height: 100%;
+    z-index: 0;
+}
+
+.conteudo2_cima {
+    width: 100%;
+    height: 15%;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.conteudo2_metade_1 {
+    font-family: "Roboto";
+    width: 50%;
+    height: 75%;
+    margin-right: 5%;
+    font-size: 22px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+
+.conteudo2_metade_1 img {
+    height: 320px;
+    margin-bottom: 15px;
+}
+
+.conteudo2_metade_2 {
+    position: relative;
+    width: 45%;
+    height: 75%;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    float: left;
+}
+
+.conteudo2_metade_2 .circle1_poke {
+    height: 150px;
+}
+
+.conteudo2_metade_2 .circle2_poke {
+    height: 110px;
+}
+
+.conteudo2_metade_2 .circle3_poke {
+    height: 100px;
+}
+
+/* FIM DO CONTEÚDO 2 */
+
+/* INÍCIO DO CONTEÚDO 3 */
+
+.conteudo3 {
+    position: relative;
+    width: 100%;
+    height: 592px;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    transition: all 0.5s ease-out;
+}
+
+.fundo_estatico {
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s ease-out;
+    animation: fadeout 0.5s ease-in alternate;
+}
+
+.conteudo3:hover .fundo_estatico {
+    animation: fadein 0.5s ease-in alternate;
+    animation-fill-mode: forwards;
+}
+
+
+.conteudo3:hover .circle1 {
+    opacity: 1;
+    transition: all 0.5s ease-in;
+}
+
+.conteudo3:hover .circle2 {
+    opacity: 1;
+    transition: all 0.5s ease-in;
+}
+
+.conteudo3:hover .circle3 {
+    opacity: 1;
+    transition: all 0.5s ease-in;
+}
+
+.container_conteudo3 {
+    position: absolute;
+    z-index: 1;
+    width: 1065px;
+    height: 100%;
+}
+
+.conteudo3:hover .fundo_animado {
+    opacity: 0.6;
+}
+
+.conteudo3_cima {
+    width: 100%;
+    height: 15%;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.conteudo3_metade_1 {
+    font-family: "Roboto";
+    width: 45%;
+    height: 75%;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    float: left;
+}
+
+.conteudo3_metade_1 .circle2 {
+    margin-left: -15px;
+}
+
+.conteudo3_metade1_filho1, .conteudo3_metade1_filho2, .conteudo3_metade1_filho3 {
+    position: relative;
+}
+
+.circle1, .circle2, .circle3 {
+    position: absolute;
+    z-index: 0;
+}
+
+.circle1_poke, .circle2_poke, .circle3_poke {
+    position: absolute;
+    z-index: 1;
+}
+
+.metade1_filho1, .metade2_filho1 {
+    height: 30%;
+    width: 90%;
+}
+
+.conteudo3_metade_1 .circle1_poke {
+    height: 150px;
+}
+
+.metade1_filho2, .metade2_filho2 {
+    height: 30%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.conteudo3_metade_1 .circle2_poke {
+    height: 120px;
+}
+
+.metade1_filho3, .metade2_filho3 {
+    height: 30%;
+    width: 90%;
+}
+
+.conteudo3_metade_1 .circle3_poke {
+    height: 100px;
+}
+
+.conteudo3_metade_2 {
+    width: 50%;
+    height: 75%;
+    font-size: 22px;
+    margin-left: 5%;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    float: left;
+}
+
+/* FIM DO CONTEÚDO 3 */
+
+/* FIM DO BODY */

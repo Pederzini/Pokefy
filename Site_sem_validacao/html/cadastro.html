@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="icon" href="../img/logo/logo.png">
+    <title>Pokéfy - Cadastro</title>
+</head>
+<body onload="sortear()">
+    <div class="header">
+        <div class="container">
+            <img class="logo" src="../img/logo/logo.png" alt="">
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a class="inicio" href="index.html">Início</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="div_botoes">
+                <a href="login.html"><button class="button_login">Entrar</button></a>
+                <a href="cadastro.html"><button class="button_cadastro">Cadastro</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="carregamento">
+        <div id="container_carregamento">
+            <img src="../img/misc/mew.gif">
+            <h3>Carregando...</h3>
+        </div>
+    </div>
+        
+    <!-- Modal -->
+    <div id="meuModal" class="modal">
+        <!-- Conteúdo do modal -->
+        <div class="modal_content">
+            <p id="conteudo_modal"></p>
+            <label id="fechar" onclick="botao_sair()">&times;</label>
+        </div>
+    </div>
+
+    <div class="conteudo1">
+        <div class="container_conteudo1">
+            <div class="conteudo1_metade_1">
+                <!-- <form id="form_cadastro" method="post" onsubmit="return cadastrar()"> -->
+                    <form id="form_cadastro">
+                        <label for="nomeCompleto">Nome completo</label>
+                        <input name="nomeCompleto" id="entry_nomeCompleto" type="text" required><br>
+                        <label for="nomeUsuario">Nome de Usuário</label>
+                        <input name="nomeUsuario" id="entry_nomeUsuario" type="text" required><br>
+                        <label for="email">E-mail</label>
+                        <input name="email" id="entry_email" type="text" onkeyup="validateEmail()"><br>
+                        <div class="senhas">
+                            <div class="senhas_filho">
+                                <label for="senha">Senha</label>
+                                <input name="senha" id="entry_senha" type="password" required onkeyup="verificarSenha()">
+                            </div>
+                            <div class="senhas_filho">
+                                <label for="confirmarSenha">Confirmar senha</label>
+                                <input name="confirmarSenha" id="entry_confirmarSenha" type="password" required onkeyup="verificarSenha()">
+                            </div>
+                        </div>
+                        <div id="validacaoSenha"></div>
+                    </form>
+                <!-- </form> -->
+            </div>
+            <div class="conteudo1_metade_2">
+                Para finalizar seu cadastro, confirme que
+                não é um robô e escreva o nome do Pokémon abaixo 
+                <img id="img_poke_verificar" src="" alt="">
+                <div id="resposta" style="color: red; font-size: 18px; text-shadow: -1.25px 0 white, 0 1.25px white, 1.25px 0 white, 0 -1.25px white"></div>
+                <input id="entry_pokemon" type="text" onkeyup="return forcarLowerCase(this)">
+                <button class="button_cadastroGrande" onclick="verificarCadastro()">Cadastrar</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container_footer">
+            <div class="footer_logo">
+                <img class="logo" src="../img/logo/logo.png" alt="">
+                Pokéfy
+            </div>
+            <div class="amor">
+                Feito com <img src="../img/misc/heart.gif" style="height: 20px"> por <b>Victor Pederzini</b>
+            </div>
+            <div class="footer_social">
+                <img onclick="linkedin()" src="../img/misc/linkedin.png" alt="">
+                <span onclick="linkedin()">Victor Pederzini</span>         
+                <img onclick="github()" src="../img/misc/github.png" alt=""></a>
+                <span onclick="github()">Pederzini</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+<script>
+    let pokemons = ['pikachu', 'treecko', 'torchic', 'mudkip'];
+    let numero = parseInt((Math.random()*4));
+    let contador = 0;
+    let contadorSenha = 0;
+    let entradaEmail;
+    let validarEmail;
+    let senha;
+    let confirmarSenha;
+
+    function verificarSenha() {
+        contadorSenha = 0;
+        senha = entry_senha.value;
+        confirmarSenha = entry_confirmarSenha.value;
+        if (senha == confirmarSenha) {
+            validacaoSenha.style = style="color: green; font-size: 18px; text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white";
+            validacaoSenha.innerHTML = `Senhas corretas`;
+        } else {
+            validacaoSenha.style = style="color: red; font-size: 18px; text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white";
+            validacaoSenha.innerHTML = `Senhas incorretas`;
+            contadorSenha++;
+        }
+    }
+
+    function sortear() {
+        entry_nomeCompleto.value = ``;
+        entry_nomeUsuario.value = ``;
+        entry_email.value = ``;
+        entry_senha.value = ``;
+        entry_confirmarSenha.value = ``;
+        entry_pokemon.value = ``;
+        resposta.innerHTML = ``;
+        img_poke_verificar.src = `../img/pokemon/animations/${pokemons[numero]}.gif`;
+    }
+
+    function forcarLowerCase(strInput) {
+        strInput.value=strInput.value.toLowerCase();
+    }
+
+    // Quando o usuário clica no (x), fecha o modal de confirmação e segue para o login
+    function botao_sair() {
+        if (contador < 1) {
+            meuModal.style.display = "none";
+            window.location.href = "login.html"; 
+        } else {
+            meuModal.style.display = "none";
+        }
+    }
+
+    function validateEmail(entradaEmail) {
+        entradaEmail = entry_email.value;
+        const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return validarEmail = re.test(String(entradaEmail).toLowerCase());
+    }
+
+    function verificarCadastro() {
+        contador = 0;
+        if (entry_nomeCompleto.value == `` || entry_nomeUsuario.value == `` || entry_email.value == ``
+        || entry_senha.value == `` || entry_confirmarSenha.value == ``) {
+            // conteudo_modal.innerHTML = `Deu tudo certo com o seu cadastro. Aproveite!`;
+            resposta.innerHTML = `Preencha os dados à esquerda antes de adivinhar o Pokémon!`;
+            conteudo_modal.innerHTML = `Por favor, preencha os campos vazios`;
+            meuModal.style.display = "block";
+            contador++;
+        } else if (validarEmail == false) {
+            resposta.innerHTML = `Preencha os dados à esquerda antes de adivinhar o Pokémon!`;
+            conteudo_modal.innerHTML = `Por favor, digite um e-mail válido`;
+            meuModal.style.display = "block";
+            contador++;
+        } else if (contadorSenha > 0) {
+            resposta.innerHTML = `Preencha os dados à esquerda antes de adivinhar o Pokémon!`;
+            conteudo_modal.innerHTML = `Senhas informadas não são iguais`;
+            meuModal.style.display = "block";
+            contador++;
+        } else if (entry_pokemon.value != `${pokemons[numero]}`) {
+            resposta.innerHTML = `Ops, este não é o nome certo. Tente novamente!`;
+         } else {
+            resposta.style = "color: green; font-size: 18px; text-shadow: -1.25px 0 white, 0 1.25px white, 1.25px 0 white, 0 -1.25px white;";
+            resposta.innerHTML = `Parabéns, você acertou!`;
+            cadastroCerto();
+        }
+    }
+
+    function cadastroCerto() {
+        // finalizar_aguardar();
+        conteudo_modal.innerHTML = `Deu tudo certo com o seu cadastro. Aproveite!`;
+        meuModal.style.display = "block";
+    }
+    
+    function linkedin() {
+        window.location.href = "https://br.linkedin.com/in/victor-pederzini-87b3679a";
+    }
+
+    function github() {
+        window.location.href = "https://github.com/Pederzini";
+    }
+
+    // function cadastrar() {
+    //     aguardar();
+    //     var formulario = new URLSearchParams(new FormData(form_cadastro));
+    //     fetch("/usuarios/cadastrar", {
+    //         method: "POST",
+    //         body: formulario
+    //     }).then(function (response) {
+            
+    //         if (response.ok) {
+    //             cadastroCerto();
+    //             // window.location.href='login.html';
+    //         } else {
+    //             console.log('Erro de cadastro!');
+    //             response.text().then(function (resposta) {
+    //                 div_erro.innerHTML = resposta;
+    //                 finalizar_aguardar();
+    //             });
+    //         }
+    //     });
+    //     return false;
+    // }
+
+    // function aguardar() {
+    //     carregamento.style.display = "flex";
+    // }
+
+    // function finalizar_aguardar(resposta) {
+    //     carregamento.style.display = "none";
+    // }
+
+
+</script>
